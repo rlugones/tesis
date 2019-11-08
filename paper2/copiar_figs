@@ -1,0 +1,72 @@
+#!/bin/bash
+dir_figs=/home/rodrigo/Doctorado/Simulaciones/figuras
+
+rm -f figs/*.png figs/*.eps figs/*.pdf
+
+#FIG 1
+cp $dir_figs/fig1/E_run01.eps figs/fig1_E.eps
+
+#FIG 2
+figs=(B0_Hc03 B1_Hc03 B4_Hc03 B8_Hc03)
+for caso in ${figs[*]}; do
+	cp $dir_figs/fig2/$caso.pdf figs/fig2_$caso.pdf;
+	cd figs; pdftops -eps fig2_$caso.pdf; cd ..
+done
+
+
+#FIG 3
+figs=(B0.0_y_Hc0.0_zm_kperp0 B0.0_y_Hc0.3_zm_kperp0 B0.0_y_Hc0.9_zm_kperp0 \
+      B0.25_y_Hc0.0_zm_kperp0 B0.25_y_Hc0.3_zm_kperp0 B0.25_y_Hc0.9_zm_kperp0 \
+      B1.0_y_Hc0.0_zm_kperp0 B1.0_y_Hc0.3_zm_kperp0 B1.0_y_Hc0.9_zm_kperp0 \
+      B8.0_y_Hc0.0_zm_kperp0 B8.0_y_Hc0.3_zm_kperp0 B8.0_y_Hc0.9_zm_kperp0 \
+      B0.0_y_Hc0.0_zp_kperp0 B0.0_y_Hc0.3_zp_kperp0 B0.0_y_Hc0.9_zp_kperp0 \
+      B0.25_y_Hc0.0_zp_kperp0 B0.25_y_Hc0.3_zp_kperp0 B0.25_y_Hc0.9_zp_kperp0 \
+      B1.0_y_Hc0.0_zp_kperp0 B1.0_y_Hc0.3_zp_kperp0 B1.0_y_Hc0.9_zp_kperp0 \
+      B8.0_y_Hc0.0_zp_kperp0 B8.0_y_Hc0.3_zp_kperp0 B8.0_y_Hc0.9_zp_kperp0 )
+
+for caso in ${figs[*]}; do
+	cp $dir_figs/fig3/$caso.eps figs/fig3_$caso.eps;
+done
+
+
+#cp $dir_figs/fig3/B0.0_y_Hc0.0_zm_kperp0.eps figs/fig3_B0.0_y_Hc0.0_kperp0_zm.eps
+#cp $dir_figs/fig3/B0.0_y_Hc0.3_zm_kperp0.eps figs/fig3_B0.0_y_Hc0.3_kperp0_zm.eps
+#cp $dir_figs/fig3/B0.0_y_Hc0.9_zm_kperp0.eps figs/fig3_B0.0_y_Hc0.9_kperp0_zm.eps
+#cp $dir_figs/fig3/B1.0_y_Hc0.0_zm_kperp0.eps figs/fig3_B1.0_y_Hc0.0_kperp0_zm.eps
+#cp $dir_figs/fig3/B1.0_y_Hc0.3_zm_kperp0.eps figs/fig3_B1.0_y_Hc0.3_kperp0_zm.eps
+#cp $dir_figs/fig3/B1.0_y_Hc0.9_zm_kperp0.eps figs/fig3_B1.0_y_Hc0.9_kperp0_zm.eps
+#cp $dir_figs/fig3/B8.0_y_Hc0.0_zm_kperp0.eps figs/fig3_B8.0_y_Hc0.0_kperp0_zm.eps
+#cp $dir_figs/fig3/B8.0_y_Hc0.3_zm_kperp0.eps figs/fig3_B8.0_y_Hc0.3_kperp0_zm.eps
+#cp $dir_figs/fig3/B8.0_y_Hc0.9_zm_kperp0.eps figs/fig3_B8.0_y_Hc0.9_kperp0_zm.eps
+#cp $dir_figs/fig3/B0.0_y_Hc0.0_zp_kperp0.eps figs/fig3_B0.0_y_Hc0.0_kperp0_zp.eps
+#cp $dir_figs/fig3/B0.0_y_Hc0.3_zp_kperp0.eps figs/fig3_B0.0_y_Hc0.3_kperp0_zp.eps
+#cp $dir_figs/fig3/B0.0_y_Hc0.9_zp_kperp0.eps figs/fig3_B0.0_y_Hc0.9_kperp0_zp.eps
+#cp $dir_figs/fig3/B1.0_y_Hc0.0_zp_kperp0.eps figs/fig3_B1.0_y_Hc0.0_kperp0_zp.eps
+#cp $dir_figs/fig3/B1.0_y_Hc0.3_zp_kperp0.eps figs/fig3_B1.0_y_Hc0.3_kperp0_zp.eps
+#cp $dir_figs/fig3/B1.0_y_Hc0.9_zp_kperp0.eps figs/fig3_B1.0_y_Hc0.9_kperp0_zp.eps
+#cp $dir_figs/fig3/B8.0_y_Hc0.0_zp_kperp0.eps figs/fig3_B8.0_y_Hc0.0_kperp0_zp.eps
+#cp $dir_figs/fig3/B8.0_y_Hc0.3_zp_kperp0.eps figs/fig3_B8.0_y_Hc0.3_kperp0_zp.eps
+#cp $dir_figs/fig3/B8.0_y_Hc0.9_zp_kperp0.eps figs/fig3_B8.0_y_Hc0.9_kperp0_zp.eps
+#cp $dir_figs/fig3/B0.25_y_Hc0.0_zm_kperp0.eps figs/fig3_B0.25_y_Hc0.0_kperp0_zm.eps
+#cp $dir_figs/fig3/B0.25_y_Hc0.3_zm_kperp0.eps figs/fig3_B0.25_y_Hc0.3_kperp0_zm.eps
+#cp $dir_figs/fig3/B0.25_y_Hc0.9_zm_kperp0.eps figs/fig3_B0.25_y_Hc0.9_kperp0_zm.eps
+#cp $dir_figs/fig3/B0.25_y_Hc0.0_zp_kperp0.eps figs/fig3_B0.25_y_Hc0.0_kperp0_zp.eps
+#cp $dir_figs/fig3/B0.25_y_Hc0.3_zp_kperp0.eps figs/fig3_B0.25_y_Hc0.3_kperp0_zp.eps
+#cp $dir_figs/fig3/B0.25_y_Hc0.9_zp_kperp0.eps figs/fig3_B0.25_y_Hc0.9_kperp0_zp.eps
+
+#FIG 4 #k_\parallel = [35, 85]
+#figs=(B8_Hc09_zpz_kperp)
+#for caso in ${figs[*]}; do
+#	cp $dir_figs/fig4/$caso.eps figs/fig4_$caso.eps;
+#done
+
+
+#FIG 5
+figs=(B1_Hc03_zmz_kpara_10 B1_Hc03_zpz_kpara_10 \
+  B025_Hc03_zpz_kpara_15 B1_Hc03_zpz_kpara_15 B4_Hc03_zpz_kpara_15 B8_Hc03_zpz_kpara_15 \
+  B025_Hc03_zpz_kperp_15 B1_Hc03_zpz_kperp_15 B4_Hc03_zpz_kperp_15 B8_Hc03_zpz_kperp_15 \
+  B1_Hc00_zpz_kperp_40 B1_Hc03_zpz_kperp_40 B1_Hc09_zpz_kperp_40)
+
+for caso in ${figs[*]}; do
+	cp $dir_figs/fig5/$caso.eps figs/fig5_$caso.eps;
+done

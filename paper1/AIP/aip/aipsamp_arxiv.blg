@@ -1,0 +1,61 @@
+This is BibTeX, Version 0.99d (TeX Live 2013/Debian)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: aipsamp_arxiv.aux
+The style file: plainnat.bst
+Database file #1: aipsamp_arxivNotes.bib
+Database file #2: aipsamp_arxiv.bib
+Warning--empty title in Chandran2003
+Warning--empty title in CH1
+Warning--empty title in CHO1
+Warning--empty title in Dalena2012
+Warning--empty title in PD1
+Warning--empty title in F1
+Warning--empty title in Lange1
+Warning--empty title in L1
+Warning--empty title in Lynn2013
+Warning--empty title in M2
+Warning--empty title in S1
+Warning--empty title in Bogdan2014
+Warning--empty title in Weidl2015
+You've used 20 entries,
+            2773 wiz_defined-function locations,
+            767 strings with 8854 characters,
+and the built_in function-call counts, 10491 in all, are:
+= -- 920
+> -- 713
+< -- 6
++ -- 239
+- -- 219
+* -- 1034
+:= -- 1672
+add.period$ -- 80
+call.type$ -- 20
+change.case$ -- 120
+chr.to.int$ -- 20
+cite$ -- 53
+duplicate$ -- 413
+empty$ -- 758
+format.name$ -- 247
+if$ -- 2132
+int.to.chr$ -- 1
+int.to.str$ -- 1
+missing$ -- 20
+newline$ -- 129
+num.names$ -- 80
+pop$ -- 208
+preamble$ -- 2
+purify$ -- 113
+quote$ -- 0
+skip$ -- 318
+stack$ -- 0
+substring$ -- 326
+swap$ -- 24
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 220
+warning$ -- 13
+while$ -- 82
+width$ -- 0
+write$ -- 308
+(There were 13 warnings)

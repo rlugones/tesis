@@ -1,0 +1,61 @@
+This is BibTeX, Version 0.99c (TeX Live 2009/Debian)
+The top-level auxiliary file: aipsamp.aux
+The style file: unsrtnat.bst
+Database file #1: aipsampNotes.bib
+Database file #2: aipsamp.bib
+Warning--empty title in M1
+Warning--empty title in F1
+Warning--empty title in L1
+Warning--empty title in M2
+Warning--empty title in S1
+Warning--empty title in CH1
+Warning--empty title in Lange1
+Warning--empty title in PD1
+Warning--empty title in Dalena2012
+Warning--empty title in Chandran2003
+Warning--empty title in CHO1
+Warning--empty title in Lynn2013
+Warning--empty title in Weidl2015
+Warning--empty title in Bogdan2014
+You've used 20 entries,
+            2481 wiz_defined-function locations,
+            725 strings with 8335 characters,
+and the built_in function-call counts, 8331 in all, are:
+= -- 679
+> -- 494
+< -- 6
++ -- 186
+- -- 146
+* -- 809
+:= -- 1392
+add.period$ -- 79
+call.type$ -- 20
+change.case$ -- 26
+chr.to.int$ -- 20
+cite$ -- 34
+duplicate$ -- 379
+empty$ -- 704
+format.name$ -- 174
+if$ -- 1711
+int.to.chr$ -- 1
+int.to.str$ -- 21
+missing$ -- 20
+newline$ -- 128
+num.names$ -- 60
+pop$ -- 121
+preamble$ -- 2
+purify$ -- 20
+quote$ -- 0
+skip$ -- 207
+stack$ -- 0
+substring$ -- 326
+swap$ -- 44
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 140
+warning$ -- 14
+while$ -- 62
+width$ -- 0
+write$ -- 306
+(There were 14 warnings)

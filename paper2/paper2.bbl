@@ -1,0 +1,238 @@
+\begin{thebibliography}{10}
+
+\bibitem{frisch_turbulence_1995}
+U.~Frisch.
+\newblock {\em Turbulence: {The} {Legacy} of {A}. {N}. {Kolmogorov}}.
+\newblock Cambridge University Press, November 1995.
+
+\bibitem{pouquet_strong_1976}
+A.~Pouquet, U.~Frisch, and J.~L{\'e}orat.
+\newblock Strong {MHD} helical turbulence and the nonlinear dynamo effect.
+\newblock {\em Journal of Fluid Mechanics}, 77(02):321--354, September 1976.
+
+\bibitem{zhou_magnetohydrodynamic_2004}
+Y.~Zhou, W.~H. Matthaeus, and P.~Dmitruk.
+\newblock Magnetohydrodynamic turbulence and time scales in astrophysical and
+  space plasmas.
+\newblock {\em Rev. Mod. Phys.}, 76(4):1015--1035, December 2004.
+
+\bibitem{zhou_non-gaussian_1993}
+Y.~Zhou, A.~A. Praskovsky, and G.~Vahala.
+\newblock A non-{Gaussian} phenomenological model for higher-order spectra in
+  turbulence.
+\newblock {\em Physics Letters A}, 178(1):138--142, July 1993.
+
+\bibitem{alexakis_turbulent_2007}
+A.~Alexakis, P.~D. Mininni, and A.~Pouquet.
+\newblock Turbulent cascades, transfer, and scale interactions in
+  magnetohydrodynamics.
+\newblock {\em New J. Phys.}, 9(8):298, 2007.
+
+\bibitem{teaca_energy_2009}
+B.~Teaca, M.~K. Verma, B.~Knaepen, and D.~Carati.
+\newblock Energy transfer in anisotropic magnetohydrodynamic turbulence.
+\newblock {\em Phys. Rev. E}, 79(4):046312, April 2009.
+
+\bibitem{aluie_2010}
+H.~Aluie and G.~L. Eyink.
+\newblock Scale locality of magnetohydrodynamic turbulence.
+\newblock {\em Physical Review Letters}, 104:081101, 2010.
+
+\bibitem{mininni_scale_2011}
+P.~D. Mininni.
+\newblock Scale interactions in magnetohydrodynamic turbulence.
+\newblock {\em Annual Review of Fluid Mechanics}, 43(1):377--397, 2011.
+
+\bibitem{kraichnan_structure_1959}
+R.~H. Kraichnan.
+\newblock The structure of isotropic turbulence at very high {Reynolds}
+  numbers.
+\newblock {\em Journal of Fluid Mechanics}, 5(04):497--543, May 1959.
+
+\bibitem{tennekes_eulerian_1975}
+H.~Tennekes.
+\newblock Eulerian and {Lagrangian} time microscales in isotropic turbulence.
+\newblock {\em Journal of Fluid Mechanics}, 67(03):561--567, February 1975.
+
+\bibitem{chen_sweeping_1989}
+S.~Chen and R.~Kraichnan.
+\newblock Sweeping decorrelation in isotropic turbulence.
+\newblock {\em Physics of Fluids A: Fluid Dynamics (1989-1993)},
+  1(12):2019--2024, December 1989.
+
+\bibitem{nelkin_time_1990}
+M.~Nelkin and M.~Tabor.
+\newblock Time correlations and random sweeping in isotropic turbulence.
+\newblock {\em Physics of Fluids A: Fluid Dynamics (1989-1993)}, 2(1):81--83,
+  January 1990.
+
+\bibitem{matthaeus_eulerian_2010}
+W.~H. Matthaeus, S.~Dasso, J.~M. Weygand, M.~G. Kivelson, and K.~T. Osman.
+\newblock Eulerian decorrelation of fluctuations in the interplanetary magnetic
+  field.
+\newblock {\em ApJ}, 721(1):L10, 2010.
+
+\bibitem{servidio_time_2011}
+S.~Servidio, V.~Carbone, P.~Dmitruk, and W.~H. Matthaeus.
+\newblock Time decorrelation in isotropic magnetohydrodynamic turbulence.
+\newblock {\em EPL}, 96(5):55003, 2011.
+
+\bibitem{carbone_anisotropy_2011}
+F.~Carbone, L.~Sorriso-Valvo, C.~Versace, G.~Strangi, and R.~Bartolino.
+\newblock Anisotropy of {Spatiotemporal} {Decorrelation} in
+  {Electrohydrodynamic} {Turbulence}.
+\newblock {\em Phys. Rev. Lett.}, 106(11):114502, March 2011.
+
+\bibitem{dobrowolny_1980_HydromagneticTurbulence}
+M.~Dobrowolny, A.~Mangeney, and P.~Veltri.
+\newblock Fully developed anisotropic hydromagnetic turbulence in
+  interplanetary space.
+\newblock {\em Physical Review Letters}, 45(2):144, 1980.
+
+\bibitem{dmitruk_waves_2009}
+P.~Dmitruk and W.~H. Matthaeus.
+\newblock Waves and turbulence in magnetohydrodynamic direct numerical
+  simulations.
+\newblock {\em Physics of Plasmas (1994-present)}, 16(6):062304, June 2009.
+
+\bibitem{clark_di_leoni_spatio-temporal_2015}
+P.~Clark~di Leoni, P.~J. Cobelli, and P.~D. Mininni.
+\newblock The spatio-temporal spectrum of turbulent flows.
+\newblock {\em Eur. Phys. J. E}, 38(12):136, December 2015.
+
+\bibitem{meyrand_weak_2015}
+R.~Meyrand, K.~H. Kiyani, and S.~Galtier.
+\newblock Weak magnetohydrodynamic turbulence and intermittency.
+\newblock {\em Journal of Fluid Mechanics}, 770:R1 (11 pages), May 2015.
+
+\bibitem{lugones_2016_spatiotemporal}
+R.~Lugones, P.~Dmitruk, P.~D. Mininni, M.~Wan, and W.~H. Matthaeus.
+\newblock On the spatio-temporal behavior of magnetohydrodynamic turbulence in
+  a magnetized plasma.
+\newblock {\em Physics of Plasmas}, 23(11):112304, 2016.
+
+\bibitem{meyrand_direct_2016}
+R.~Meyrand, S.~Galtier, and K.~H. Kiyani.
+\newblock Direct {Evidence} of the {Transition} from {Weak} to {Strong}
+  {Magnetohydrodynamic} {Turbulence}.
+\newblock {\em Phys. Rev. Lett.}, 116(10):105002, March 2016.
+
+\bibitem{matthaeus1994transport}
+W.~H. Matthaeus, Y.~Zhou, G.~P. Zank, and S.~Oughton.
+\newblock Transport theory and the wkb approximation for interplanetary mhd
+  fluctuations.
+\newblock {\em Journal of Geophysical Research: Space Physics},
+  99(A12):23421--23430, 1994.
+
+\bibitem{zhou1990remarks}
+Y.~Zhou and W.~H. Matthaeus.
+\newblock Remarks on transport theories of interplanetary fluctuations.
+\newblock {\em Journal of Geophysical Research: Space Physics},
+  95(A9):14863--14871, 1990.
+
+\bibitem{velli_1993_propagation}
+M.~Velli.
+\newblock On the propagation of ideal, linear alfv{\'e}n waves in radially
+  stratified stellar atmospheres and winds.
+\newblock {\em Astronomy and Astrophysics}, 270:304--314, 1993.
+
+\bibitem{matthaeus_1999_coronal}
+W.~H. Matthaeus, G.~P. Zank, S.~Oughton, D.~J. Mullan, and P.~Dmitruk.
+\newblock Coronal {Heating} by {Magnetohydrodynamic} {Turbulence} {Driven} by
+  {Reflected} {Low}-{Frequency} {Waves}.
+\newblock {\em The Astrophysical Journal}, 523(1):L93--L96, September 1999.
+
+\bibitem{dmitruk_2001_coronal}
+P.~Dmitruk, W.~H. Matthaeus, L.~J. Milano, S.~Oughton, D.~J. Mullan, and G.~P.
+  Zank.
+\newblock Coronal heating distribution due to alfvenic driven
+  magnetohydrodynamic turbulence.
+\newblock In {\em AGU Spring Meeting Abstracts}, 2001.
+
+\bibitem{matthaeus_anisotropic_2009}
+W.~H. Matthaeus, S.~Oughton, and Y.~Zhou.
+\newblock Anisotropic magnetohydrodynamic spectral transfer in the diffusion
+  approximation.
+\newblock {\em Phys. Rev. E}, 79(3):035401, March 2009.
+
+\bibitem{baerenzung_2008_spectral}
+J.~Baerenzung, H.~Politano, Y.~Ponty, and A.~Pouquet.
+\newblock Spectral modeling of turbulent flows and the role of helicity.
+\newblock {\em Physical Review E}, 77(4):046303, 2008.
+
+\bibitem{heisenberg_zur_1948}
+W.~Heisenberg.
+\newblock Zur statistischen {Theorie} der {Turbulenz}.
+\newblock {\em Z. Physik}, 124(7-12):628--657, July 1948.
+
+\bibitem{comte-bellot_simple_1971}
+G.~Comte-Bellot and S.~Corrsin.
+\newblock Simple {Eulerian} time correlation of full-and narrow-band velocity
+  signals in grid-generated, turbulence.
+\newblock {\em Journal of Fluid Mechanics}, 48(02):273--337, July 1971.
+
+\bibitem{orszag_numerical_1972}
+S.~A. Orszag and G.~S. Patterson.
+\newblock Numerical {Simulation} of {Three}-{Dimensional} {Homogeneous}
+  {Isotropic} {Turbulence}.
+\newblock {\em Phys. Rev. Lett.}, 28(2):76--79, January 1972.
+
+\bibitem{clark_di_leoni_quantification_2014}
+P.~Clark~di Leoni, P.~J. Cobelli, P.~D. Mininni, P.~Dmitruk, and W.~H.
+  Matthaeus.
+\newblock Quantification of the strength of inertial waves in a rotating
+  turbulent flow.
+\newblock {\em Physics of Fluids (1994-present)}, 26(3):035106, March 2014.
+
+\bibitem{gomez_parallel_2005}
+D.~O. G{\'o}mez, P.~D. Mininni, and P.~Dmitruk.
+\newblock Parallel {Simulations} in {Turbulent} {MHD}.
+\newblock {\em Phys. Scr.}, 2005(T116):123, 2005.
+
+\bibitem{gomez_mhd_2005}
+D.~O. G{\'o}mez, P.~D. Mininni, and P.~Dmitruk.
+\newblock {MHD} simulations and astrophysical applications.
+\newblock {\em Advances in Space Research}, 35(5):899--907, 2005.
+
+\bibitem{hybrid2011}
+P.~D. Mininni, D.~Rosenberg, R.~Reddy, and A.~Pouquet.
+\newblock A hybrid {M}{P}{I}-{O}pen{M}{P} scheme for scalable parallel
+  pseudospectral computations for fluid turbulence.
+\newblock {\em Parallel Computing}, 37:316--326, 2011.
+
+\bibitem{hollweg_1990_wkb}
+J.~V. Hollweg.
+\newblock On {W}{K}{B} expansions for alfv{\'e}n waves in the solar wind.
+\newblock {\em Journal of Geophysical Research: Space Physics},
+  95(A9):14873--14879, 1990.
+
+\bibitem{zhou_1989_nonWKBevolution}
+Y.~Zhou and W.~H. Matthaeus.
+\newblock Non-{W}{K}{B} evolution of solar wind fluctuations: A turbulence
+  modeling approach.
+\newblock {\em Geophysical Research Letters}, 16(7):755--758, 1989.
+
+\bibitem{grappin_1983_dependence}
+R.~Grappin, J.~Leorat, and A.~Pouquet.
+\newblock Dependence of mhd turbulence spectra on the velocity field-magnetic
+  field correlation.
+\newblock {\em Astronomy and Astrophysics}, 126:51--58, 1983.
+
+\bibitem{shebalin_1983_anisotropy}
+J.~V. Shebalin, W.~H. Matthaeus, and D.~Montgomery.
+\newblock Anisotropy in mhd turbulence due to a mean magnetic field.
+\newblock {\em Journal of Plasma Physics}, 29(3):525--547, 1983.
+
+\bibitem{kraichnan_1964_kolmogorov}
+R.~H. Kraichnan.
+\newblock Kolmogorov's hypotheses and eulerian turbulence theory.
+\newblock {\em The Physics of Fluids}, 7(11):1723--1734, 1964.
+
+\bibitem{andres_2017_interplay}
+N.~Andr{\'e}s, P.~Clark Di~Leoni, P.~D Mininni, P.~Dmitruk, F.~Sahraoui, and
+  W.~H. Matthaeus.
+\newblock Interplay between alfv{\'e}n and magnetosonic waves in compressible
+  magnetohydrodynamics turbulence.
+\newblock {\em Physics of Plasmas}, 24(10):102314, 2017.
+
+\end{thebibliography}

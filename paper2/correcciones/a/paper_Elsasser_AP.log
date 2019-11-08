@@ -1,0 +1,1285 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2019.7.29)  28 AUG 2019 17:01
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**paper_Elsasser_AP.tex
+(./paper_Elsasser_AP.tex
+LaTeX2e <2018-12-01>
+(/usr/share/texlive/texmf-dist/tex/latex/revtex/revtex4-1.cls
+Document Class: revtex4-1 2010/07/25/20:33:00 4.1r (http://publish.aps.org/revt
+ex4/ for documentation)
+ Copyright (c) 2009 The American Physical Society.
+ mailto:revtex@aps.org
+ Licensed under the LPPL:
+http://www.ctan.org/tex-archive/macros/latex/base/lppl.txt
+ Arthur Ogawa <arthur_ogawa at sbcglobal dot net>
+ Based on work by David Carlisle <david at dcarlisle.demon.co.uk>.
+ltxutil[2010/07/25/20:33:00 4.1r utilities package (portions licensed from W. E
+. Baxter web at superscript.com)]
+LaTeX Info: Redefining \@centercr on input line 308.
+Class revtex4-1 Info: Repairing broken LaTeX eqnarray on input line 358.
+\eqncolsep=\skip41
+Class revtex4-1 Info: Repairing hyperref-unfriendly LaTeX definition of \mpfoot
+note on input line 433.
+Class revtex4-1 Info: Repairing broken LateX \@sect on input line 755.
+\intertabularlinepenalty=\count80
+\@tbpen=\count81
+\@arstrutbox@hline=\box27
+Class revtex4-1 Info: Repairing broken LaTeX \@xbitor on input line 1786.
+Class revtex4-1 Info: Making \typeout \long on input line 2046.
+ltxfront[2010/07/25/20:33:00 4.1r frontmatter package (AO,DPC)]
+\c@affil=\count82
+\c@collab=\count83
+\absbox=\box28
+ltxgrid[2010/07/25/20:33:00 4.1r page grid package (portions licensed from W. E
+. Baxter web at superscript.com)]
+\c@linecount=\count84
+\output@latex=\toks14
+\box@size@1=\box29
+\box@size@2=\box30
+\@protection@box=\box31
+\@topmark@saved=\toks15
+\footins@saved=\box32
+\footins@recovered=\box33
+\column@recovered=\box34
+\pagesofar=\box35
+\footsofar=\box36
+\pagegrid@col=\count85
+Class revtex4-1 Info: Overriding \@vspace, \@vspacer, \@no@pgbk, \@newline, and
+ \\  on input line 5578.
+\c@part=\count86
+\c@section=\count87
+\c@subsection=\count88
+\c@subsubsection=\count89
+\c@paragraph=\count90
+\c@subparagraph=\count91
+\abovecaptionskip=\skip42
+\belowcaptionskip=\skip43
+\c@figure=\count92
+\fbox@1=\box37
+\c@table=\count93
+\fbox@2=\box38
+\c@video=\count94
+\fbox@4=\box39
+\@bibdataout=\write3
+\widetext@top=\box40
+\widetext@bot=\box41
+Class revtex4-1 Info: Selecting society aip on input line 7542.
+(/usr/share/texlive/texmf-dist/tex/latex/revtex/aip4-1.rtx
+File: aip4-1.rtx 2010/07/25 4.1r AIP substyle for REVTeX
+Class revtex4-1 Info: RevTeX society AIP selected on input line 67.
+)
+Class revtex4-1 Info: Selecting journal pop on input line 7544.
+
+Using journal substyle pop.
+Class revtex4-1 Info: Reading file aps10pt4-1.rtx on input line 7547.
+(/usr/share/texlive/texmf-dist/tex/latex/revtex/aps10pt4-1.rtx
+File: aps10pt4-1 2010/07/25/20:33:00 4.1r (http://publish.aps.org/revtex4/ for 
+documentation)
+Class revtex4-1 Info: RevTeX pointsize 10pt selected on input line 30.
+)
+Class revtex4-1 Info: Overriding 10pt on input line 7547.
+
+(/usr/share/texlive/texmf-dist/tex/latex/textcase/textcase.sty
+Package: textcase 2004/10/07 v0.07 Text only upper/lower case changing (DPC)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\@emptytoks=\toks16
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+))
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2018/12/01 v2.17b AMS math features
+\@mathmargin=\skip44
+
+For additional information on amsmath, use the `?' option.
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2000/06/29 v2.01 AMS text
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks17
+\ex@=\dimen102
+)
+LaTeX Info: Redefining \text on input line 28.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen103
+)
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 2016/03/08 v2.02 operator names
+)
+\inf@bad=\count95
+LaTeX Info: Redefining \frac on input line 223.
+\uproot@=\count96
+\leftroot@=\count97
+LaTeX Info: Redefining \overline on input line 385.
+\classnum@=\count98
+\DOTSCASE@=\count99
+LaTeX Info: Redefining \ldots on input line 482.
+LaTeX Info: Redefining \dots on input line 485.
+LaTeX Info: Redefining \cdots on input line 606.
+\Mathstrutbox@=\box42
+\strutbox@=\box43
+\big@size=\dimen104
+LaTeX Font Info:    Redeclaring font encoding OML on input line 729.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 730.
+\macc@depth=\count100
+\c@MaxMatrixCols=\count101
+\dotsspace@=\muskip10
+\c@parentequation=\count102
+\dspbrk@lvl=\count103
+\tag@help=\toks18
+\row@=\count104
+\column@=\count105
+\maxfields@=\count106
+\andhelp@=\toks19
+\eqnshift@=\dimen105
+\alignsep@=\dimen106
+\tagshift@=\dimen107
+\tagwidth@=\dimen108
+\totwidth@=\dimen109
+\lineht@=\dimen110
+\@envbody=\toks20
+\multlinegap=\skip45
+\multlinetaggap=\skip46
+\mathdisplay@stack=\toks21
+LaTeX Info: Redefining \[ on input line 2844.
+LaTeX Info: Redefining \] on input line 2845.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/url/url.sty
+\Urlmuskip=\muskip11
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/natbib/natbib.sty
+Package: natbib 2010/09/13 8.31b (PWD, AO)
+\bibhang=\skip47
+\bibsep=\skip48
+LaTeX Info: Redefining \cite on input line 694.
+\c@NAT@ctr=\count107
+)
+Class revtex4-1 Info: Repairing natbib's \BibitemShut on input line 7549.
+
+(/usr/share/texlive/texmf-dist/tex/latex/revtex/revsymb4-1.sty
+Package: revsymb4-1 2010/07/25/20:33:00 4.1r (http://publish.aps.org/revtex4/ f
+or documentation)
+LaTeX Info: Redefining \frak on input line 95.
+LaTeX Info: Redefining \Bbb on input line 111.
+LaTeX Info: Redefining \REV@mathfrak on input line 119.
+))
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2017/06/01 v1.1a Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks22
+)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2017/06/25 v1.2c Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 99.
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def
+File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
+))
+\Gin@req@height=\dimen111
+\Gin@req@width=\dimen112
+)
+(/usr/share/texlive/texmf-dist/tex/latex/subfigure/subfigure.sty
+Package: subfigure 2002/03/15 v2.1.5 subfigure package
+\subfigtopskip=\skip49
+\subfigcapskip=\skip50
+\subfigcaptopadj=\dimen113
+\subfigbottomskip=\skip51
+\subfigcapmargin=\dimen114
+\subfiglabelskip=\skip52
+\c@subfigure=\count108
+\c@lofdepth=\count109
+\c@subtable=\count110
+\c@lotdepth=\count111
+
+****************************************
+* Local config file subfigure.cfg used *
+****************************************
+(/usr/share/texlive/texmf-dist/tex/latex/subfigure/subfigure.cfg)
+\subfig@top=\skip53
+\subfig@bottom=\skip54
+)
+(/usr/share/texlive/texmf-dist/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: pdftex.def on input line 225.
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1352.
+Package xcolor Info: Model `RGB' extended on input line 1364.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1366.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1367.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1368.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/soul/soul.sty
+Package: soul 2003/11/17 v2.4 letterspacing/underlining (mf)
+\SOUL@word=\toks23
+\SOUL@lasttoken=\toks24
+\SOUL@cmds=\toks25
+\SOUL@buffer=\toks26
+\SOUL@token=\toks27
+\SOUL@spaceskip=\skip55
+\SOUL@ttwidth=\dimen115
+\SOUL@uldp=\dimen116
+\SOUL@ulht=\dimen117
+)
+(/usr/share/texlive/texmf-dist/tex/latex/cancel/cancel.sty
+Package: cancel 2013/04/12 v2.2 Cancel math terms
+)
+(/usr/share/texlive/texmf-dist/tex/latex/cleveref/cleveref.sty
+Package: cleveref 2018/03/27 v0.21.4 Intelligent cross-referencing
+)
+Class revtex4-1 Info: Patching LaTeX tabular. on input line 21.
+Class revtex4-1 Info: Robustifying \LaTeX's \boldmath command on input line 21.
+
+Class revtex4-1 Info: cite was not loaded (OK!) on input line 21.
+Class revtex4-1 Info: mcite was not loaded (OK!) on input line 21.
+Class revtex4-1 Info: multicol was not loaded (OK!) on input line 21.
+
+(./paper_Elsasser_AP.aux)
+\openout1 = `paper_Elsasser_AP.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+
+(/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count112
+\scratchdimen=\dimen118
+\scratchbox=\box44
+\nofMPsegments=\count113
+\nofMParguments=\count114
+\everyMPshowfont=\toks28
+\MPscratchCnt=\count115
+\MPscratchDim=\dimen119
+\MPnumerator=\count116
+\makeMPintoPDFobject=\count117
+\everyMPtoPDFconversion=\toks29
+) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/infwarerr.sty
+Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/grfext.sty
+Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty
+Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
+Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
+)))
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
+Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/etexcmds.sty
+Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifluatex.sty
+Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+))))
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
+Package: pdftexcmds 2018/09/10 v0.29 Utility functions of pdfTeX for LuaTeX (HO
+)
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+Package: ifpdf 2018/09/07 v3.3 Provides the ifpdf switch
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+38.
+Package grfext Info: Graphics extension search list:
+(grfext)             [.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 456.
+
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
+\openout3 = `paper_Elsasser_APNotes.bib'.
+
+LaTeX Font Info:    Try loading font information for U+msa on input line 76.
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 76.
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+
+Package natbib Warning: Citation `frisch_turbulence_1995' on page 1 undefined o
+n input line 81.
+
+
+Package natbib Warning: Citation `pouquet_strong_1976' on page 1 undefined on i
+nput line 81.
+
+
+Package natbib Warning: Citation `zhou_magnetohydrodynamic_2004' on page 1 unde
+fined on input line 81.
+
+
+Package natbib Warning: Citation `alexakis_turbulent_2007' on page 1 undefined 
+on input line 81.
+
+
+Package natbib Warning: Citation `mininni_scale_2011' on page 1 undefined on in
+put line 81.
+
+
+Package natbib Warning: Citation `kraichnan_structure_1959' on page 1 undefined
+ on input line 81.
+
+
+Package natbib Warning: Citation `tennekes_eulerian_1975' on page 1 undefined o
+n input line 81.
+
+
+Package natbib Warning: Citation `chen_sweeping_1989' on page 1 undefined on in
+put line 81.
+
+
+Package natbib Warning: Citation `nelkin_time_1990' on page 1 undefined on inpu
+t line 81.
+
+
+Package natbib Warning: Citation `matthaeus_eulerian_2010' on page 1 undefined 
+on input line 81.
+
+
+Package natbib Warning: Citation `servidio_time_2011' on page 1 undefined on in
+put line 81.
+
+
+Package natbib Warning: Citation `carbone_anisotropy_2011' on page 1 undefined 
+on input line 81.
+
+
+Package natbib Warning: Citation `dobrowolny_1980_HydromagneticTurbulence' on p
+age 1 undefined on input line 83.
+
+
+Package natbib Warning: Citation `dmitruk_waves_2009' on page 1 undefined on in
+put line 85.
+
+
+Package natbib Warning: Citation `servidio_time_2011' on page 1 undefined on in
+put line 94.
+
+
+Package natbib Warning: Citation `clark_di_leoni_spatio-temporal_2015' on page 
+1 undefined on input line 94.
+
+
+Package natbib Warning: Citation `meyrand_weak_2015' on page 1 undefined on inp
+ut line 100.
+
+
+Package natbib Warning: Citation `lugones_2016_spatiotemporal' on page 1 undefi
+ned on input line 100.
+
+
+Package natbib Warning: Citation `meyrand_direct_2016' on page 1 undefined on i
+nput line 100.
+
+
+Package natbib Warning: Citation `servidio_time_2011' on page 1 undefined on in
+put line 106.
+
+
+Package natbib Warning: Citation `chen_sweeping_1989' on page 1 undefined on in
+put line 106.
+
+
+Package natbib Warning: Citation `lugones_2016_spatiotempora' on page 1 undefin
+ed on input line 106.
+
+
+Package natbib Warning: Citation `lugones_2016_spatiotemporal' on page 1 undefi
+ned on input line 114.
+
+
+Underfull \hbox (badness 1173) in paragraph at lines 111--136
+\OT1/cmr/m/n/10 netic field and the amount of cross-helicity in the
+ []
+
+[1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
+
+Package natbib Warning: Citation `servidio_time_2011' on page 2 undefined on in
+put line 159.
+
+
+Package natbib Warning: Citation `matthaeus1994transport' on page 2 undefined o
+n input line 185.
+
+
+Package natbib Warning: Citation `zhou1990remarks' on page 2 undefined on input
+ line 185.
+
+
+Package natbib Warning: Citation `velli_1993_propagation' on page 2 undefined o
+n input line 206.
+
+
+Package natbib Warning: Citation `matthaeus_1999_coronal' on page 2 undefined o
+n input line 206.
+
+
+Package natbib Warning: Citation `dmitruk_2001_coronal' on page 2 undefined on 
+input line 206.
+
+[2]
+
+Package natbib Warning: Citation `zhou_magnetohydrodynamic_2004' on page 3 unde
+fined on input line 218.
+
+
+Package natbib Warning: Citation `matthaeus_anisotropic_2009' on page 3 undefin
+ed on input line 218.
+
+
+Package natbib Warning: Citation `baerenzung_08b' on page 3 undefined on input 
+line 233.
+
+
+Package natbib Warning: Citation `servidio_time_2011' on page 3 undefined on in
+put line 235.
+
+
+Package natbib Warning: Citation `heisenberg_zur_1948' on page 3 undefined on i
+nput line 242.
+
+
+Package natbib Warning: Citation `comte-bellot_simple_1971' on page 3 undefined
+ on input line 242.
+
+
+Package natbib Warning: Citation `orszag_numerical_1972' on page 3 undefined on
+ input line 242.
+
+
+LaTeX Warning: File `fig1_E.eps' not found on input line 246.
+
+Package epstopdf Info: Source file: <fig1_E.eps>
+(epstopdf)             Output file: <fig1_E-eps-converted-to.pdf>
+(epstopdf)             Command: <repstopdf --outfile=fig1_E-eps-converted-to.pd
+f fig1_E.eps>
+(epstopdf)             \includegraphics on input line 246.
+Package epstopdf Info: Output file is already uptodate.
+
+! Package pdftex.def Error: File `fig1_E-eps-converted-to.pdf' not found: using
+ draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.246 ...graphics[width=1\columnwidth]{fig1_E.eps}
+                                                  
+? 
+
+Package natbib Warning: Citation `clark_di_leoni_quantification_2014' on page 3
+ undefined on input line 253.
+
+
+Package natbib Warning: Citation `clark_di_leoni_spatio-temporal_2015' on page 
+3 undefined on input line 253.
+
+
+Underfull \hbox (badness 3078) in paragraph at lines 253--254
+[]\OT1/cmr/m/n/10 The Fourier trans-form in the time lag of the
+ []
+
+
+Underfull \hbox (badness 3449) in paragraph at lines 253--254
+\OT1/cmr/m/n/10 scale-dependent cor-re-la-tion func-tion re-sults in the
+ []
+
+[3]
+
+LaTeX Warning: File `fig2_B0_Hc03.png' not found on input line 266.
+
+
+! Package pdftex.def Error: File `fig2_B0_Hc03.png' not found: using draft sett
+ing.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.266 ...[width=0.48\textwidth]{fig2_B0_Hc03.png}}
+                                                  
+? 
+
+LaTeX Warning: File `fig2_B1_Hc03.png' not found on input line 267.
+
+
+! Package pdftex.def Error: File `fig2_B1_Hc03.png' not found: using draft sett
+ing.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.267 ...[width=0.48\textwidth]{fig2_B1_Hc03.png}}
+                                                  
+? 
+
+LaTeX Warning: File `fig2_B4_Hc03.png' not found on input line 268.
+
+
+! Package pdftex.def Error: File `fig2_B4_Hc03.png' not found: using draft sett
+ing.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.268 ...[width=0.48\textwidth]{fig2_B4_Hc03.png}}
+                                                  
+? 
+
+LaTeX Warning: File `fig2_B8_Hc03.png' not found on input line 269.
+
+
+! Package pdftex.def Error: File `fig2_B8_Hc03.png' not found: using draft sett
+ing.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.269 ...[width=0.48\textwidth]{fig2_B8_Hc03.png}}
+                                                  
+? 
+
+Package natbib Warning: Citation `gomez_parallel_2005' on page 4 undefined on i
+nput line 276.
+
+
+Package natbib Warning: Citation `gomez_mhd_2005' on page 4 undefined on input 
+line 276.
+
+
+LaTeX Warning: File `{fig3_B0.0_y_Hc0.3_zm_kperp0}.png' not found on input line
+ 280.
+
+
+! Package pdftex.def Error: File `fig3_B0.0_y_Hc0.3_zm_kperp0.png' not found: u
+sing draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.280 ...idth]{{fig3_B0.0_y_Hc0.3_zm_kperp0}.png}}
+                                                  
+? 
+
+LaTeX Warning: File `{fig3_B0.0_y_Hc0.3_zp_kperp0}.png' not found on input line
+ 281.
+
+
+! Package pdftex.def Error: File `fig3_B0.0_y_Hc0.3_zp_kperp0.png' not found: u
+sing draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.281 ...idth]{{fig3_B0.0_y_Hc0.3_zp_kperp0}.png}}
+                                                  
+? 
+
+LaTeX Warning: File `{fig3_B0.0_y_Hc0.9_zm_kperp0}.png' not found on input line
+ 282.
+
+
+! Package pdftex.def Error: File `fig3_B0.0_y_Hc0.9_zm_kperp0.png' not found: u
+sing draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.282 ...idth]{{fig3_B0.0_y_Hc0.9_zm_kperp0}.png}}
+                                                  
+? 
+
+LaTeX Warning: File `{fig3_B0.0_y_Hc0.9_zp_kperp0}.png' not found on input line
+ 283.
+
+
+! Package pdftex.def Error: File `fig3_B0.0_y_Hc0.9_zp_kperp0.png' not found: u
+sing draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.283 ...idth]{{fig3_B0.0_y_Hc0.9_zp_kperp0}.png}}
+                                                  
+? 
+
+LaTeX Warning: File `{fig3_B0.25_y_Hc0.0_zm_kperp0}.png' not found on input lin
+e 304.
+
+
+! Package pdftex.def Error: File `fig3_B0.25_y_Hc0.0_zm_kperp0.png' not found: 
+using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.304 ...dth]{{fig3_B0.25_y_Hc0.0_zm_kperp0}.png}}
+                                                  
+? 
+
+LaTeX Warning: File `{fig3_B0.25_y_Hc0.0_zp_kperp0}.png' not found on input lin
+e 305.
+
+
+! Package pdftex.def Error: File `fig3_B0.25_y_Hc0.0_zp_kperp0.png' not found: 
+using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.305 ...dth]{{fig3_B0.25_y_Hc0.0_zp_kperp0}.png}}
+                                                  
+? 
+
+LaTeX Warning: File `{fig3_B0.25_y_Hc0.3_zm_kperp0}.png' not found on input lin
+e 306.
+
+
+! Package pdftex.def Error: File `fig3_B0.25_y_Hc0.3_zm_kperp0.png' not found: 
+using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.306 ...dth]{{fig3_B0.25_y_Hc0.3_zm_kperp0}.png}}
+                                                  
+? 
+
+LaTeX Warning: File `{fig3_B0.25_y_Hc0.3_zp_kperp0}.png' not found on input lin
+e 307.
+
+
+! Package pdftex.def Error: File `fig3_B0.25_y_Hc0.3_zp_kperp0.png' not found: 
+using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.307 ...dth]{{fig3_B0.25_y_Hc0.3_zp_kperp0}.png}}
+                                                  
+? 
+
+LaTeX Warning: File `{fig3_B0.25_y_Hc0.9_zm_kperp0}.png' not found on input lin
+e 308.
+
+
+! Package pdftex.def Error: File `fig3_B0.25_y_Hc0.9_zm_kperp0.png' not found: 
+using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.308 ...dth]{{fig3_B0.25_y_Hc0.9_zm_kperp0}.png}}
+                                                  
+? 
+
+LaTeX Warning: File `{fig3_B0.25_y_Hc0.9_zp_kperp0}.png' not found on input lin
+e 309.
+
+
+! Package pdftex.def Error: File `fig3_B0.25_y_Hc0.9_zp_kperp0.png' not found: 
+using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.309 ...dth]{{fig3_B0.25_y_Hc0.9_zp_kperp0}.png}}
+                                                  
+? 
+
+LaTeX Warning: Float too large for page by 135.44098pt on input line 312.
+
+
+LaTeX Warning: File `{fig3_B1.0_y_Hc0.0_zm_kperp0}.png' not found on input line
+ 316.
+
+
+! Package pdftex.def Error: File `fig3_B1.0_y_Hc0.0_zm_kperp0.png' not found: u
+sing draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.316 ...idth]{{fig3_B1.0_y_Hc0.0_zm_kperp0}.png}}
+                                                  
+? 
+
+LaTeX Warning: File `{fig3_B1.0_y_Hc0.0_zp_kperp0}.png' not found on input line
+ 317.
+
+
+! Package pdftex.def Error: File `fig3_B1.0_y_Hc0.0_zp_kperp0.png' not found: u
+sing draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.317 ...idth]{{fig3_B1.0_y_Hc0.0_zp_kperp0}.png}}
+                                                  
+? 
+
+LaTeX Warning: File `{fig3_B1.0_y_Hc0.3_zm_kperp0}.png' not found on input line
+ 318.
+
+
+! Package pdftex.def Error: File `fig3_B1.0_y_Hc0.3_zm_kperp0.png' not found: u
+sing draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.318 ...idth]{{fig3_B1.0_y_Hc0.3_zm_kperp0}.png}}
+                                                  
+? 
+
+LaTeX Warning: File `{fig3_B1.0_y_Hc0.3_zp_kperp0}.png' not found on input line
+ 319.
+
+
+! Package pdftex.def Error: File `fig3_B1.0_y_Hc0.3_zp_kperp0.png' not found: u
+sing draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.319 ...idth]{{fig3_B1.0_y_Hc0.3_zp_kperp0}.png}}
+                                                  
+? 
+
+LaTeX Warning: File `{fig3_B1.0_y_Hc0.9_zm_kperp0}.png' not found on input line
+ 320.
+
+
+! Package pdftex.def Error: File `fig3_B1.0_y_Hc0.9_zm_kperp0.png' not found: u
+sing draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.320 ...idth]{{fig3_B1.0_y_Hc0.9_zm_kperp0}.png}}
+                                                  
+? 
+
+LaTeX Warning: File `{fig3_B1.0_y_Hc0.9_zp_kperp0}.png' not found on input line
+ 321.
+
+
+! Package pdftex.def Error: File `fig3_B1.0_y_Hc0.9_zp_kperp0.png' not found: u
+sing draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.321 ...idth]{{fig3_B1.0_y_Hc0.9_zp_kperp0}.png}}
+                                                  
+? 
+
+LaTeX Warning: Float too large for page by 122.28438pt on input line 324.
+
+
+LaTeX Warning: File `{fig3_B8.0_y_Hc0.0_zm_kperp0}.png' not found on input line
+ 328.
+
+
+! Package pdftex.def Error: File `fig3_B8.0_y_Hc0.0_zm_kperp0.png' not found: u
+sing draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.328 ...idth]{{fig3_B8.0_y_Hc0.0_zm_kperp0}.png}}
+                                                  
+? 
+
+LaTeX Warning: File `{fig3_B8.0_y_Hc0.0_zp_kperp0}.png' not found on input line
+ 329.
+
+
+! Package pdftex.def Error: File `fig3_B8.0_y_Hc0.0_zp_kperp0.png' not found: u
+sing draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.329 ...idth]{{fig3_B8.0_y_Hc0.0_zp_kperp0}.png}}
+                                                  
+? 
+
+LaTeX Warning: File `{fig3_B8.0_y_Hc0.3_zm_kperp0}.png' not found on input line
+ 330.
+
+
+! Package pdftex.def Error: File `fig3_B8.0_y_Hc0.3_zm_kperp0.png' not found: u
+sing draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.330 ...idth]{{fig3_B8.0_y_Hc0.3_zm_kperp0}.png}}
+                                                  
+? 
+
+LaTeX Warning: File `{fig3_B8.0_y_Hc0.3_zp_kperp0}.png' not found on input line
+ 331.
+
+
+! Package pdftex.def Error: File `fig3_B8.0_y_Hc0.3_zp_kperp0.png' not found: u
+sing draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.331 ...idth]{{fig3_B8.0_y_Hc0.3_zp_kperp0}.png}}
+                                                  
+? 
+
+LaTeX Warning: File `{fig3_B8.0_y_Hc0.9_zm_kperp0}.png' not found on input line
+ 332.
+
+
+! Package pdftex.def Error: File `fig3_B8.0_y_Hc0.9_zm_kperp0.png' not found: u
+sing draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.332 ...idth]{{fig3_B8.0_y_Hc0.9_zm_kperp0}.png}}
+                                                  
+? 
+
+LaTeX Warning: File `{fig3_B8.0_y_Hc0.9_zp_kperp0}.png' not found on input line
+ 333.
+
+
+! Package pdftex.def Error: File `fig3_B8.0_y_Hc0.9_zp_kperp0.png' not found: u
+sing draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.333 ...idth]{{fig3_B8.0_y_Hc0.9_zp_kperp0}.png}}
+                                                  
+? 
+
+LaTeX Warning: Float too large for page by 102.53438pt on input line 336.
+
+[4] [5]
+
+LaTeX Warning: File `fig5_B1_Hc03_zmz_kpara_10.png' not found on input line 350
+.
+
+
+! Package pdftex.def Error: File `fig5_B1_Hc03_zmz_kpara_10.png' not found: usi
+ng draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.350 ...umnwidth]{fig5_B1_Hc03_zmz_kpara_10.png}}
+                                                  
+? 
+
+LaTeX Warning: File `fig5_B1_Hc03_zpz_kpara_10.png' not found on input line 351
+.
+
+
+! Package pdftex.def Error: File `fig5_B1_Hc03_zpz_kpara_10.png' not found: usi
+ng draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.351 ...umnwidth]{fig5_B1_Hc03_zpz_kpara_10.png}}
+                                                  
+? 
+[6] [7]
+
+LaTeX Warning: A float is stuck (cannot be placed) on input line 358.
+
+[8]
+
+LaTeX Warning: A float is stuck (cannot be placed) on input line 358.
+
+
+Class revtex4-1 Warning: Deferred float stuck during \clearpage processing.
+
+[9]
+
+LaTeX Warning: A float is stuck (cannot be placed) on input line 358.
+
+
+LaTeX Warning: A float is stuck (cannot be placed) on input line 358.
+
+
+Class revtex4-1 Warning: Deferred float stuck during \clearpage processing.
+
+[10]
+
+LaTeX Warning: File `fig5_B025_Hc03_zpz_kpara_15.png' not found on input line 3
+73.
+
+
+! Package pdftex.def Error: File `fig5_B025_Hc03_zpz_kpara_15.png' not found: u
+sing draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.373 ...nwidth]{fig5_B025_Hc03_zpz_kpara_15.png}}
+                                                  
+? 
+
+LaTeX Warning: File `fig5_B1_Hc03_zpz_kpara_15.png' not found on input line 374
+.
+
+
+! Package pdftex.def Error: File `fig5_B1_Hc03_zpz_kpara_15.png' not found: usi
+ng draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.374 ...umnwidth]{fig5_B1_Hc03_zpz_kpara_15.png}}
+                                                  
+? 
+
+LaTeX Warning: File `fig5_B4_Hc03_zpz_kpara_15.png' not found on input line 375
+.
+
+
+! Package pdftex.def Error: File `fig5_B4_Hc03_zpz_kpara_15.png' not found: usi
+ng draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.375 ...umnwidth]{fig5_B4_Hc03_zpz_kpara_15.png}}
+                                                  
+? 
+
+LaTeX Warning: File `fig5_B8_Hc03_zpz_kpara_15.png' not found on input line 376
+.
+
+
+! Package pdftex.def Error: File `fig5_B8_Hc03_zpz_kpara_15.png' not found: usi
+ng draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.376 ...umnwidth]{fig5_B8_Hc03_zpz_kpara_15.png}}
+                                                  
+? 
+
+LaTeX Warning: File `fig5_B025_Hc03_zpz_kperp_15.png' not found on input line 3
+83.
+
+
+! Package pdftex.def Error: File `fig5_B025_Hc03_zpz_kperp_15.png' not found: u
+sing draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.383 ...nwidth]{fig5_B025_Hc03_zpz_kperp_15.png}}
+                                                  
+? 
+
+LaTeX Warning: File `fig5_B1_Hc03_zpz_kperp_15.png' not found on input line 384
+.
+
+
+! Package pdftex.def Error: File `fig5_B1_Hc03_zpz_kperp_15.png' not found: usi
+ng draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.384 ...umnwidth]{fig5_B1_Hc03_zpz_kperp_15.png}}
+                                                  
+? 
+
+LaTeX Warning: File `fig5_B4_Hc03_zpz_kperp_15.png' not found on input line 385
+.
+
+
+! Package pdftex.def Error: File `fig5_B4_Hc03_zpz_kperp_15.png' not found: usi
+ng draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.385 ...umnwidth]{fig5_B4_Hc03_zpz_kperp_15.png}}
+                                                  
+? 
+
+LaTeX Warning: File `fig5_B8_Hc03_zpz_kperp_15.png' not found on input line 386
+.
+
+
+! Package pdftex.def Error: File `fig5_B8_Hc03_zpz_kperp_15.png' not found: usi
+ng draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.386 ...umnwidth]{fig5_B8_Hc03_zpz_kperp_15.png}}
+                                                  
+? 
+[11]
+
+Package natbib Warning: Citation `lugones_2016_spatiotemporal' on page 12 undef
+ined on input line 454.
+
+[12]
+
+LaTeX Warning: File `fig5_B1_Hc00_zpz_kperp_40.png' not found on input line 458
+.
+
+
+! Package pdftex.def Error: File `fig5_B1_Hc00_zpz_kperp_40.png' not found: usi
+ng draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.458 ...umnwidth]{fig5_B1_Hc00_zpz_kperp_40.png}}
+                                                  
+? 
+
+LaTeX Warning: File `fig5_B1_Hc03_zpz_kperp_40.png' not found on input line 459
+.
+
+
+! Package pdftex.def Error: File `fig5_B1_Hc03_zpz_kperp_40.png' not found: usi
+ng draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.459 ...umnwidth]{fig5_B1_Hc03_zpz_kperp_40.png}}
+                                                  
+? 
+
+LaTeX Warning: File `fig5_B1_Hc09_zpz_kperp_40.png' not found on input line 460
+.
+
+
+! Package pdftex.def Error: File `fig5_B1_Hc09_zpz_kperp_40.png' not found: usi
+ng draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.460 ...umnwidth]{fig5_B1_Hc09_zpz_kperp_40.png}}
+                                                  
+? 
+
+LaTeX Warning: Float too large for page by 62.34154pt on input line 463.
+
+
+Package natbib Warning: Citation `lugones_2016_spatiotemporal' on page 13 undef
+ined on input line 469.
+
+[13]
+
+LaTeX Warning: A float is stuck (cannot be placed) on input line 470.
+
+
+LaTeX Warning: A float is stuck (cannot be placed) on input line 470.
+
+
+Class revtex4-1 Warning: Deferred float stuck during \clearpage processing.
+
+
+Package natbib Warning: Citation `lugones_2016_spatiotemporal' on page 14 undef
+ined on input line 475.
+
+
+Package natbib Warning: Citation `meyrand_weak_2015' on page 14 undefined on in
+put line 475.
+
+
+Package natbib Warning: Citation `lugones_2016_spatiotemporal' on page 14 undef
+ined on input line 475.
+
+
+Package natbib Warning: Citation `meyrand_direct_2016' on page 14 undefined on 
+input line 475.
+
+[14]
+
+Package natbib Warning: Citation `zhou1990remarks' on page 15 undefined on inpu
+t line 491.
+
+
+Package natbib Warning: Citation `dmitruk_waves_2009' on page 15 undefined on i
+nput line 493.
+
+
+Package natbib Warning: Citation `servidio_time_2011' on page 15 undefined on i
+nput line 493.
+
+
+Package natbib Warning: Citation `lugones_2016_spatiotemporal' on page 15 undef
+ined on input line 493.
+
+
+Package natbib Warning: Citation `dmitruk_waves_2009' on page 15 undefined on i
+nput line 498.
+
+
+Package natbib Warning: Citation `servidio_time_2011' on page 15 undefined on i
+nput line 498.
+
+
+Package natbib Warning: Citation `lugones_2016_spatiotemporal' on page 15 undef
+ined on input line 498.
+
+[15]
+
+Package natbib Warning: Citation `andres_2017_interplay' on page 16 undefined o
+n input line 511.
+
+No file paper_Elsasser_AP.bbl.
+
+Package natbib Warning: There were undefined citations.
+
+[16] (./paper_Elsasser_AP.aux) ) 
+Here is how much of TeX's memory you used:
+ 6913 strings out of 492609
+ 106408 string characters out of 6131462
+ 274139 words of memory out of 5000000
+ 10700 multiletter control sequences out of 15000+600000
+ 15115 words of font info for 57 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 41i,9n,35p,1563b,955s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/share/texlive/texmf-dist/fonts/type1/publ
+ic/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/ams
+fonts/cm/cmbx7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/c
+m/cmbx8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9
+.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><
+/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/s
+hare/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/te
+xlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/t
+exmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-di
+st/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/share/texlive/texmf-dist/font
+s/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1
+/public/amsfonts/cm/cmr5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/
+amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts
+/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8
+.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></u
+sr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/sha
+re/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/share/texl
+ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/share/texlive/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-
+dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/share/texlive/texmf-dist/fo
+nts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/typ
+e1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/publ
+ic/amsfonts/cm/cmsy9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsf
+onts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/c
+m/cmti9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt9
+.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.
+pfb>
+Output written on paper_Elsasser_AP.pdf (16 pages, 385100 bytes).
+PDF statistics:
+ 169 PDF objects out of 1000 (max. 8388607)
+ 121 compressed objects within 2 object streams
+ 0 named destinations out of 1000 (max. 500000)
+ 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+

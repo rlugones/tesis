@@ -1,0 +1,45 @@
+#!/bin/bash
+dir_figs=/home/rodrigo/Doctorado/Simulaciones/figuras
+
+cp $dir_figs/fig1/E_run01.eps figs/fig1_E.eps
+
+#cp $dir_figs/fig2/B025_bvf.eps figs/fig2_B025.eps
+#cp $dir_figs/fig2/B0_bvf.eps figs/fig2_B0.eps
+#cp $dir_figs/fig2/B1_bvf.eps figs/fig2_B1.eps
+#cp $dir_figs/fig2/Explanation_B1_bvf.eps figs/fig2_B1_explanation.eps
+#cp $dir_figs/fig2/B4_bvf.eps figs/fig2_B4.eps
+#cp $dir_figs/fig2/B8_bvf.eps figs/fig2_B8.eps
+cp $dir_figs/fig2/B0_bvf.pdf figs/fig2_B0.pdf
+cp $dir_figs/fig2/B1_bvf.pdf figs/fig2_B1.pdf
+cp $dir_figs/fig2/B4_bvf.pdf figs/fig2_B4.pdf
+cp $dir_figs/fig2/B4_bvf_log.pdf figs/fig2_B4_log.pdf
+cp $dir_figs/fig2/B8_bvf_p32.pdf figs/fig2_B8.pdf
+cp $dir_figs/fig2/B8_bvf_p32_log.pdf figs/fig2_B8_log.pdf
+
+cp $dir_figs/fig3/B025_bvf_Etot_kperp0.eps figs/fig3_B025_Etot.eps
+cp $dir_figs/fig3/B1_bvf_v3_Etot_kperp0.eps figs/fig3_B1_Etot.eps
+cp $dir_figs/fig3/B8_bvf_p32_Etot_kperp0.eps figs/fig3_B8_Etot.eps
+
+cp $dir_figs/fig4/B1_bvf_b_kpara.eps figs/fig4_B1_b_kpara.eps
+cp $dir_figs/fig4/B1_bvf_b_kperp.eps figs/fig4_B1_b_kperp.eps
+
+cp $dir_figs/fig5/B0_bvf_b_kpara_0.eps figs/fig5_B0_b.eps
+cp $dir_figs/fig5/B0_bvf_b_kpara_0.eps figs/fig5_B0_b_kpara_0.eps
+cp $dir_figs/fig5/B025_bvf_b_kpara_0.eps figs/fig5_B025_b_kpara_0.eps
+cp $dir_figs/fig5/B025_bvf_b_kpara_10.eps figs/fig5_B025_b_kpara_10.eps
+cp $dir_figs/fig5/B025_bvf_b_kpara_20.eps figs/fig5_B025_b_kpara_20.eps
+cp $dir_figs/fig5/B025_bvf_b_kperp_0.eps figs/fig5_B025_b_kperp_0.eps
+cp $dir_figs/fig5/B025_bvf_b_kperp_10.eps figs/fig5_B025_b_kperp_10.eps
+cp $dir_figs/fig5/B025_bvf_b_kperp_20.eps figs/fig5_B025_b_kperp_20.eps
+cp $dir_figs/fig5/B1_bvf_v3_b_kpara_0.eps figs/fig5_B1_b_kpara_0.eps
+cp $dir_figs/fig5/B1_bvf_v3_b_kpara_10.eps figs/fig5_B1_b_kpara_10.eps
+cp $dir_figs/fig5/B1_bvf_v3_b_kpara_20.eps figs/fig5_B1_b_kpara_20.eps
+cp $dir_figs/fig5/B1_bvf_v3_b_kperp_0.eps figs/fig5_B1_b_kperp_0.eps
+cp $dir_figs/fig5/B1_bvf_v3_b_kperp_10.eps figs/fig5_B1_b_kperp_10.eps
+cp $dir_figs/fig5/B1_bvf_v3_b_kperp_20.eps figs/fig5_B1_b_kperp_20.eps
+cp $dir_figs/fig5/B8_bvf_p32_b_kpara_0.eps figs/fig5_B8_b_kpara_0.eps
+cp $dir_figs/fig5/B8_bvf_p32_b_kpara_10.eps figs/fig5_B8_b_kpara_10.eps
+cp $dir_figs/fig5/B8_bvf_p32_b_kpara_20.eps figs/fig5_B8_b_kpara_20.eps
+cp $dir_figs/fig5/B8_bvf_p32_b_kperp_0.eps figs/fig5_B8_b_kperp_0.eps
+cp $dir_figs/fig5/B8_bvf_p32_b_kperp_10.eps figs/fig5_B8_b_kperp_10.eps
+cp $dir_figs/fig5/B8_bvf_p32_b_kperp_20.eps figs/fig5_B8_b_kperp_20.eps

@@ -1,0 +1,126 @@
+\documentclass[a4paper, landscape, 11pt, spanish]{article}
+\usepackage{babel}
+\usepackage[none]{hyphenat}
+%\usepackage[latin1]{inputenc}
+\usepackage[utf8]{inputenc}
+\usepackage{float,wrapfig,subfigure}
+\usepackage{graphicx}
+\usepackage{amsmath,amssymb, bm, commath}
+\usepackage{hyperref}
+\usepackage{cleveref}
+\usepackage{color}
+\usepackage{endnotes}
+%\usepackage{dsfont}
+\usepackage{cancel}
+\usepackage{tikz, tkz-euclide}
+\usetikzlibrary{patterns, arrows}
+\usepackage{listings}
+\usepackage[framemethod=tikz]{mdframed}
+\usepackage{rotating}
+
+\definecolor{codeComment}{rgb}{0,0.6,0}
+\definecolor{codeNumber}{rgb}{0.5,0.5,0.5}
+\definecolor{codeString}{rgb}{0.58,0,0.82}
+\definecolor{codeBackground}{rgb}{0.95,0.95,0.92}
+\definecolor{codeKeyword}{rgb}{0.9,0,0.9}
+\lstdefinestyle{codeAll}{
+  backgroundcolor=\color{codeBackground},
+  commentstyle=\color{codeComment}\ttfamily,
+  keywordstyle=\color{codeKeyword}\ttfamily,
+  numberstyle=\tiny\color{codeNumber}\ttfamily,
+  stringstyle=\color{codeString}\ttfamily,
+  basicstyle=\footnotesize\ttfamily,
+  breakatwhitespace=false,
+  breaklines=true,
+  captionpos=b,
+  columns=fullflexible,
+  keepspaces=true,
+  numbers=left,
+  numbersep=3pt,
+  showspaces=false,
+  showstringspaces=false,
+  showtabs=false,
+  tabsize=2,
+}
+\lstdefinestyle{Python}{
+  style=codeAll,
+  language=Python,
+  classoffset=3,
+  morekeywords={as},
+  classoffset=3,
+  morekeywords={__init__, self},
+  keywordstyle=\color{blue},
+}
+
+
+\addto\captionsspanish{
+  %\def\contentsname{\hfill Índice \hfill }%
+  %\def\bibname{Referencias}%
+  \def\tablename{}%
+  %\def\refname{Bibliografía y Referencias}%
+  %\def\abstractname{Resumen y Objetivos generales}
+  }
+\usepackage[font=small,format=plain,labelfont=bf,up,textfont=it,up]{caption}
+\renewcommand{\baselinestretch}{1.1}
+\usepackage[left=.5cm,top=1.9cm,head=1cm,foot=1cm,right=.5cm,bottom=2cm]{geometry}
+
+\graphicspath{{./figs/}}
+%\setcounter{secnumdepth}{5} % Para que se numere el paragraph
+
+
+
+\begin{document}
+
+
+\begin{table}[]
+\centering
+\caption{\Huge{$z^\pm$}}
+\resizebox{\columnwidth}{!}{
+\begin{tabular}{|c||c|c|c||c|c|c|}
+  \hline
+   & $z_- - H_c = 0.0$ & $z_- - H_c = 0.3$ & $z_- -H_c = 0.9$    & $z_+ - H_c = 0.0$ & $z_+ - H_c = 0.3$ & $z_+ - H_c = 0.9$ \\ \hline
+  $B_0 = 0$ & \includegraphics[scale=0.16]{{B0.0_y_Hc0.0_kperp0_zm}.png} & \includegraphics[scale=0.16]{{B0.0_y_Hc0.3_kperp0_zm}.png} & \includegraphics[scale=0.16]{{B0.0_y_Hc0.9_kperp0_zm}.png} & \includegraphics[scale=0.16]{{B0.0_y_Hc0.0_kperp0_zp}.png} & \includegraphics[scale=0.16]{{B0.0_y_Hc0.3_kperp0_zp}.png} & \includegraphics[scale=0.16]{{B0.0_y_Hc0.9_kperp0_zp}.png} \\ \hline
+  $B_0 = 0.25$ & \includegraphics[scale=0.16]{{B0.25_y_Hc0.0_kperp0_zm}.png} & \includegraphics[scale=0.16]{{B0.25_y_Hc0.3_kperp0_zm}.png} & \includegraphics[scale=0.16]{{B0.25_y_Hc0.9_kperp0_zm}.png} & \includegraphics[scale=0.16]{{B0.25_y_Hc0.0_kperp0_zp}.png} & \includegraphics[scale=0.16]{{B0.25_y_Hc0.3_kperp0_zp}.png} & \includegraphics[scale=0.16]{{B0.25_y_Hc0.9_kperp0_zp}.png} \\ \hline
+  $B_0 = 1$ & \includegraphics[scale=0.16]{{B1.0_y_Hc0.0_kperp0_zm}.png} & \includegraphics[scale=0.16]{{B1.0_y_Hc0.3_kperp0_zm}.png} & \includegraphics[scale=0.16]{{B1.0_y_Hc0.9_kperp0_zm}.png} & \includegraphics[scale=0.16]{{B1.0_y_Hc0.0_kperp0_zp}.png} & \includegraphics[scale=0.16]{{B1.0_y_Hc0.3_kperp0_zp}.png} & \includegraphics[scale=0.16]{{B1.0_y_Hc0.9_kperp0_zp}.png} \\ \hline
+  $B_0 = 8$ & \includegraphics[scale=0.16]{{B8.0_y_Hc0.0_kperp0_zm}.png} & \includegraphics[scale=0.16]{{B8.0_y_Hc0.3_kperp0_zm}.png} & \includegraphics[scale=0.16]{{B8.0_y_Hc0.9_kperp0_zm}.png} & \includegraphics[scale=0.16]{{B8.0_y_Hc0.0_kperp0_zp}.png} & \includegraphics[scale=0.16]{{B8.0_y_Hc0.3_kperp0_zp}.png} & \includegraphics[scale=0.16]{{B8.0_y_Hc0.9_kperp0_zp}.png} \\ \hline
+\end{tabular}}
+\end{table}
+
+
+
+%% \begin{table}[]
+%% \centering
+%% \caption{\Huge{$z_m$}}
+%% \resizebox{\columnwidth}{!}{
+%% \begin{tabular}{|c|c|c|c|}
+%%   \hline
+%%    & $H_c = 0.0$ & $H_c = 0.3$ & $H_c = 0.9$ \\ \hline
+%%   $B_0 = 0$ & \includegraphics[scale=0.16]{{B0.0_y_Hc0.0_kperp0_zm}.png} & \includegraphics[scale=0.16]{{B0.0_y_Hc0.3_kperp0_zm}.png} & \includegraphics[scale=0.16]{{B0.0_y_Hc0.9_kperp0_zm}.png} \\ \hline
+%%   $B_0 = 0.25$ & \includegraphics[scale=0.16]{{B0.25_y_Hc0.0_kperp0_zm}.png} & \includegraphics[scale=0.16]{{B0.25_y_Hc0.3_kperp0_zm}.png} & \includegraphics[scale=0.16]{{B0.25_y_Hc0.9_kperp0_zm}.png} \\ \hline
+%%   $B_0 = 1$ & \includegraphics[scale=0.16]{{B1.0_y_Hc0.0_kperp0_zm}.png} & \includegraphics[scale=0.16]{{B1.0_y_Hc0.3_kperp0_zm}.png} & \includegraphics[scale=0.16]{{B1.0_y_Hc0.9_kperp0_zm}.png} \\ \hline
+%%   $B_0 = 2$ & \includegraphics[scale=0.16]{{B2.0_y_Hc0.0_kperp0_zm}.png} & \includegraphics[scale=0.16]{{B2.0_y_Hc0.3_kperp0_zm}.png} & \includegraphics[scale=0.16]{{B2.0_y_Hc0.9_kperp0_zm}.png} \\ \hline
+%%   $B_0 = 4$ & \includegraphics[scale=0.16]{{B4.0_y_Hc0.0_kperp0_zm}.png} & \includegraphics[scale=0.16]{{B4.0_y_Hc0.3_kperp0_zm}.png} & \includegraphics[scale=0.16]{{B4.0_y_Hc0.9_kperp0_zm}.png} \\ \hline
+%%   $B_0 = 8$ & \includegraphics[scale=0.16]{{B8.0_y_Hc0.0_kperp0_zm}.png} & \includegraphics[scale=0.16]{{B8.0_y_Hc0.3_kperp0_zm}.png} & \includegraphics[scale=0.16]{{B8.0_y_Hc0.9_kperp0_zm}.png} \\ \hline
+%% \end{tabular}}
+%% \end{table}
+
+%% \newpage
+
+%% \begin{table}[]
+%% \centering
+%% \caption{\Huge{$z_p$}}
+%% \resizebox{\columnwidth}{!}{
+%% \begin{tabular}{|c|c|c|c|c|c|c|}
+%%   \hline
+%%    & $H_c = 0.0$ & $H_c = 0.3$ & $H_c = 0.9$ \\ \hline
+%%   $B_0 = 0$ & \includegraphics[scale=0.16]{{B0.0_y_Hc0.0_kperp0_zp}.png} & \includegraphics[scale=0.16]{{B0.0_y_Hc0.3_kperp0_zp}.png} & \includegraphics[scale=0.16]{{B0.0_y_Hc0.9_kperp0_zp}.png} \\ \hline
+%%   $B_0 = 0.25$ & \includegraphics[scale=0.16]{{B0.25_y_Hc0.0_kperp0_zp}.png} & \includegraphics[scale=0.16]{{B0.25_y_Hc0.3_kperp0_zp}.png} & \includegraphics[scale=0.16]{{B0.25_y_Hc0.9_kperp0_zp}.png} \\ \hline
+%%   $B_0 = 1$ & \includegraphics[scale=0.16]{{B1.0_y_Hc0.0_kperp0_zp}.png} & \includegraphics[scale=0.16]{{B1.0_y_Hc0.3_kperp0_zp}.png} & \includegraphics[scale=0.16]{{B1.0_y_Hc0.9_kperp0_zp}.png} \\ \hline
+%%   $B_0 = 2$ & \includegraphics[scale=0.16]{{B2.0_y_Hc0.0_kperp0_zp}.png} & \includegraphics[scale=0.16]{{B2.0_y_Hc0.3_kperp0_zp}.png} & \includegraphics[scale=0.16]{{B2.0_y_Hc0.9_kperp0_zp}.png} \\ \hline
+%%   $B_0 = 4$ & \includegraphics[scale=0.16]{{B4.0_y_Hc0.0_kperp0_zp}.png} & \includegraphics[scale=0.16]{{B4.0_y_Hc0.3_kperp0_zp}.png} & \includegraphics[scale=0.16]{{B4.0_y_Hc0.9_kperp0_zp}.png} \\ \hline
+%%   $B_0 = 8$ & \includegraphics[scale=0.16]{{B8.0_y_Hc0.0_kperp0_zp}.png} & \includegraphics[scale=0.16]{{B8.0_y_Hc0.3_kperp0_zp}.png} & \includegraphics[scale=0.16]{{B8.0_y_Hc0.9_kperp0_zp}.png} \\ \hline
+%% \end{tabular}}
+%% \end{table}
+
+\end{document}
+

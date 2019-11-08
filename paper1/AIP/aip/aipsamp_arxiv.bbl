@@ -1,0 +1,156 @@
+\providecommand{\noopsort}[1]{}\providecommand{\singleletter}[1]{#1}%
+\begin{thebibliography}{20}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Ambrosiano et~al.(1988)Ambrosiano, Matthaeus, Goldstein, and
+  Plante]{AmbrosianoEA88}
+John Ambrosiano, William~H. Matthaeus, Melvyn~L. Goldstein, and Daniel Plante.
+\newblock Test particle acceleration in turbulent reconnecting magnetic fields.
+\newblock \emph{Journal of Geophysical Research: Space Physics}, 93\penalty0
+  (A12):\penalty0 14383--14400, 1988.
+\newblock ISSN 2156-2202.
+\newblock \doi{10.1029/JA093iA12p14383}.
+\newblock URL \url{http://dx.doi.org/10.1029/JA093iA12p14383}.
+
+\bibitem[Arzner and Vlahos(2004)]{Vlahos}
+Kaspar Arzner and Loukas Vlahos.
+\newblock Particle acceleration in multiple dissipation regions.
+\newblock \emph{The Astrophysical Journal Letters}, 605\penalty0 (1):\penalty0
+  L69, 2004.
+\newblock URL \url{http://stacks.iop.org/1538-4357/605/i=1/a=L69}.
+
+\bibitem[Chandran(2003)]{Chandran2003}
+Benjamin D.~G. Chandran.
+\newblock \emph{The Astrophysical Journal}, 599\penalty0 (2):\penalty0 1426,
+  2003.
+\newblock URL \url{http://stacks.iop.org/0004-637X/599/i=2/a=1426}.
+
+\bibitem[Chandran and Maron(2004)]{CH1}
+Benjamin D.~G. Chandran and Jason~L. Maron.
+\newblock \emph{The Astrophysical Journal}, 603\penalty0 (1):\penalty0 23,
+  2004.
+\newblock URL \url{http://stacks.iop.org/0004-637X/603/i=1/a=23}.
+
+\bibitem[Cho and Lazarian(2006)]{CHO1}
+Jungyeon Cho and A.~Lazarian.
+\newblock \emph{The Astrophysical Journal}, 638\penalty0 (2):\penalty0 811,
+  2006.
+\newblock URL \url{http://stacks.iop.org/0004-637X/638/i=2/a=811}.
+
+\bibitem[Clyne et~al.(2007)Clyne, Mininni, Norton, and Rast]{vapor}
+John Clyne, Pablo Mininni, Alan Norton, and Mark Rast.
+\newblock Interactive desktop analysis of high resolution simulations:
+  application to turbulent plume dynamics and current sheet formation.
+\newblock \emph{New Journal of Physics}, 9\penalty0 (8):\penalty0 301, 2007.
+\newblock URL \url{http://stacks.iop.org/1367-2630/9/i=8/a=301}.
+
+\bibitem[Dalena et~al.(2014)Dalena, Rappazzo, Dmitruk, Greco, and
+  Matthaeus]{Dalena2012}
+S.~Dalena, A.~F. Rappazzo, P.~Dmitruk, A.~Greco, and W.~H. Matthaeus.
+\newblock \emph{The Astrophysical Journal}, 783\penalty0 (2):\penalty0 143,
+  2014.
+\newblock URL \url{http://stacks.iop.org/0004-637X/783/i=2/a=143}.
+
+\bibitem[Dmitruk et~al.(2004)Dmitruk, Matthaeus, and Seenu]{PD1}
+Pablo Dmitruk, W.~H. Matthaeus, and N.~Seenu.
+\newblock \emph{The Astrophysical Journal}, 617\penalty0 (1):\penalty0 667,
+  2004.
+\newblock URL \url{http://stacks.iop.org/0004-637X/617/i=1/a=667}.
+
+\bibitem[Drake et~al.(2006)Drake, Swisdak, Che, and Shay]{DrakeEA06}
+J.~F. Drake, M.~Swisdak, H.~Che, and M.~A. Shay.
+\newblock Electron acceleration from contracting magnetic islands during
+  reconnection.
+\newblock \emph{Nature}, 443\penalty0 (7111):\penalty0 553--556, October 2006.
+\newblock ISSN 0028-0836.
+\newblock URL \url{http://dx.doi.org/10.1038/nature05116}.
+
+\bibitem[Fermi(1949)]{F1}
+ENRICO Fermi.
+\newblock \emph{Phys. Rev.}, 75:\penalty0 1169--1174, Apr 1949.
+\newblock \doi{10.1103/PhysRev.75.1169}.
+\newblock URL \url{http://link.aps.org/doi/10.1103/PhysRev.75.1169}.
+
+\bibitem[{Lange, S.} et~al.(2013){Lange, S.}, {Spanier, F.}, {Battarbee, M.},
+  {Vainio, R.}, and {Laitinen, T.}]{Lange1}
+{Lange, S.}, {Spanier, F.}, {Battarbee, M.}, {Vainio, R.}, and {Laitinen, T.}
+\newblock \emph{A\&A}, 553:\penalty0 A129, 2013.
+\newblock \doi{10.1051/0004-6361/201220804}.
+\newblock URL \url{http://dx.doi.org/10.1051/0004-6361/201220804}.
+
+\bibitem[Lazarian et~al.(2012)Lazarian, Vlahos, Kowal, Yan, Beresnyak, and
+  de~Gouveia Dal Pino]{L1}
+A.~Lazarian, L.~Vlahos, G.~Kowal, H.~Yan, A.~Beresnyak, and E.M.
+  de~Gouveia Dal Pino.
+\newblock \emph{Space Science Reviews}, 173\penalty0 (1-4):\penalty0 557--622,
+  2012.
+\newblock ISSN 0038-6308.
+\newblock \doi{10.1007/s11214-012-9936-7}.
+\newblock URL \url{http://dx.doi.org/10.1007/s11214-012-9936-7}.
+
+\bibitem[Lynn et~al.(2013)Lynn, Quataert, Chandran, and Parrish]{Lynn2013}
+Jacob~W. Lynn, Eliot Quataert, Benjamin D.~G. Chandran, and Ian~J. Parrish.
+\newblock \emph{The Astrophysical Journal}, 777\penalty0 (2):\penalty0 128,
+  2013.
+\newblock URL \url{http://stacks.iop.org/0004-637X/777/i=2/a=128}.
+
+\bibitem[Matthaeus et~al.(1984)Matthaeus, Ambrosiano, and Goldstein]{M2}
+W.~H. Matthaeus, J.~J. Ambrosiano, and M.~L. Goldstein.
+\newblock \emph{Phys. Rev. Lett.}, 53:\penalty0 1449--1452, Oct 1984.
+\newblock \doi{10.1103/PhysRevLett.53.1449}.
+\newblock URL \url{http://link.aps.org/doi/10.1103/PhysRevLett.53.1449}.
+
+\bibitem[Matthaeus et~al.(2015)Matthaeus, Wan, Servidio, Greco, Osman, Oughton,
+  and Dmitruk]{M1}
+W.~H. Matthaeus, Minping Wan, S.~Servidio, A.~Greco, K.~T. Osman, S.~Oughton,
+  and P.~Dmitruk.
+\newblock Intermittency, nonlinear dynamics and dissipation in the solar wind
+  and astrophysical plasmas.
+\newblock \emph{Philosophical Transactions of the Royal Society of London A:
+  Mathematical, Physical and Engineering Sciences}, 373\penalty0 (2041), 2015.
+\newblock ISSN 1364-503X.
+\newblock \doi{10.1098/rsta.2014.0154}.
+
+\bibitem[Mininni et~al.(2011)Mininni, Rosenberg, Reddy, and Pouquet]{ghost}
+Pablo~D. Mininni, Duane Rosenberg, Raghu Reddy, and Annick Pouquet.
+\newblock A hybrid mpi–openmp scheme for scalable parallel pseudospectral
+  computations for fluid turbulence.
+\newblock \emph{Parallel Computing}, 37\penalty0 (6–7):\penalty0 316 -- 326,
+  2011.
+\newblock ISSN 0167-8191.
+\newblock \doi{http://dx.doi.org/10.1016/j.parco.2011.05.004}.
+\newblock URL
+  \url{http://www.sciencedirect.com/science/article/pii/S0167819111000512}.
+
+\bibitem[Schlickeiser and Miller(1998)]{S1}
+Reinhard Schlickeiser and James~A. Miller.
+\newblock \emph{The Astrophysical Journal}, 492\penalty0 (1):\penalty0 352,
+  1998.
+\newblock URL \url{http://stacks.iop.org/0004-637X/492/i=1/a=352}.
+
+\bibitem[Servidio et~al.(2010)Servidio, Matthaeus, Shay, Dmitruk, Cassak, and
+  Wan]{ServidioEA10}
+S.~Servidio, W.~H. Matthaeus, M.~A. Shay, P.~Dmitruk, P.~A. Cassak, and M.~Wan.
+\newblock Statistics of magnetic reconnection in two-dimensional
+  magnetohydrodynamic turbulence.
+\newblock \emph{Physics of Plasmas}, 17\penalty0 (3):\penalty0 032315, 2010.
+\newblock \doi{http://dx.doi.org/10.1063/1.3368798}.
+\newblock URL
+  \url{http://scitation.aip.org/content/aip/journal/pop/17/3/10.1063/1.3368798}.
+
+\bibitem[Teaca et~al.(2014)Teaca, Weidl, Jenko, and Schlickeiser]{Bogdan2014}
+Bogdan Teaca, Martin~S. Weidl, Frank Jenko, and Reinhard Schlickeiser.
+\newblock \emph{Phys. Rev. E}, 90:\penalty0 021101, Aug 2014.
+\newblock \doi{10.1103/PhysRevE.90.021101}.
+\newblock URL \url{http://link.aps.org/doi/10.1103/PhysRevE.90.021101}.
+
+\bibitem[Weidl et~al.(2015)Weidl, Jenko, Teaca, and Schlickeiser]{Weidl2015}
+Martin~S. Weidl, Frank Jenko, Bogdan Teaca, and Reinhard Schlickeiser.
+\newblock \emph{The Astrophysical Journal}, 811\penalty0 (1):\penalty0 8, 2015.
+\newblock URL \url{http://stacks.iop.org/0004-637X/811/i=1/a=8}.
+
+\end{thebibliography}

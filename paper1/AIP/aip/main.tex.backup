@@ -1,0 +1,189 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Template for a LaTex article in English.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[11pt]{article}
+
+% AMS packages:
+\usepackage[left=1.5cm,top=1.5cm,right=1.5cm,bottom=2.5cm]{geometry} 
+\usepackage{amsmath, amsthm, amsfonts}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{float}
+\usepackage[position=top]{subfig}
+
+%-----------------------------------------------------------------
+\title{Compressible effect on particle acceleration in MHD turbulence}
+
+\begin{document}
+\date{\vspace{-10px}}
+\maketitle
+
+\begin{abstract}
+\noindent The compressibility effect of the magnetohydrodynamics fields  on charged particle 
+energization is studied in the context of test particle simulation. This problem is relevant 
+to solar wind and solar corona due to the compressible nature of those astrophysical 
+scenarios. We obtain the turbulent electromagnetic field using direct numerical simulation 
+of MHD equations in a strong background magnetic field using pseudospectral method.  
+In order to explore the compressible effect over the particle dynamic we performed two 
+different numerical experiments: the incompressible case and two weak compressible cases 
+changing the sound Mach number: for $M=0.25$ and $M=0.1$. Analyzing  the behavior of protons and 
+electrons in that turbulent field which is well known to form aligned current sheets in the 
+direction of the guide magnetic field,  we show that compressibility enhance the efficiency 
+of proton acceleration and that energization is due to perpendicular electric field 
+generated between currents sheets. On the other hand, electrons remains magnetized, showing 
+an adiabatic behavior, and not effect of compressibility is observed.
+\end{abstract}
+
+\section*{Introduction}
+
+\begin{figure}[h!]
+\begin{center}
+{\includegraphics[width = 3.5in]{incompressible_256.eps}}
+{\includegraphics[width = 3.5in]{compressible_256.eps}}
+\caption{Three dimensional view of the parallel current density $J_z(x,v,z)$. (Left) Incompressible and 
+(Right) Compressible field with Mach number $M=0.25$ case at $t/t_0 =2$.}
+\end{center}
+\label{field}
+\end{figure}
+\vspace*{-1cm}
+
+\begin{figure}[h!]
+\begin{center}
+{\includegraphics[width = 2.5in]{spectrum_k.eps}}
+{\includegraphics[width = 2.5in]{spectrum_m.eps}}
+\caption{(Left). Total kinetic energy spectrum for compressible field with Mach number $M=0.25$ (solid line), $M=0.1$ (dashed 
+line) and incompressible case (dash-dot line). (Right) Total Magnetic energy spectrum for the three 
+cases named before using the same line type.}
+\end{center}
+\label{mean square velocity}
+\end{figure}
+
+
+\begin{figure}[h!]
+\begin{center}
+{\includegraphics[width = 3.5in]{Fig1.eps}}
+{\includegraphics[width = 3.5in]{Fig2.eps}}
+\caption{Particle mean square velocity as function of time in a static MHD turbulence: (Left) Ion 
+perpendicular velocity $v_\perp = \sqrt{v_x^2 + v_y^2}$ for two different Mach number cases, 
+$M=0.25$ (solid line), $M=0.1$ (dashed line) and incompressible case (dash-dot line). (Right) 
+Electron parallel velocity for $M=0.25$, $M=0.1$ and incompressible field with the same line type.}
+\end{center}
+\label{mean square velocity}
+\end{figure}
+
+\begin{figure}[h!]
+\begin{center}
+\includegraphics[width = 2.3in]{Fig3_a.eps}}
+\includegraphics[width = 2.3in]{Fig3_b.eps}}
+\includegraphics[width = 2.3in]{Fig3_c.eps}}
+\caption{(a) Parallel current density, (b) three components of the electric field and (c) velocity 
+components as function of time for the most energetic particle in each case: (Left) incompressible field,
+(Middle) compressible $M=0.1$, and (Right) compressible $M=0.25$.}
+\end{center}
+\label{mean square velocity}
+\end{figure}
+
+\begin{figure}[h!]
+\begin{center}
+{\includegraphics[scale=0.5]{elec_real_mu.eps}}
+{\includegraphics[scale=0.5]{elec_fic_mu.eps}}
+\caption{Mean square magnetic moment $\mu = v_{\perp}^2/2B$ as function of time for two different small 
+gyroradii particles: (Left) real electron mass $m_e = m_p/1836$ and (Right) fictitious electron mass 
+$m_e_f = 66 m_e$ with the same line type used before for the different field cases.}
+\end{center}
+\label{mean square velocity}
+\end{figure}
+
+
+\begin{figure}[h!]
+\begin{center}
+{\includegraphics[scale=0.6]{Fig4_1.eps}}
+{\includegraphics[scale=0.6]{Fig4_2.eps}}
+\caption{Probability density function of electric field in the simulation box. (Left) one of the 
+component of perpendicular direction for $M=0.25$ (solid line), $M=0.1$ (dashed line) and 
+incompressible field (dash-dot line). (Right) parallel component of electric field for the compressible 
+and incompressible cases using the same line type.}
+\end{center}
+\label{mean square velocity}
+\end{figure}
+
+
+
+\clearpage                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                
+                            
+
+%\section*{Dynamic MHD turbulence}
+
+%\begin{figure}[h!]
+%\begin{center}
+%{\includegraphics[width = 3.2in]{Fig5.eps}}
+%{\includegraphics[width = 3.2in]{Fig5_2.eps}}
+%\caption{Particle mean square velocity as function of time in a dynamic MHD turbulence: (Left) Ion 
+%perpendicular velocity $v_\perp = \sqrt{v_x^2 + v_y^2}$ for two different Mach number cases, 
+%$M=0.25$ (solid line), $M=0.1$ (dashed line) and incompressible case (dash-dot line). (Right) 
+%Electron parallel velocity for $M=0.25$, $M=0.1$ and incompressible field with the same line type.}
+%\end{center}
+%\label{field}
+%\end{figure}
+
+
+%\begin{figure}[h!]
+%\begin{center}
+%\includegraphics[width = 2.3in]{Fig6_1.eps}}
+%\includegraphics[width = 2.3in]{Fig6_2.eps}}
+%\includegraphics[width = 2.3in]{Fig6_3.eps}}
+%\caption{(a) Parallel current density, (b) three components of the electric field and (c) velocity 
+%components as function of time for the most energetic particle in each case: (Left) incompressible field,
+%(Middle) compressible $M=0.1$, and (Right) compressible $M=0.25$.}
+%\end{center}
+%\label{mean square velocity}
+%\end{figure}
+%\vspace{-0.5cm}
+
+%\begin{figure}[h!]
+%\begin{center}
+%{\includegraphics[scale=0.5]{elec_real_mu_dyn.eps}}
+%{\includegraphics[scale=0.5]{elec_fic_mu_dyn.eps}}
+%\caption{Mean square magnetic moment $\mu = v_{\perp}^2/2B$ as function of time for two different small 
+%gyroradii particles: (Left) real electron mass $m_e = m_p/1836$ and (Right) fictitious electron mass 
+%$m_e_f = 66 m_e$ with the same line type used before for the different field cases.}
+%\end{center}
+%\label{mean square velocity}
+%\end{figure}
+
+%\section*{Particle energization differences between Static and Dynamic MHD turbulence}
+
+
+%\begin{figure}[h!]
+%\begin{center}
+%{\includegraphics[width = 2in]{ion_dyn_stat_p.eps}}
+%{\includegraphics[width = 2in]{ion_dyn_stat_z.eps}}
+%\caption{Comparison of the probability density function of ion velocity for static (solid line) and 
+%dynamic (dashed line) cases. (Left) Perpendicular velocity for compressible $M=0.25$ field at 
+%$t/t_0 = 2.5$. (Right) Parallel ion velocity for the same cases at the same time.}
+%\end{center}
+%\label{mean square velocity}
+%\end{figure}
+%\vspace*{-0.5cm}
+%\begin{figure}[h!]
+%\begin{center}
+%{\includegraphics[width = 2in]{elec_dis_dyn_stat_p.eps}}
+%{\includegraphics[width = 2in]{elec_dis_dyn_stat_z.eps}}
+%\caption{Comparison of the probability density function of real mass electron velocity for static (solid line) and 
+%dynamic (dashed line) cases. (Left) Perpendicular velocity for compressible $M=0.25$ field at 
+%$t/t_0 = 4.5x10^{-3}$. (Right) Parallel ion velocity for the same cases at the same time.}
+%\end{center}
+%\label{mean square velocity}
+%\end{figure}
+
+
+
+
+
+\end{document}  
