@@ -1,0 +1,213 @@
+\section{Medio interplanetario}
+El medio interplanetario llena el espacio entre planetas, cometas y
+otros objetos del sistema solar. Lejos de ser vacío, este espacio está
+lleno de plasma proveniente de la corona solar, radiación
+electromagnética, rayos cósmicos, partículas de polvo y campos
+magnéticos. El término \emph{viento solar} fue acuñado por Eugene
+Parker \cite{Parker1958} para describir la expansión supersónica (y
+supermagnetosónica) de la corona solar hacia el sistema solar. Esta
+expansión se da debido a la diferencia de presiones entre la corona
+solar y el espacio interplanetario que la rodea. La diferencia de
+presiones genera la expansión del viento solar, a pesar de la
+influencia gravitatoria de la estrella \cite{KivelsonYRussel1995}.
+
+La dinámica de los plasmas espaciales, tales como el viento solar,
+pueden mostrar grandes diferencias en sus propiedades físicas con
+respecto a los plasmas presentes en el laboratorio. Por ejemplo, las
+colisiones entre iones o electrones pueden ser bastante frecuentes en
+el plasma coronal solar, pero son extremadamente raras en el medio
+interplanetario a 1 unidad astronómica ($\si{1}{AU} =
+\si{1.49e11}{m}$). Dado que algunas de estas condiciones pueden ser
+imposibles de reproducir en laboratorios terrestres, el medio
+interplanetario ofrece una oportunidad única para investigar una
+amplia variedad de procesos plasmáticos. En particular, a
+$\si{1}{AU}$, la densidad numérica media es de $\si{7}{cm^{-3}}$, la
+velocidad de flujo (casi radial) es de $\si{450}{km/s}$, la
+temperatura media es de $\si{1.2e5}{K}$ y el campo magnético medio
+(valor absoluto) es de aproximadamente $\si{10}{nT}$ [valores
+  extraídos de Kivelson y Russel, 1995].
+
+El viento solar se modifica significativamente por la actividad del
+Sol a través de cambios en el campo magnético solar, que terminan
+contribuyendo al campo magnético interplanetario (IMF) y a la dinámica
+general del plasma. Durante su expansión, el viento solar desarrolla
+un régimen fuertemente turbulento, que puede estudiarse a través de
+mediciones \emph{in situ} [Matthaeus y Goldstein, 1982]. La
+turbulencia aparece como un estado de movimiento muy complejo y
+fuertemente irregular en el espacio y el tiempo. Sin embargo, en un
+momento dado, un flujo turbulento muestra la presencia de estructuras
+organizadas de diferentes tamaños y diferentes tiempos característicos
+que interactúan entre sí a medida que el flujo las convecta. Gracias a
+las observaciones \emph{in situ} proporcionadas por diferentes naves
+espaciales, el flujo del viento solar ofrece la mejor oportunidad para
+estudiar directamente la dinámica no lineal en los plasmas espaciales
+[p. Bruno y Carbone, 2013].
+
+El plasma del viento solar está enhebrado con las líneas de campo
+magnético interplanetario. Cuando el viento solar encuentra el campo
+magnético intrínseco de la Tierra, en algunas condiciones particulares
+del IMF, el proceso de reconexión magnética puede tener lugar [Dungey,
+  1961]. La reconexión magnética implica un cambio de topología de un
+conjunto de líneas de campo, mientras convierte la energía magnética
+libre en calor y energía cinética. La reconexión magnética puede
+ocurrir en una variedad de escenarios, desde la evolución de las
+erupciones solares, las eyecciones de masa coronal hasta la formación
+de estrellas [Biskamp, 2000, Priest y Forbes, 2000].
+
+Cuando el plasma de viento solar supersónico y supermagnetosónico se
+encuentra con un obstáculo, como una magnetosfera planetaria, se forma
+un arco de choque. El arco de choque ralentiza el plasma del viento
+solar entrante de velocidad supersónica a velocidad subsónica para que
+la información sobre el obstáculo pueda propagarse aguas arriba dentro
+de la región conmocionada y dejar que el plasma se ajuste y fluya a su
+alrededor [Thomsen et al., 1983]. Aguas arriba del choque, sin
+embargo, el viento solar no es consciente de que se está acercando a
+un obstáculo. La región aguas arriba del choque y conectada
+magnéticamente a ella, se conoce como \emph{foreshock}. En el choque
+de proa, una pequeña fracción de las partículas del viento solar se
+acelera y se propaga hacia la región de \emph{foreshock} aguas
+arriba. Estas partículas de flujo posterior pueden conducir una serie
+de inestabilidades de plasma, lo que lleva a la generación de ondas de
+ultra baja frecuencia (ULF), que son detectadas por naves espaciales
+[p. Tsurutani y Rodriguez, 1981].
+
+Estos tres resultados de la dinámica del viento solar, es decir, su
+régimen turbulento, el proceso de reconexión magnética y la generación
+y distribución espacial de las ondas ULF, son el tema principal de la
+presente Tesis.
+
+
+
+\section{Plasma espacial}
+
+Los plasmas espaciales son gases casi neutros compuestos
+principalmente de protones y electrones (es decir, un plasma de
+hidrógeno completamente ionizado) que están sujetos a fuerzas
+eléctricas, magnéticas y probablemente a otros tipos de fuerzas. Al
+mismo tiempo, estas cargas gratuitas actúan como fuentes de fuerzas
+eléctricas y magnéticas. Debido a la naturaleza de largo alcance de
+las fuerzas electromagnéticas, cada partícula cargada en el plasma
+interactúa simultáneamente con una gran cantidad de otras partículas
+cargadas. Este proceso da como resultado un comportamiento colectivo
+del plasma.
+
+Hay al menos tres niveles de descripción para modelar la dinámica de
+los plasmas espaciales. La principal diferencia entre ellos son las
+variables físicas utilizadas para describir el estado del plasma. Cuál
+debe elegirse depende del tipo de fenómeno que le interese. Los tres
+enfoques son:
+
+(1) El movimiento de partículas cargadas individuales y su interacción
+con el campo eléctrico y magnético.
+
+(2) La descripción cinética de una colección de partículas.
+
+(3) La descripción del fluido.
+
+La forma más completa de especificar el estado de un plasma es dar las
+posiciones y velocidades de todas las partículas y el valor de los
+campos en cada punto del espacio. Para un sistema de $N$ partículas,
+esta descripción de partículas implica un espacio de fase de $6N$
+dimensiones, que se vuelve prohibitivamente grande a medida que
+aumenta $N$ (por ejemplo, $N\sim 10^{15}$ para un cubo de
+$\si{1}{km^3}$ en el medio interplanetario). Una posible salida a este
+problema es utilizar la teoría cinética. En este enfoque estadístico,
+definimos la función de distribución de velocidades $f_s(\vec{x},
+\vec{v}, t)$, para cada especie $s$, de manera que $d^3x d^3v
+f_s(\vec{x}, \vec{v}, t)$ es la cantidad de partículas en una caja de
+tamaño $d^3x$ alrededor de $\vec{x}$, con velocidades en un cubo
+$d^3v$ alrededor de $\vec{v}$, para un tiempo $t$. La función de
+distribución $f_s$ satisface ecuaciones cinéticas tales como la
+ecuación de Vlasov (en el límite no colisional). Estas ecuaciones se
+acoplan con las ecuaciones de Maxwell, debido a la autoconsistencia
+del campo electromagnético. A pesar de que es posible integrar este
+conjunto de ecuaciones numéricamente, poder cubrir un rango realista
+de valores de $(\vec{x}, \vec{v}, t)$ se vuelve muy demandante
+computacionalmente. Un enfoque más simple comparativamente es
+considerar una descripción fluídica del plasma, basada en los momentos
+de menor orden de $f_s$ (tales como la densidad de partículas, la
+velocidad media del flujo y la presión). Para considerar el hecho de
+que las partículas cargadas interactúan con el campo electromagnético,
+se acopla la ecuación del fluido con las ecuaciones de Maxwell. Dentro
+de este marco, la aproximación más simple es el llamado modelo de
+magnetohidrodinámica de un fluido (MHD).
+
+La descripción MHD de un fluido describe adecuadamente la
+fenomenología a grandes escalas temporales y espaciales.  Sin embargo,
+a escalas espaciales y/o temporales más pequeñas, existen fenómenos
+físicos que no pueden reproducirse con la descripción tradicional de
+MHD de un fluido. Por ejemplo, para describir adecuadamente el
+espectro de energía del viento solar derivado de observaciones
+recientes [Sahraoui et al., 2009], o para estudiar la reconexión
+magnética en el límite sin colisión, se requiere un marco teórico que
+se extienda más allá de un fluido MHD.
+
+
+\section{Viento solar turbulento}
+
+La naturaleza produce habitualmente turbulencia MHD. Se puede
+encontrar en varios entornos espaciales, como la corona solar, las
+atmósferas planetarias o el medio interplanetario. Como discutimos
+anteriormente, el viento solar se expande desde el Sol y penetra las
+regiones entre los planetas. Una característica importante para
+caracterizar un régimen turbulento estacionario e isotrópico de un
+plasma es su espectro de potencia de energía $E_k$, que proporciona la
+energía por unidad de número de onda. Al igual que en el caso
+paradigmático de la turbulencia hidrodinámica, las interacciones no
+lineales en la turbulencia MHD producen un flujo de energía en el
+espacio de número de onda que es predominantemente de escalas grandes
+a escalas pequeñas. Como se indica esquemáticamente en la Figura 1.2,
+el espectro de energía se puede dividir en tres rangos: (a) la gran
+escala en la cual la energía se inyecta en el rango del sistema (o que
+contiene energía), (b) un rango inercial donde el los términos no
+lineales dominan sobre los términos disipativos y las cascadas de
+energía de escalas grandes a pequeñas, y (c) el rango de pequeña
+escala (o disipativo), donde la energía que se está conectando en
+cascada desde las escalas más grandes se convierte en calor. Dado que
+la energía total (y otros invariantes ideales también) no se modifica
+directamente por las interacciones no lineales [p. Frisch, 1995], su
+espectro proporciona información importante sobre el estado y la
+dinámica del plasma turbulento.
+
+Si el plasma se describe mediante la aproximación MHD de un fluido, su
+rango inercial se caracteriza por un espectro de energía que sigue
+una ley de potencia $E_k \sim k^{-5/3}$, es decir, el espectro de
+Kolmogorov para turbulencia isotrópica, estacionaria e
+incompresible. Kolmogorov [1941] predijo esta dependencia de la ley de
+potencia para la turbulencia hidrodinámica mediante el análisis
+dimensional. Usando mediciones del viento solar a $1$, $2.8$ y
+$\si{5}{AU}$, y asumiendo la hipótesis de Taylor [Taylor, 1938],
+Matthaeus y Goldstein [1982] obtuvieron espectros de energía
+consistentes con el espectro de Kolmogorov.
+
+Sin embargo, las observaciones \emph{in situ} del viento solar han
+demostrado que el rango inercial de $k^{-5/3}$ se rompe a cierta
+escala, presumiblemente correspondiente a la longitud inercial del ion
+[Leamon et al., 2000]. En números de onda mayores que esta ruptura,
+los espectros magnéticos exhiben leyes de potencia ligeramente más
+pronunciadas [Goldstein et al., 1994, Ghosh et al., 1996, Leamon et
+  al., 1998]. Suponiendo estar a escalas más pequeñas que la longitud
+inercial del ion, Biskamp et al. [1999] encontró que el espectro de
+energía sigue una ley de potencias $k^{-7/3}$. Esta predicción fue
+luego confirmada por simulaciones numéricas [Galtier, 2006, Gómez et
+  al., 2008]. La explicación tradicional para este régimen de
+turbulencia es que está asociado con un proceso de cascada de energía
+que involucra ondas dispersivas, tales como los modos ión-ciclotrón
+y/o silbato [Ghosh et al., 1996].
+
+Recientemente, Sahraoui et al. [2009] reportó evidencia de un nuevo
+punto de ruptura (a escalas aún más pequeñas) en el espectro de
+energía magnética de las observaciones del viento solar obtenidas con
+la misión Cluster de naves espaciales múltiples. Estos resultados
+confirman la ruptura en un número de onda presumiblemente consistente
+con la longitud de inercia del ion inverso [Leamon et al., 2000, Smith
+  et al., 2001], y encuentran una segunda ruptura en las ondas de onda
+más grandes. En el plasma del viento solar a 1 UA, la escala
+giroscópica electrónica está muy cerca de la longitud de inercia
+electrónica (electron 12 km) y, por lo tanto, no está claro a cuál de
+estas escalas corresponde. Los autores confirmaron el espectro de
+Kolmogorov en las escalas más grandes, una segunda ley de potencia k
+−7/3 en escala intermedia y una ley de potencia más pronunciada k −4.1
+en las escalas más pequeñas (más allá del segundo descanso).
+
+Estas rupturas espectrales son probablemente causadas por efectos cinéticos y no pueden describirse mediante la descripción de un fluido MHD. Una posible forma de incluir algunos efectos cinéticos dentro de un marco fluidístico es adoptar un enfoque de múltiples fluidos para reconocer la presencia de varias especies de partículas en un plasma. En particular, estudiamos la turbulencia del viento solar en el marco de una descripción completa de dos fluidos MHD, conservando los efectos de la corriente de Hall, la presión electrónica y la inercia electrónica. El objetivo principal del Capítulo 3 es explorar la física de un modelo completo de dos fluidos y compararlo con mediciones de viento solar in situ.
