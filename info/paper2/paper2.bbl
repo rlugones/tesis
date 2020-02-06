@@ -95,6 +95,11 @@ P.~Dmitruk and W.~H. Matthaeus.
   simulations.
 \newblock {\em Physics of Plasmas (1994-present)}, 16(6):062304, June 2009.
 
+\bibitem{rappazzo_coronal_2007}
+Antonio~F Rappazzo, M~Velli, G~Einaudi, and RB~Dahlburg.
+\newblock Coronal heating, weak mhd turbulence, and scaling laws.
+\newblock {\em The Astrophysical Journal Letters}, 657(1):L47, 2007.
+
 \bibitem{clark_di_leoni_spatio-temporal_2015}
 P.~Clark~di Leoni, P.~J. Cobelli, and P.~D. Mininni.
 \newblock The spatio-temporal spectrum of turbulent flows.
@@ -184,6 +189,11 @@ P.~Clark~di Leoni, P.~J. Cobelli, P.~D. Mininni, P.~Dmitruk, and W.~H.
   turbulent flow.
 \newblock {\em Physics of Fluids (1994-present)}, 26(3):035106, March 2014.
 
+\bibitem{batchelor_theory_1953}
+G.~K. Batchelor.
+\newblock {\em The {Theory} of {Homogeneous} {Turbulence}}.
+\newblock Cambridge University Press, 1953.
+
 \bibitem{gomez_parallel_2005}
 D.~O. G{\'o}mez, P.~D. Mininni, and P.~Dmitruk.
 \newblock Parallel {Simulations} in {Turbulent} {MHD}.
@@ -199,6 +209,12 @@ P.~D. Mininni, D.~Rosenberg, R.~Reddy, and A.~Pouquet.
 \newblock A hybrid {M}{P}{I}-{O}pen{M}{P} scheme for scalable parallel
   pseudospectral computations for fluid turbulence.
 \newblock {\em Parallel Computing}, 37:316--326, 2011.
+
+\bibitem{mininni_isotropization_2012}
+P.~D. Mininni, D.~Rosenberg, and A.~Pouquet.
+\newblock Isotropization at small scales of rotating helically driven
+  turbulence.
+\newblock {\em Journal of Fluid Mechanics}, 699:263--279, May 2012.
 
 \bibitem{hollweg_1990_wkb}
 J.~V. Hollweg.
@@ -217,6 +233,11 @@ R.~Grappin, J.~Leorat, and A.~Pouquet.
 \newblock Dependence of mhd turbulence spectra on the velocity field-magnetic
   field correlation.
 \newblock {\em Astronomy and Astrophysics}, 126:51--58, 1983.
+
+\bibitem{galtier_2000_weak}
+S~Galtier, SV~Nazarenko, Alan~C Newell, and A~Pouquet.
+\newblock A weak turbulence theory for incompressible magnetohydrodynamics.
+\newblock {\em Journal of Plasma Physics}, 63(5):447--488, 2000.
 
 \bibitem{shebalin_1983_anisotropy}
 J.~V. Shebalin, W.~H. Matthaeus, and D.~Montgomery.

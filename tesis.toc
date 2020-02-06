@@ -1,47 +1,47 @@
 \babel@toc {spanish}{}
-\contentsline {chapter}{\numberline {1}Introducción}{1}{chapter.1}% 
-\contentsline {section}{\numberline {1.1}Medio interplanetario}{1}{section.1.1}% 
-\contentsline {section}{\numberline {1.2}Plasma espacial}{3}{section.1.2}% 
-\contentsline {section}{\numberline {1.3}Viento solar turbulento}{4}{section.1.3}% 
-\contentsline {chapter}{\numberline {2}Fundamentos de turbulencia, MHD y tiempos característicos}{7}{chapter.2}% 
-\contentsline {section}{\numberline {2.1}Introducción}{7}{section.2.1}% 
-\contentsline {section}{\numberline {2.2}Conceptos fundamentales de turbulencia hidrodi\-námica}{8}{section.2.2}% 
-\contentsline {subsection}{\numberline {2.2.1}Decaimiento global de energía}{8}{subsection.2.2.1}% 
-\contentsline {subsection}{\numberline {2.2.2}Localidad de la transferencia de energía y espectro de\\ Kolmogorov}{9}{subsection.2.2.2}% 
-\contentsline {subsection}{\numberline {2.2.3}\textit {Straining} y \textit {sweeping}}{11}{subsection.2.2.3}% 
-\contentsline {subsection}{\numberline {2.2.4}Escalas temporales, cascada y clausura}{14}{subsection.2.2.4}% 
-\contentsline {section}{\numberline {2.3}Turbulencia magnetohidrodinámica}{17}{section.2.3}% 
-\contentsline {subsection}{\numberline {2.3.1}Ecuaciones MHD y conceptos físicos básicos}{17}{subsection.2.3.1}% 
-\contentsline {subsection}{\numberline {2.3.2}Fenomenología del decaimiento MHD}{21}{subsection.2.3.2}% 
-\contentsline {subsection}{\numberline {2.3.3}MHD isótropo}{23}{subsection.2.3.3}% 
-\contentsline {subsubsection}{Cuando el \textit {straining} local es dominante: escaleo de Kolmogorov}{23}{section*.6}% 
-\contentsline {subsubsection}{Cuando el \textit {sweeping} aleatorio es dominante:\\ escaleo de Iroshnikov-Kraichnan}{26}{section*.10}% 
-\contentsline {subsubsection}{Fenomenología extendida}{27}{section*.11}% 
-\contentsline {subsection}{\numberline {2.3.4}MHD anisotrópico}{28}{subsection.2.3.4}% 
-\contentsline {subsection}{\numberline {2.3.5}Localidad de las interacciones a partir de las transferencias \emph {shell-to-shell}}{32}{subsection.2.3.5}% 
-\contentsline {section}{\numberline {2.4}Discusión y conclusiones}{35}{section.2.4}% 
-\contentsline {chapter}{\numberline {3}Paper1}{39}{chapter.3}% 
-\contentsline {section}{\numberline {3.1}Introducción}{39}{section.3.1}% 
-\contentsline {section}{\numberline {3.2}Equations and numerical simulations}{41}{section.3.2}% 
-\contentsline {subsection}{\numberline {3.2.1}The MHD equations}{41}{subsection.3.2.1}% 
-\contentsline {subsection}{\numberline {3.2.2}Wavenumber-frequency spectrum and correlation functions}{41}{subsection.3.2.2}% 
-\contentsline {subsection}{\numberline {3.2.3}Simulaciones numéricas}{43}{subsection.3.2.3}% 
-\contentsline {section}{\numberline {3.3}Resultados}{44}{section.3.3}% 
-\contentsline {subsection}{\numberline {3.3.1}Espectros de energía y escalas temporales dominantes}{44}{subsection.3.3.1}% 
-\contentsline {subsection}{\numberline {3.3.2}Spatio-temporal spectra}{46}{subsection.3.3.2}% 
-\contentsline {subsection}{\numberline {3.3.3}Funciones de correlación y tiempos de descorrelación}{48}{subsection.3.3.3}% 
-\contentsline {section}{\numberline {3.4}Conclusions}{55}{section.3.4}% 
-\contentsline {chapter}{\numberline {4}Paper2}{65}{chapter.4}% 
-\contentsline {section}{\numberline {4.1}Introduction}{65}{section.4.1}% 
-\contentsline {section}{\numberline {4.2}Equations and numerical simulations}{67}{section.4.2}% 
-\contentsline {subsection}{\numberline {4.2.1}The MHD equations and the Els\"asser fields}{67}{subsection.4.2.1}% 
-\contentsline {subsection}{\numberline {4.2.2}Wavenumber-frequency spectrum and correlation functions}{69}{subsection.4.2.2}% 
-\contentsline {subsection}{\numberline {4.2.3}Numerical simulations}{72}{subsection.4.2.3}% 
-\contentsline {section}{\numberline {4.3}Results}{75}{section.4.3}% 
-\contentsline {subsection}{\numberline {4.3.1}Wavenumber spectra}{75}{subsection.4.3.1}% 
-\contentsline {subsection}{\numberline {4.3.2}Wavenumber-frequency spectra}{79}{subsection.4.3.2}% 
-\contentsline {subsection}{\numberline {4.3.3}Tiempos de descorrelación}{87}{subsection.4.3.3}% 
-\contentsline {section}{\numberline {4.4}Conclusiones}{89}{section.4.4}% 
-\contentsline {chapter}{\numberline {5}Conclusiones y Perspectiva}{93}{chapter.5}% 
-\contentsline {section}{\numberline {5.1}Intro conclusiones}{93}{section.5.1}% 
+\contentsline {chapter}{\numberline {1}Introducción}{1}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Medio interplanetario}{1}{section.1.1}%
+\contentsline {section}{\numberline {1.2}Plasma espacial}{2}{section.1.2}%
+\contentsline {section}{\numberline {1.3}Plasma espacial turbulento}{3}{section.1.3}%
+\contentsline {section}{\numberline {1.4}Tiempos característicos y correlaciones}{4}{section.1.4}%
+\contentsline {chapter}{\numberline {2}Fundamentos de turbulencia, MHD y tiempos característicos}{7}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Conceptos fundamentales de turbulencia hidrodi\-námica}{8}{section.2.1}%
+\contentsline {subsection}{\numberline {2.1.1}Decaimiento global de energía}{9}{subsection.2.1.1}%
+\contentsline {subsection}{\numberline {2.1.2}Localidad de la transferencia de energía y espectro de Kolmogorov}{9}{subsection.2.1.2}%
+\contentsline {subsection}{\numberline {2.1.3}\textit {Straining} y \textit {sweeping}}{12}{subsection.2.1.3}%
+\contentsline {subsection}{\numberline {2.1.4}Escalas temporales, cascada y clausura}{14}{subsection.2.1.4}%
+\contentsline {section}{\numberline {2.2}Turbulencia magnetohidrodinámica}{17}{section.2.2}%
+\contentsline {subsection}{\numberline {2.2.1}Ecuaciones MHD y conceptos físicos básicos}{17}{subsection.2.2.1}%
+\contentsline {subsection}{\numberline {2.2.2}Fenomenología del decaimiento MHD}{22}{subsection.2.2.2}%
+\contentsline {subsection}{\numberline {2.2.3}MHD isótropo}{24}{subsection.2.2.3}%
+\contentsline {subsubsection}{Cuando el \textit {straining} local es dominante: escaleo de Kolmogorov}{24}{section*.7}%
+\contentsline {subsubsection}{Cuando la propagación de Alfv\'en es dominante: escaleo de Iroshnikov-Kraichnan}{26}{section*.11}%
+\contentsline {subsubsection}{Fenomenología extendida}{28}{section*.12}%
+\contentsline {subsection}{\numberline {2.2.4}MHD anisotrópico}{28}{subsection.2.2.4}%
+\contentsline {subsection}{\numberline {2.2.5}Localidad de las interacciones a partir de las transferencias \emph {shell-to-shell}}{33}{subsection.2.2.5}%
+\contentsline {subsection}{\numberline {2.2.6}Comentarios de los espectros de frecuencias}{37}{subsection.2.2.6}%
+\contentsline {section}{\numberline {2.3}Discusión y conclusiones}{37}{section.2.3}%
+\contentsline {chapter}{\numberline {3}Comportamiento espacio-temporal de la turbulencia MHD}{41}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Ecuaciones y simulaciones numéricas}{42}{section.3.1}%
+\contentsline {subsection}{\numberline {3.1.1}Las ecuaciones MHD}{42}{subsection.3.1.1}%
+\contentsline {subsection}{\numberline {3.1.2}Espectros y funciones de correlación}{43}{subsection.3.1.2}%
+\contentsline {subsection}{\numberline {3.1.3}Simulaciones numéricas}{45}{subsection.3.1.3}%
+\contentsline {section}{\numberline {3.2}Resultados}{46}{section.3.2}%
+\contentsline {subsection}{\numberline {3.2.1}Espectros de energía y escalas temporales dominantes}{46}{subsection.3.2.1}%
+\contentsline {subsection}{\numberline {3.2.2}Espectros espacio-temporales}{48}{subsection.3.2.2}%
+\contentsline {subsection}{\numberline {3.2.3}Funciones de correlación y tiempos de descorrelación}{50}{subsection.3.2.3}%
+\contentsline {section}{\numberline {3.3}Conclusiones}{59}{section.3.3}%
+\contentsline {chapter}{\numberline {4}Efectos de la helicidad cruzada}{65}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Ecuaciones y simulaciones numéricas}{66}{section.4.1}%
+\contentsline {subsection}{\numberline {4.1.1}Los campos de Els\"asser}{66}{subsection.4.1.1}%
+\contentsline {subsection}{\numberline {4.1.2}Espectros y funciones de correlación}{68}{subsection.4.1.2}%
+\contentsline {subsection}{\numberline {4.1.3}Simulaciones numéricas}{69}{subsection.4.1.3}%
+\contentsline {section}{\numberline {4.2}Resultados}{70}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}Espectros espaciales}{70}{subsection.4.2.1}%
+\contentsline {subsection}{\numberline {4.2.2}Espectros espacio-temporales}{78}{subsection.4.2.2}%
+\contentsline {subsection}{\numberline {4.2.3}Tiempos de descorrelación}{84}{subsection.4.2.3}%
+\contentsline {section}{\numberline {4.3}Conclusiones}{86}{section.4.3}%
+\contentsline {chapter}{\numberline {5}Conclusiones y Perspectiva}{89}{chapter.5}%
+\contentsline {chapter}{\numberline {A}Publicaciones relacionadas con esta tesis}{91}{appendix.Alph1}%
+\contentsline {chapter}{Bibliografía}{93}{appendix*.43}%
 \contentsfinish 

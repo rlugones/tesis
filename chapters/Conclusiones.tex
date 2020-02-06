@@ -1,0 +1,407 @@
+A lo largo de esta Tesis, hemos estudiado el comportamiento
+espacio-temporal de las fluctuaciones de diversos campos presentes en
+el sistema: primero el campo magnético (\cref{ch:P1}), y segundo los
+campos de Elss\"asser (\cref{ch:P2}).
+
+En primer lugar, en el \cref{ch:P1}, estudiamos el tiempo de
+descorrelación (en función de $\vec{k}$) y los espectros
+espacio-temporales (en función de $\omega$ y $\vec{k}$) para distintos
+valores del campo magnético medio de fondo, en el caso de helicidad
+cruzada nula. Los resultados encontrados respaldan la conclusión de
+que los efectos no locales juegan un rol preponderante en la
+turbulencia MHD, y que las descorrelaciones están principalmente
+dominadas por el \textit{sweeping} y por las interacciones Alfvénicas,
+confirmando los resultados previos obtenidos para el caso isotrópico
+[\cite{servidio_time_2011}]. Adicionalmente, el análisis realizado
+permite distinguir entre los dos efectos no locales, y los resultados
+apoyan la conclusión de que la interacción de \textit{sweeping} domina
+la descorrelación para valores moderados de $B_0$, mientras que para
+grandes valores del campo medio $B_0$ y a grandes escalas las
+descorrelaciones están más controladas por las interacciones
+Alfvénicas (aunque aun en este caso, para escalas pequeñas
+el \textit{sweeping} vuelve a ser el efecto dominante). Las
+interacciones relevantes son las ondas de Alfvén, y como tales se
+puede concluir que las ondas se encuentran todavía presentes en
+turbulencia MHD y dominan las descorrelaciones esencialmente para
+números de onda paralelos al campo medio. En estos casos estudiados,
+se observa que el sistema elige el tiempo de descorrelación más bajo
+disponible.
+
+Posteriormente, en el \cref{ch:P2}, estudiamos el caso de los campos
+de Elss\"asser correspondientes a las fluctuaciones de los campos
+magnético y de velocidades. Los resultados indicaron que
+el \textit{sweeping} domina los tiempos de descorrelación para valores
+bajos del campo magnético medio y de la helicidad cruzada; mientras que
+para valores grandes del campo magnético medio o de helicidad
+cruzada, los tiempos de descorrelación están controlados por los
+efectos Alfvénicos. Esto sucede aún cuando el tiempo de Alfvén no sea
+el más rápido, lo que resulta en una nueva característica respecto de
+estudios previos del comportamiento espacio-temporal de turbulencia
+MHD fuerte con helicidad cruzada nula, posiblemente causada por una
+transición hacia un régimen con no-linealidades más débiles a medida
+que se incrementa la helicidad cruzada.
+
+También encontramos un régimen en el que fluctuaciones con
+polarizaciones opuestas se propagan en la misma dirección debido a la
+reflexión de ondas, causada por inhomogeneidades del campo magnético
+de gran escala. De esta forma, este resultado confirma las
+conclusiones de \cite{hollweg_1990_wkb} y provee evidencia de un
+fenómeno predicho anteriormente con la teoría WKB. Este fenómeno se
+vuelve más prominente en flujos con alta helicidad cruzada,
+modificando fuertemente la propagación de ondas en flujos
+magnetohidrodinámicos turbulentos y las interacciones no lineales en
+el medio interplanetario.
+
+\vspace{0.7cm}
+
+En MHD, tanto la propagación de la onda de Alfvén como
+el \textit{sweeping} contribuyen a la variación de tiempo total en un
+punto (espectro de frecuencia euleriano) y, por lo tanto, influyen en
+una predicción limitante. De esta forma, si bien no resulta sencillo
+extrapolar las conclusiones de forma precisa a aplicaciones espaciales
+y astrofísicas, sí permiten realizar un análisis cualitativo y pueden
+ayudar a explicar ciertos resultados experimentales, como hemos
+expuesto en las secciones \ref{sec3:Conclusions}
+y \ref{sec4:Conclusions}.
+
+Todos estos resultados muestran la complejidad y la multiplicidad de
+fenómenos presentes en el sistema de MHD, aún en el caso
+incompresible. Sin dudas, resulta necesario un análisis más detallado
+para poder comprender y analizar toda la física presente en plasma
+turbulento.  En futuros trabajos, por ejemplo, podría extenderse este
+estudio a MHD compresible [\cite{andres_2017_interplay}], considerando
+la dependencia con la helicidad cruzada en el flujo y su interacción
+con los efectos compresibles. También podría realizarse un estudio que
+considere otras helicidades, como la helicidad cinética $H_v$, la
+helicidad magnética $H_b$ y la helicidad híbrida para
+Hall-MHD. Asimismo, se podría analizar los efectos de distintos tipos
+de forzados compresibles e incompresibles, así como también estudiar
+qué sucede variando el número de Mach.
+
+Cualquiera de estos estudios sería un seguimiento interesante de la
+presente Tesis y un primer paso hacia una comprensión más profunda
+del papel de los efectos no lineales en la propagación de ondas en la
+turbulencia en plasma. 
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+%% \newpage
+
+
+%% {\color{olive}
+
+%% \section{P1}
+%% Utilizando simulaciones numéricas de turbulencia MHD 3D,
+%% analizamos el comportamiento espacio-temporal de las fluctuaciones del
+%% campo magnético. Consideramos casos con un campo magnético medio de
+%% fondo fuerte, mediano y débil.  Computamos la función de correlación
+%% temporal dependiente de la escala espacial (vía el número de onda)
+%% para las distintas simulaciones realizadas, variando el campo
+%% magnético medio.  A partir de estas funciones de correlación,
+%% computamos el tiempo de descorrelación y lo comparamos con diferentes
+%% tiempos teóricos, a saber, el tiempo local no lineal, el tiempo
+%% de \textit{sweeping} aleatorio y el tiempo de Alfvén, siendo este
+%% último un efecto ondulatorio.  Observamos que los tiempos de
+%% descorrelación están dominados por los efectos de \textit{sweeping}, y
+%% sólo para valores grandes del campo magnético medio y para vectores de
+%% onda mayormente alinealos con este campo, los tiempos de
+%% descorrelación están controlados por efectos Alfvénicos.
+
+%% \rule{4cm}{0.4pt}
+
+%% En este trabajo, hemos estudiado los tiempos de correlación que entran
+%% en juego en magnetohidrodinámica, en la aproximación
+%% incompresible. Aún en el caso (más simple) hidrodinámico, uno espera
+%% que tanto las correlaciones espaciales como las temporales sean
+%% relevantes en la física de la turbulencia, ya que estas propiedades
+%% independientes puede encarnarse en el tensor de correlación de dos
+%% puntos y dos tiempos, $R_{ij}(\vec{r},t)$, una generalización directa
+%% de la \cref{eq3:Rbij}. Correlaciones análogas pueden ser escritas para
+%% las componentes de la velocidad del fluido $\vec{v}$ y para otras
+%% cantidades. La transformada espacial de la correlación (o,
+%% equivalentemente, las funciones de estructura espacial de segundo
+%% orden) a tiempo de retraso $\tau$ nulo, proveen información acerca de
+%% la distribución espacial de la energía a lo largo de las distintas
+%% escalas. Acordemente, la correlación temporal a un punto espacial, variando
+%% el tiempo de retraso y transformándolo en frecuencias, provee
+%% información análoga acerca de la distribución energética a lo largo de
+%% las distintas escalas temporales. Aquí, estudiamos las correlaciones
+%% en tiempo para un dado número de onda o una escala espacial para el
+%% modelo magnetohidrodinámico.
+
+%% El caso MHD es más complejo que el hidrodinámico porque hay dos campos
+%% involucrados: el magnético y el de velocidades. Además, el campo
+%% magnético no puede ser removido por una transformada de Galileo,
+%% mientras que el de velocidades, sí. En consecuencia, el campo
+%% magnético medio, impone una dirección preferencial. Adicionalmente, el
+%% caso MHD tiene un nuevo y anisotrópico modo de ondas, las ondas de
+%% Alfvén, que introducen la posibilidad de anisotropías en el espectro y
+%% en las correlaciones, así como también una nueva escala temporal, el
+%% tiempo de Alfvén. Debido a estos efectos, el análisis de la
+%% descorrelación temporal se vuelve también más complejo, con al menos
+%% tres escalas temporales para examinar (Alfvén, \textit{sweeping} y no lineal),
+%% así como también la posibilidad de una anisotropía en la tasa de
+%% descorrelación.
+
+%% Tanto el \textit{sweeping} aleatorio como la correlación Alfvénica son efectos
+%% no locales, en el sentido de que acoplan las grandes escalas con otras
+%% más pequeñas. Los resultados mostrados aquí respaldan la conclusión de
+%% que los efectos no locales (en el espacio espectral) juegan un rol
+%% importante en turbulencia MHD (en acuerdo con los estudios de
+%% transferencia \textit{shell-to-shell} introducidos en el \cref{ch:fundamentos}),
+%% y que las descorrelaciones están principalmente dominadas por el
+%% \textit{sweeping} y las interacciones Alfvénicas, confirmado los estudios
+%% previos de MHD isotrópico [\cite{servidio_time_2011}].
+
+%% Además, en comparación con los estudios previos, el análisis aquí
+%% presentado permite distinguir entre los efectos de \textit{sweeping} y
+%% Alfvénicos, y los resultados apoyan la conclusión de que la
+%% interacción de \textit{sweeping} domina la descorrelación para valores
+%% moderados de $B_0$, mientras que para grandes valores del campo medio
+%% $B_0$ y a grandes escalas (números de onda perpendiculares pequeños)
+%% las descorrelaciones están más controladas por las interacciones
+%% Alfvénicas.  Las interacciones relevantes son las ondas de Alfvén, y
+%% como tales se puede concluir que las ondas se encuentran todavía
+%% presentes en turbulencia MHD y dominan las descorrelaciones
+%% esencialmente para números de onda paralelos (alineados con el campo
+%% medio; ver también \cite{meyrand_direct_2016,
+%% meyrand_weak_2015}). Nuestros resultados también indican que el
+%% sistema elige, en efecto, el tiempo de descorrelación más bajo
+%% disponible. Un constructo simple y relevante es que la tasa de
+%% descorrelación es la suman de las tasas asociadas con cada escala de
+%% tiempo relevante (ver, por ejemplo, \cite{pouquet_strong_1976,
+%% zhou_magnetohydrodynamic_2004}). Como resultado, aún para grandes
+%% valores del campo guía $B_0$, para escalas suficientemente pequeñas en
+%% las que el tiempo de \textit{sweeping} resulte más rápido que el de
+%% Alfvén, luego de un gran rango de escalas en las que dominen las ondas
+%% de Alfvén, el sistema transiciona a un comportamiento donde domina el
+%% \textit{sweeping}.
+
+
+%% Una conclusión convincente del presente trabajo es que la influencia
+%% de la descorrelación de \textit{sweeping} se extiende a lo largo de un amplio
+%% rango de los parámetros globales. Aún si el \textit{sweeping} no es el tiempo
+%% dominante de los mecanismos de descorrelación a lo largo de todo el
+%% sistema, su importancia relativa a la descorrelación vía propagación
+%% Alfvénica persiste en ciertas subregiones del espacio de Fourier.
+%% Este es el caso para valores moderados del campo magnético medio
+%% aplicado $B_0$, como puede observarse en las
+%% \cref{fig3-5:B1_bvf_b_kperp,fig3-5:B1_bvf_b_kpara}. Esta influencia del
+%% \textit{sweeping} se encuentra aún en los casos con campo magnético medio
+%% fuerte ($B_0 = 8$), como se ve en
+%% las \cref{fig3-5:B8_bvf_b_kperp,fig3-5:B8_bvf_b_kpara}. Acordemente,
+%% también se podría concluir que los efecto de descorrelación Alfvénica
+%% son muy importantes, por lo menos para valores altos de $B_0$ y en
+%% ciertas regiones del espacio de ondas.  A pesar de que resulta difícil
+%% extrapolar tales conclusiones en una forma precisa para aplicaciones
+%% espaciales y astrofísicas, podemos aplicar los presentes resultados en
+%% una forma cualitativa.  Por ejemplo, el viento solar típicamente
+%% admite $\delta B/B_0 \sim 1$ en la escala más externa.  Aún si el
+%% cociente es menor, por ejemplo a escalas menores en el rango inercial,
+%% el presente resultado sugiere que el efecto de \textit{sweeping} se
+%% mantendría importante en establecer la tasa del tiempo de
+%% descorrelación en el ambiente interplanetario. Esto podría conllevar
+%% diversas implicaciones, por ejemplo en la predicción cuantitativa, en
+%% la dispersión de partículas y en la comprensión del ámbito de
+%% aplicación de la teoría de la turbulencia débil. En este sentido, las
+%% técnicas de observación han comenzado a extraer medidas aproximadas
+%% del viento solar y la descorrelación del tiempo magnetosférico en el
+%% marco del plasma
+%% [\cite{matthaeus_ensemble_2016,weygand_magnetic_2013}], pero aún no han
+%% alcanzado la precisión para distinguir los efectos de barrido y
+%% Alfvénicos como lo ha hecho el presente estudio utilizando la
+%% simulación MHD.
+
+%% Es interesante recordar que la descorrelación de tiempo relevante
+%% asociada con la transferencia de energía en turbulencia no es la
+%% correlación de tiempo euleriana que hemos considerado (punto espacial
+%% fijo, tiempo variable), sino más bien la descorrelación de tiempo
+%% lagrangiana, calculada siguiendo un elemento fluido material. A este
+%% respecto, es bien sabido que ni el barrido ni la propagación de ondas
+%% Alfvénicas pueden producir directamente la transferencia espectral en
+%% modelos homogéneos idealizados. En parte debido a estas
+%% complicaciones, actualmente no existe una teoría completa que vincule
+%% la correlación espacial y las correlaciones de tiempo en MHD o
+%% turbulencia hidrodinámica. Por otro lado, está claro que en MHD, tanto
+%% la propagación de la onda de Alfvén como el \textit{sweeping} contribuyen a la
+%% variación de tiempo total en un punto (espectro de frecuencia
+%% euleriano) y, por lo tanto, influyen en una predicción
+%% limitante. Estas escalas de tiempo también son características
+%% importantes para comprender la dispersión de partículas de prueba
+%% cargadas, como los rayos cósmicos de baja energía
+%% [\cite{bieber_proton_1994}], así como para tener en cuenta la
+%% distribución de las aceleraciones, que está relacionada con la
+%% intermitencia [\cite{nelkin_time_1990}].
+
+%% El comportamiento observado del tiempo de descorrelación para MHD,
+%% ejemplificado por los nuevos resultados presentados aquí, tiene
+%% aplicaciones en una serie de temas, incluyendo la teoría de dispersión
+%% de partículas cargadas [\cite{schlickeiser_cosmic-ray_1993,
+%%   nelkin_time_1990}], la dinámica del campo magnético interplanetario y
+%% de la magnetosfera [\cite{miller_critical_1997}], y la interpretación de
+%% datos de naves espaciales de misiones históricas y futuras
+%% [\cite{matthaeus_ensemble_2016}]. Mirando hacia las perspectivas
+%% futuras, notamos que ha habido cierto éxito en el establecimiento de
+%% conexiones empíricas entre la escala de tiempo de \textit{sweeping} y la
+%% descorrelación del tiempo euleriano observado en hidrodinámica
+%% [\cite{chen_sweeping_1989}]. Se podrían aprovechar ideas similares para
+%% MHD (por ejemplo, \cite{matthaeus_dynamical_1999}) para comprender
+%% mejor, o al menos modelar empíricamente, la relación en MHD entre la
+%% estructura espacial y la descorrelación del tiempo, un esfuerzo que se
+%% beneficiaría directamente de los resultados novedosos presentados
+%% aquí.
+
+
+
+
+
+
+
+%% \newpage
+%% \section{P2}
+%% Estudiamos el comportamiento espacio-temporal de las variables
+%% de Els\"asser correspondientes a las fluctuaciones de los campos
+%% magnético y de velocidades, utilizando simulaciones numéricas de MHD
+%% 3D turbulento. Consideramos casos con campo magnético medio de fondo
+%% débil, mediano y fuerte, y con helicidad cruzada (correlaciones entre
+%% el campo de velocidades y el magnético) nula, pequeña y grande.
+%% Computamos las funciones de correlación temporal para cada una de las
+%% simulaciones.  A partir de dichas funciones de correlación, computamos
+%% los tiempos de descorrelación y los comparamos con los distintos
+%% tiempos teóricos característicos: tiempo local no lineal, tiempo
+%% de \textit{sweeping} aleatorio y tiempo de Alfvén. Encontramos que los
+%% tiempos de descorrelación son dominados por los efectos
+%% de \textit{sweeping} para valores bajos del campo magnético medio y
+%% para valores bajos de la helicidad cruzada; mientras que para valores
+%% grandes del campo de fondo o de la helicidad cruzada, y para valores
+%% del vector de onda suficientemente alineados con el campo guía,los
+%% tiempos de descorrelación son controlados por efectos
+%% Alfvénicos. Finalmente, observamos contrapropagación de fluctuaciones
+%% Alfvénicas debidas a reflexiones producidas por inhomogeneidades en el
+%% campo magnético total. Este efecto se vuelve más prominente el flujos
+%% con alta helicidad cruzada, modificando fuertemente la propagación de
+%% ondas en flujos magnetohidrodinámicos turbulentos.
+
+%% \rule{4cm}{0.4pt}
+
+%% Analizamos el comportamiento espacio-temporal de las fluctuaciones MHD
+%% considerando sus polarizaciones en términos de las variables de
+%% Els\"asser, utilizando simulaciones numéricas directas
+%% tridimensionales de turbulencia MHD incompresible. Consideramos casos
+%% con valores bajos, intermedios y altos de campo magnético medio de
+%% fondo, y con helicidad cruzada nula, pequeña y alta. Las funciones de
+%% correlación como función de los vectores de onda (descompuestos en las
+%% direcciones perpendicular y paralela del campo magnético medio) y del
+%% tiempo de retraso fue directamente computada para todas las diferentes
+%% simulaciones consideradas, así como también los espectros
+%% espacio-temporales. A partir de las funciones de correlación,
+%% computamos el tiempo de descorrelación para cada modo de Fourier, y lo
+%% comparamos con las diferentes predicciones teóricas para las escalas
+%% temporales relevantes en el sistema: el tiempo no lineal local, el
+%% \textit{sweeping} aleatorio y el tiempo Alfvénico. Se observó que los tiempos
+%% de descorrelación son dominados por los efectos de \textit{sweeping} para
+%% valores bajos del campo magnético medio y de la helicidad cruzada,
+%% mientras que para valores grandes del campo magnético medio o de
+%% helicidad cruzada, los tiempos de descorrelación están controlados por
+%% los efectos Alfvénicos aún cuando el tiempo de Alfvén no sea el más
+%% rápido, una nueva característica cuando lo comparamos con estudios
+%% previos del comportamiento espacio-temporal de turbulencia MHD fuerte
+%% con helicidad cruzada nula. En principio, este comportamiento puede
+%% ser interpretado como una transición hacia un régimen con
+%% no-linealidades más débiles a medida que se incrementa la helicidad
+%% cruzada, como suele ser discutido teóricamente y como aparentemente
+%% indican nuestras simulaciones numéricas.
+
+%% Sin embargo, debe notarse que los espectros espacio-temporales indican
+%% que aún en este régimen, las interacciones no lineales son
+%% relevantes. El otro resultado principal obtenido de nuestro análisis
+%% es el haber encontrado un régimen en el que se generan fluctuaciones
+%% $\vec{z}^-$ y $\vec{z}^+$ (polarizaciones opuestas), y se propagan en
+%% la misma dirección debido a la reflexión de ondas, causada por
+%% inhomogeneidades del campo magnético de gran escala. Este resultado es más
+%% evidente en los espectros espacio-temporales de los campos de
+%% Els\"asser para valores intermedios del campo magnético de fondo (es
+%% decir, cuando la componente uniforme y constante del campo magnético
+%% de gran escala no es demasiado fuerte). Un análisis fenomenológico
+%% basado en ideas previas en \cite{zhou1990remarks}
+%% confirma las conclusiones de \cite{hollweg_1990_wkb}, que indican que
+%% las fluctuaciones Alfvénicas con polarizaciones opuestas pueden
+%% efectivamente propagarse en la misma dirección y aún con la misma
+%% velocidad.  Si el campo magnético de fondo se vuelve demasiado fuerte
+%% (o si la helicidad cruzada se acerca a cero), este efecto no se
+%% observa más. Así, el análisis espacio-temporal de los flujos
+%% turbulentos provee evidencia directa de un fenómeno predicho
+%% anteriormente con la teoría WKB, y puede jugar un rol relevante
+%% modificando la propagación de ondas y las interacciones no lineales en
+%% el medio interplanetario.
+
+%% Los resultados analizados en este trabajo muestran en detalle que, al
+%% menos en el régimen de turbulencia fuerte, la representación de ondas
+%% no es suficientemente completa para describir el sistema de MHD
+%% incompresible. En este sistema aparece una amplia banda de
+%% fluctuaciones provenientes de efectos locales y no locales
+%% (\textit{sweeping}), que generan dispersión y efectos no lineales. Es
+%% importante recordar, por supuesto, que gran parte del presente estudio
+%% se ha concentrado en el estudio del tiempo de descorrelación euleriano,
+%% descompuesto en un tiempo de descorrelación dependiente de la escala de
+%% los modos de Fourier individuales. Esta descorrelación generalmente se
+%% interpreta como una competencia entre la descorrelación por \textit{sweeping}
+%% por fluctuaciones a gran escala y la descorrelación que se origina en
+%% la propagación de ondas. Sin embargo, ninguno de estos efectos es en
+%% principio responsable de la transferencia espectral que da lugar a la
+%% cascada de turbulencias. De hecho, el efecto principal de la
+%% propagación de Alfvén, desde la perspectiva de la cascada energética
+%% en turbulenta fuerte, no es causar transferencia espectral sino
+%% suprimirla [\cite{shebalin_1983_anisotropy}]. La comprensión de la
+%% cascada en sí misma requiere examinar la fuerza de las no
+%% linealidades. En este caso, el tiempo característico apropiado se
+%% convierte en el tiempo no lineal, cuyo aislamiento requiere el
+%% análisis de escalas de tiempo en el marco lagrangiano
+%% [\cite{kraichnan_1964_kolmogorov}] (tener en cuenta que sólo en algunos
+%% casos particulares en nuestro análisis, el tiempo no lineal se
+%% identificó positivamente como un candidato para el tiempo de
+%% descorrelación). Sin embargo, hemos demostrado que fenómenos
+%% físicamente relevantes como la reflexión y la ``propagación anómala''
+%% de fluctuaciones reflejadas pueden producir efectos observables en la
+%% energía del flujo, y estos fenómenos se han reconocido en una variedad
+%% de configuraciones de los diferentes parámetros de control del
+%% sistema, con posibles aplicaciones.
+
+%% Por ejemplo, efectos interesantes asociados con la reflexión se suman
+%% a la complejidad de la dinámica, incluso en el caso más simple de MHD
+%% incompresible considerado aquí. Esto tiene implicaciones importantes
+%% para aplicaciones como el calentamiento coronal, la aceleración del
+%% viento solar y la energización de partículas en el espacio
+%% interplanetario [\cite{velli_1993_propagation, matthaeus_1999_coronal}].
+%% Como otro ejemplo, las fluctuaciones observadas en el viento solar,
+%% que tienden a alinear o antialinear el campo magnético y el campo de
+%% velocidad (es decir, con diferentes polarizaciones Alfvénicas), no
+%% siempre se pueden interpretar trivialmente como viajando
+%% ``downstream'' o ``upstream'' respecto del campo magnético medio.
+
+
+
+
+%% \rule{4cm}{2pt}
+%% \newpage
+%% Extensiones de este estudio a MHD compresible
+%% [\cite{andres_2017_interplay}], considerando la dependencia con la
+%% helicidad cruzada en el flujo y su interacción con los efectos
+%% compresibles, así como un estudio que considera otras helicidades como
+%% la helicidad cinética $H_v$, la helicidad magnética $H_b$ y la
+%% helicidad híbrida para Hall-MHD, sería un seguimiento interesante del
+%% presente estudio y un primer paso hacia una comprensión más profunda
+%% del papel de los efectos no lineales en la propagación de ondas en la
+%% turbulencia en plasma.
+
+%% Para el capitulo 5 me parece bien la idea de poner las conclusiones
+%% del paper 1, las del paper 2 y mencionar como perspectiva lo del
+%% estudio del caso compresible, tal como esta, quizas agregando estudiar
+%% distintos tipos de forzados compresibles/incompresibles y variando el
+%% numero de Mach (que es algo que aun no hicimos).
+
+%% }

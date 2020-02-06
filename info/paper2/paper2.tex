@@ -1,6 +1,6 @@
 \documentclass[aip,pop,reprint,amsmath,amssymb,floatfix]{revtex4-1}
 
-%\pdfoutput=1
+\pdfoutput=1
 
 \usepackage{graphicx}
 \usepackage{subfigure}
@@ -34,8 +34,9 @@
   Universitaria, 1428 Buenos Aires, Argentina.}
 
 \author{A. Pouquet}
-\affiliation{National Center for Atmospheric Research, CISL, NCAR, UCAR,
-CO , USA}
+\affiliation{Laboratory for Atmospheric and Space Physics, University of Colorado,
+  Boulder, CO 80309, USA, and National Center for Atmospheric Research, P.O. Box 3000,
+  Boulder, CO 80307, USA.}
 
 \author{W.H. Matthaeus}
 \affiliation{Bartol Research Institute and Department of Physics and Astronomy,
@@ -108,7 +109,7 @@ background magnetic field controls the propagation velocity (i.e., the
 Alfv\'en velocity), the non-linear interaction is influenced by the
 Alfv\'en crossing time of counter-propagating wave packets. There is
 therefore a competition between non-linear interactions (i.e.,
-turbulence) and wave propagation \cite{dmitruk_waves_2009}.
+turbulence) and wave propagation \cite{dmitruk_waves_2009, rappazzo_coronal_2007}.
 
 The strength of counter-propagating fluctuations can be measured by
 the cross-helicity, a quantity which is a quadratic invariant of the
@@ -172,7 +173,7 @@ presented in Sec.~\ref{sec_Conclusions}.
 
 \subsection{The MHD equations and the Els\"asser fields}\label{sec_eq}
 The incompressible MHD equations (momentum and induction equations) in
-dimensionless units are
+dimensionless units as solved in the numerical simulations are
 \begin{equation}\label{eq:MHD_v}
   \frac {\partial {\bf v}}{\partial t} +
   {\bf v }\cdot \nabla {\bf v} = -\frac{1}{\rho}\nabla p +
@@ -182,24 +183,26 @@ dimensionless units are
   \frac{\partial {\bf b}}{\partial t} = \nabla \times ({\bf v} 
   \times {\bf B}) + \frac{1}{R_m} \nabla^2 {\bf b} + \vec{F}_b,
 \end{equation}
-where ${\bf v}$ is the plasma bulk velocity, ${\bf B} = {\bf b} + {\bf B}_0$ is the total magnetic field (in units
-of an Alfv\'enic speed, and obtained from the total magnetic field
-${\bf B}'$ in Gaussian units after dividing by $\sqrt{4\pi\rho}$,
-where $\rho$ is the plasma density), and $\vec{F}_v$ and $\vec{F}_b$ are forcing terms to be discussed in more detail below. The total magnetic field has a
-fluctuating part ${\bf b}$, and a mean DC field
-${\bf B}_0=B_0\hat{x}$. Finally, ${\bf j} = \nabla \times {\bf b}$ is
-the current density and $p$ is the pressure. The units are based on a
-characteristic speed $v_0$, which for MHD is chosen to be the typical
-Alfv\'en speed of the magnetic field fluctuations,
-$v_0 = \sqrt{\langle b^2 \rangle /(4\pi\rho)}$, where
-$\langle . \rangle$ denotes a spatial average. The dimensionless
-parameters appearing in the equations are the kinetic and magnetic
-Reynolds numbers, $R=v_0 L/\nu$ and $R_m = v_0 L /\mu$ respectively,
-with $\nu$ the kinematic viscosity, $\mu$ the magnetic diffusivity, and
-$L$ the characteristic length scale (the simulation box side length is
-defined as $2\pi L$). The unit time is $t_0 = L/v_0$, which for MHD
-becomes the Alfv\'en crossing time based on magnetic field
-fluctuations. The Els\"asser fields are then defined as
+where ${\bf v}$ is the plasma bulk velocity, ${\bf B} = {\bf b} + {\bf
+  B}_0$ is the total magnetic field (in units of an Alfv\'enic speed,
+and obtained from the total magnetic field ${\bf B}'$ in Gaussian
+units after dividing by $\sqrt{4\pi\rho}$, where $\rho$ is the plasma
+density), and $\vec{F}_v$ and $\vec{F}_b$ are forcing terms to be
+discussed in more detail below. The total magnetic field has a
+fluctuating part ${\bf b}$, and a mean DC field ${\bf
+  B}_0=B_0\hat{x}$. Finally, ${\bf j} = \nabla \times {\bf b}$ is the
+current density and $p$ is the plasma pressure. The units are based on
+a characteristic speed $v_0$, which for MHD is chosen to be the
+typical Alfv\'en speed of the magnetic field fluctuations, $v_0 =
+\sqrt{\langle b^2 \rangle /(4\pi\rho)}$, where $\langle . \rangle$
+denotes a spatial average. The dimensionless parameters appearing in
+the equations are the kinetic and magnetic Reynolds numbers, $R=v_0
+L/\nu$ and $R_m = v_0 L /\mu$ respectively, with $\nu$ the kinematic
+viscosity, $\mu$ the magnetic diffusivity, and $L$ the characteristic
+length scale (the simulation box side length is defined as $2\pi
+L$). The unit time is $t_0 = L/v_0$, which for MHD becomes the
+Alfv\'en crossing time based on magnetic field fluctuations. The
+Els\"asser fields are then defined as
 \begin{equation}\label{eq:MHD_zdef}
 \vec{z}^\pm = \vec{v} \pm \vec{b} .
 \end{equation}
@@ -207,20 +210,20 @@ fluctuations. The Els\"asser fields are then defined as
 In terms of the Els\"asser fields, the MHD equations can be written
 \cite{servidio_time_2011} as
 \begin{equation}
-\partial_t \vec{z}^\pm  = \pm  \vec{V}_\textrm{A} \cdot \nabla \vec{z}^\pm  - 
-\vec{z}^\mp \cdot \nabla \vec{z}^\pm - \nabla{P} + 
+\partial_t \vec{z}^\pm = \pm \vec{V}_\textrm{A} \cdot \nabla
+\vec{z}^\pm - \vec{z}^\mp \cdot \nabla \vec{z}^\pm - \nabla{P} +
 \frac{1}{R} \nabla^2 \vec{z}^\pm ,
 \label{eq:Elsasser}
 \end{equation}
-with $P=p/\rho$, and with the assumption that $R=R_m$. In the
-r.h.s.~of Eq.~(\ref{eq:Elsasser}) we explicitly separated the
-convective term into a linear part describing Alfv\'enic propagation
-with $\vec{V}_\textrm{A} = \vec{B}_0$ the Alfv\'en velocity based on
-the background magnetic field (with $\vec{B}_0$ the field in units of
-velocity), and the non-linear part describing the interaction among
-counter-propagating wave-like fluctuations. It is evident from these
-equations that both Els\"asser fields must be present to activate the
-non-linear interactions.
+with $P$ the total pressure divided by the plasma density, and with
+the assumption that $R=R_m$. In the r.h.s.~of Eq.~(\ref{eq:Elsasser}) 
+we explicitly separated the convective term into a linear part 
+describing Alfv\'enic propagation with $\vec{V}_\textrm{A} = \vec{B}_0$ 
+the Alfv\'en velocity based on the background magnetic field (with
+$\vec{B}_0$ the field in units of velocity), and the non-linear part
+describing the interaction among counter-propagating wave-like 
+fluctuations. It is evident from these equations that both Els\"asser 
+fields must be present to activate the non-linear interactions.
 
 The ideal invariants (i.e., with zero viscosity and resistivity) of
 incompressible MHD theory can be written in terms of the Els\"asser
@@ -245,11 +248,13 @@ fluctuations in the system. A value $\sigma_c = \pm 1$ corresponds to
 only one type of fluctuations $\vec{z}^\pm$, while $\sigma_c=0$
 represents equipartition between both fields.
 
-Following the works of Matthaeus {\it et al.}
-\cite{matthaeus1994transport} and Zhou {\it et al.}
-\cite{zhou1990remarks}, the ideal MHD equations can be linearized
-considering the presence of an inhomogeneous background magnetic field
-and/or an inhomogeneous background flow, as
+As later in the analysis we will be interested in the effect of flow inhomogeneities in the propagation of these fluctuations, following 
+the works of Matthaeus {\it et al.} \cite{matthaeus1994transport} 
+and Zhou {\it et al.} \cite{zhou1990remarks} we can linearize the 
+ideal MHD equations considering the presence of an inhomogeneous 
+background magnetic field and/or an inhomogeneous background flow. From 
+these works, the general MHD equations (including density fluctuations) 
+can be written as
 \begin{equation}\label{eq:MHD_zpzm}
   \partial_t \vec{z}^\pm
   + \left( L^\pm_\vec{x} + L^\pm \right) \vec{z}^\pm
@@ -363,8 +368,8 @@ function \cite{servidio_time_2011},
 \includegraphics[width=1\columnwidth]{fig1_E.eps}
 \caption{Reduced perpendicular energy spectra $E(k_\perp)$ for
   simulations with $B_0=0$, $0.25$, $1$, $2$, $4$, and $8$. All curves
-  correspond to the case $\sigma_c = 0.3$, but the cases with $\sigma_c = 0$ and
-  $0.9$ show the same behavior. Kolmogorov scaling,
+  correspond to the case $\sigma_c = 0.3$, but the cases with
+  $\sigma_c = 0$ and $0.9$ show the same behavior. Kolmogorov scaling,
   $\sim k_\perp^{-5/3}$, is shown as reference.}
 \label{fig1:E}
 \end{figure}
@@ -383,9 +388,14 @@ arising from Alfv\'enic non-linear interactions or sweeping.
 
 The Fourier transform in the time lag of the scale-dependent
 correlation function results in the wavenumber-frequency spectrum
-$E^\pm(\vec{k},\omega)$ \cite{clark_di_leoni_quantification_2014,
-  clark_di_leoni_spatio-temporal_2015}, for each of the Els\"asser
-fields. These spectra allow identification of modes satisfying a
+$E^\pm(\vec{k},\omega)$ for each of the Els\"asser fields. 
+This property follows directly from the 1, that 
+states that the Fourier transform of a signal auto-correlation is the 
+power spectrum of the same signal (see Refs. 
+\cite{clark_di_leoni_quantification_2014, 
+clark_di_leoni_spatio-temporal_2015}, and pp.~35-36 from Ref. 
+\cite{batchelor_theory_1953} for further details). The spectra
+$E^\pm(\vec{k},\omega)$ allow identification of modes satisfying a
 generalized dispersion relation of the system, and provide a direct
 measurement of how much energy is in those modes, and of how much
 energy is in other modes. For the two separate Els\"asser fields, from
@@ -425,19 +435,20 @@ wavenumber-frequency spectra of the Els\"asser fields, and vice-versa.
 
 \subsection{Numerical simulations}\label{sec_NumSim}
 
-To solve numerically the incompressible MHD equations we employ a
-standard pseudo-spectral code \cite{gomez_parallel_2005,
-  gomez_mhd_2005, hybrid2011}. We consider a spatial resolution of 
-$N^3 = 512^3$ grid points, with a second-order Runge-Kutta time 
-integration scheme. Spatial resolution is moderate as we need to store 
-a large amount of data in space and time to compute the correlation 
-functions and spectra defined in Sec.~\ref{sec_Wfspectrum_and_Gamma}. 
-Values considered for the intensity of the external magnetic field are 
-$B_0 = 0, 0.25$, $1$, $2$, $4$ and $8$ (in units of the initial 
-r.m.s.~magnetic fluctuations value). We assume periodic boundary 
-conditions in a cube of side $2\pi L$ (with $L$ the initial correlation 
-length of the fluctuations, defined as the unit length). Aliasing is 
-removed by the two-thirds rule truncation method.
+To solve numerically the incompressible MHD Eqs.~(\ref{eq:MHD_v})
+and (\ref{eq:MHD_b}) we employ a parallel pseudo-spectral code
+\cite{gomez_parallel_2005, gomez_mhd_2005, hybrid2011}. We consider a
+spatial resolution of $N^3 = 512^3$ grid points, with a second-order
+Runge-Kutta time integration scheme. Spatial resolution is moderate as
+we need to store a large amount of data in space and time to compute
+the correlation functions and spectra defined in
+Sec.~\ref{sec_Wfspectrum_and_Gamma}.  Values considered for the
+intensity of the external magnetic field are $B_0 = 0, 0.25$, $1$,
+$2$, $4$ and $8$ (in units of the initial r.m.s.~magnetic fluctuations
+value). We assume periodic boundary conditions in a cube of side $2\pi
+L$ (with $L$ the initial correlation length of the fluctuations,
+defined as the unit length). Aliasing is removed by the two-thirds
+rule truncation method.
 
 \begin{figure*}
   \centering 
@@ -445,17 +456,17 @@ removed by the two-thirds rule truncation method.
   \subfigure[$B_0 = 0$, $\vec{z}^+$, $\sigma_c = 0.3$]{\includegraphics[width=0.45\textwidth]{{fig3_B0.0_y_Hc0.3_zp_kperp0}.eps}}
   \subfigure[$B_0 = 0$, $\vec{z}^-$, $\sigma_c = 0.9$]{\includegraphics[width=0.45\textwidth]{{fig3_B0.0_y_Hc0.9_zm_kperp0}.eps}}
   \subfigure[$B_0 = 0$, $\vec{z}^+$, $\sigma_c = 0.9$]{\includegraphics[width=0.45\textwidth]{{fig3_B0.0_y_Hc0.9_zp_kperp0}.eps}}
-  \caption{Normalized wave vector and frequency spectra
-    $E^\pm({\bf k}, \omega)/E^+({\bf k})$ of $\vec{z}^-$ (left) and
-    $\vec{z}^+$ (right), for the isotropic simulations ($B_0=0$) with
-    $\sigma_c = 0.3$ [top, panels (a) and (b)] and $\sigma_c = 0.9$ [bottom,
-    panels (c) and (d)], as a function of $k_\parallel$ and for fixed
-    $k_\perp=0$. Lighter regions indicate larger energy density. The
-    spectra correspond to the power in the time and space Fourier
-    transform of the fields, such that accumulation of energy in modes
-    near the dispersion relation (or in all modes below the sweeping
-    curve) points to a dominance of a physical effect (i.e., of its
-    associated frequency) in the dynamics of a given scale
+  \caption{Normalized wave vector and frequency spectra $E^\pm({\bf
+      k}, \omega)/E^+({\bf k})$ of $\vec{z}^-$ (left) and $\vec{z}^+$
+    (right), for the isotropic simulations ($B_0=0$) with $\sigma_c =
+    0.3$ [top, panels (a) and (b)] and $\sigma_c = 0.9$ [bottom,
+      panels (c) and (d)], as a function of $k_\parallel$ and for
+    fixed $k_\perp=0$. Lighter regions indicate larger energy
+    density. The spectra correspond to the power in the time and space
+    Fourier transform of the fields, such that accumulation of energy
+    in modes near the dispersion relation (or in all modes below the
+    sweeping curve) points to a dominance of a physical effect (i.e.,
+    of its associated frequency) in the dynamics of a given scale
     $\sim 1/k_\parallel$. As a reference, the sweeping time relation
     giving by Eq.~(\ref{eq:tausw}) is indicated by solid (green)
     lines. A broad excitation of modes is observed for all modes with
@@ -466,35 +477,48 @@ removed by the two-thirds rule truncation method.
 
 The initial condition in all simulations consists of nonzero
 amplitudes for the ${\bf v}({\bf k})$ and ${\bf b}({\bf k})$ fields,
-equipartitioned in all the wavenumbers within shells
-$1.1 \leq k \leq 4$ (in units of $2\pi L/\lambda$, with $\lambda$ the
+equipartitioned in all the wavenumbers within shells $1.1 \leq k \leq
+4$ (in units of $2\pi L/\lambda$, with $\lambda$ the
 wavelength). Random phases are chosen for all Fourier modes in both
 fields. To keep the system in a turbulent steady state we apply a
-driving consisting of forcing terms $\vec{F}_b$ and $\vec{F}_v$ 
-for $\vec{b}$ and $\vec{v}$ respectively, in Eqs.~(\ref{eq:MHD_v}) 
-and (\ref{eq:MHD_b}). $\vec{F}_b$ and $\vec{F}_v$ are band limited to 
-a fixed set of Fourier modes in the band $0.9\leq k \leq 1.8$. The driving has a
-random and a time-coherent component, and the correlation time of the
-forcing is $\tau_f \approx 1$ (of the order of the unit time
-$t_0$), which is larger than all the characteristic times 
-defined in the previous section. To change the level of cross-helicity in the flow,
-correlations were introduced between the mechanical and electromotive
-drivings, resulting at late times (depending on the level of
-cross-correlation between the drivers) in a normalized cross-helicity of 
-$\sigma_c=0$, $0.3$, or $0.9$ (these values correspond to the time average 
-in the turbulent steady state; in practice, in each simulation the
-instantaneous cross-helicity fluctuates in time around the reported
-mean values).
+driving consisting of forcing terms $\vec{F}_b$ and $\vec{F}_v$ for
+$\vec{b}$ and $\vec{v}$ respectively, in Eqs.~(\ref{eq:MHD_v}) and
+(\ref{eq:MHD_b}). $\vec{F}_b$ and $\vec{F}_v$ are band limited to a
+fixed set of Fourier modes in the band $0.9\leq k \leq 1.8$. The
+driving has a random and a time-coherent component, and the
+correlation time of the forcing is $\tau_f \approx 1$ (of the order of
+the unit time $t_0$), which is larger than all the characteristic
+times defined in the previous section. To change the level of
+cross-helicity in the flow, correlations were introduced between the
+mechanical and electromotive drivings, resulting at late times
+(depending on the level of cross-correlation between the drivers) in a
+normalized cross-helicity of $\sigma_c=0$, $0.3$, or $0.9$ (these
+values correspond to the time average in the turbulent steady state;
+in practice, in each simulation the instantaneous cross-helicity
+fluctuates in time around the reported mean values).
 
-Note the different values of $B_0$ and of $\sigma_c$ explored result in a
-total of 18 simulations. All simulations were continued until the
-system reached a turbulent steady state, and then continued further to
-perform the spatio-temporal analysis on the evolution of the
-Els\"asser fields presented in the next section. We will first
-characterize the spatial behavior of the flows (specially considering
-the degree of anisotropy as the intensity of the background flow is
-increased), to then study the behavior of the Els\"asser fluctuations
-using the spatio-temporal information.
+\begin{table}
+\begin{tabular}{|l||c||c||c||c||c||c|}
+\hline
+        & $B_0=0$ & $B_0 = 0.25$ & $B_0 = 1$ & $B_0 = 2$ & $B_0 = 4$ & $B_0 = 8$ \\ \hline\hline
+              & $0$ & $0$ & $0$ & $0$ & $0$ & $0$ \\ \cline{2-7} 
+$\sigma_c \approx $ & $0.3$ & $0.3$ & $0.3$ & $0.3$ & $0.3$ & $0.3$ \\ \cline{2-7} 
+              & $0.9$ & $0.9$ & $0.9$ & $0.9$ & $0.9$ & $0.9$ \\ \hline
+\end{tabular}
+\caption{List of numerical simulations performed, with guide field
+$\vec{B} = B_0 \hat{x}$ and normalized cross-helicity $\sigma_c$.}
+\label{tab:listSim}
+\end{table}
+
+Note the different values of $B_0$ and of $\sigma_c$ explored result
+in a total of 18 simulations (see \cref{tab:listSim}). All simulations
+were continued until the system reached a turbulent steady state, and
+then continued further to perform the spatio-temporal analysis on the
+evolution of the Els\"asser fields presented in the next section. We
+will first characterize the spatial behavior of the flows (specially
+considering the degree of anisotropy as the intensity of the
+background flow is increased), to then study the behavior of the
+Els\"asser fluctuations using the spatio-temporal information.
 
 \section{Results}\label{sec_results}
 
@@ -506,17 +530,24 @@ using the spatio-temporal information.
   \subfigure[$B_0 = 0.25$, $\vec{z}^+$, $\sigma_c = 0.3$]{\includegraphics[width=0.45\textwidth]{{fig3_B0.25_y_Hc0.3_zp_kperp0}.eps}}
   \subfigure[$B_0 = 0.25$, $\vec{z}^-$, $\sigma_c = 0.9$]{\includegraphics[width=0.45\textwidth]{{fig3_B0.25_y_Hc0.9_zm_kperp0}.eps}}
   \subfigure[$B_0 = 0.25$, $\vec{z}^+$, $\sigma_c = 0.9$]{\includegraphics[width=0.45\textwidth]{{fig3_B0.25_y_Hc0.9_zp_kperp0}.eps}}
-    \caption{Normalized spectra $E^\pm({\bf k}, \omega)/E^+({\bf k})$ of $\vec{z}^-$ (left)
-    and $\vec{z}^+$ (right), for the runs with $B_0=0.25$, for modes with $k_\perp=0$, and 
-    thus as a function of $k_\parallel$ and $\omega$. Panels (a) and (b) correspond to 
-    $\sigma_c = 0$, (c) and (d) to $\sigma_c = 0.3$, and (e) and (f) to $\sigma_c = 0.9$. 
-    The sweeping time relation, given by Eq.~(\ref{eq:tausw}), is indicated by solid (green)
-    lines, and the dashed (blue) lines indicate the dispersion relation of Alfv\'en waves. 
-    Lighter regions indicate larger energy density, and the accumulation of energy in modes
-    near the dispersion relation (or in all modes below the sweeping curve) points to a 
-    dominance of a physical effect (i.e., of its associated frequency) in the dynamics of a 
-    given scale $\sim 1/k_\parallel$. For low normalized cross-helicity $\sigma_c$ sweeping is the dominant effect, while for large $\sigma_c$ energy accumulates near the dispersion relation 
-    of the waves, albeit for both $\vec{z}^+$ and $\vec{z}^-$ with the same sign of the frequency $\omega$.}
+    \caption{Normalized spectra $E^\pm({\bf k}, \omega)/E^+({\bf k})$
+      of $\vec{z}^-$ (left) and $\vec{z}^+$ (right), for the runs with
+      $B_0=0.25$, for modes with $k_\perp=0$, and thus as a function
+      of $k_\parallel$ and $\omega$. Panels (a) and (b) correspond to
+      $\sigma_c = 0$, (c) and (d) to $\sigma_c = 0.3$, and (e) and (f)
+      to $\sigma_c = 0.9$.  The sweeping time relation, given by
+      Eq.~(\ref{eq:tausw}), is indicated by solid (green) lines, and
+      the dashed (blue) lines indicate the dispersion relation of
+      Alfv\'en waves.  Lighter regions indicate larger energy density,
+      and the accumulation of energy in modes near the dispersion
+      relation (or in all modes below the sweeping curve) points to a
+      dominance of a physical effect (i.e., of its associated
+      frequency) in the dynamics of a given scale $\sim
+      1/k_\parallel$. For low normalized cross-helicity $\sigma_c$
+      sweeping is the dominant effect, while for large $\sigma_c$
+      energy accumulates near the dispersion relation of the waves,
+      albeit for both $\vec{z}^+$ and $\vec{z}^-$ with the same sign
+      of the frequency $\omega$.}
   \label{fig3:B025_spectrum_Hc}
 \end{figure*}
 
@@ -528,8 +559,22 @@ using the spatio-temporal information.
   \subfigure[$B_0 = 1.0$, $\vec{z}^+$, $\sigma_c = 0.3$]{\includegraphics[width=0.45\textwidth]{{fig3_B1.0_y_Hc0.3_zp_kperp0}.eps}}
   \subfigure[$B_0 = 1.0$, $\vec{z}^-$, $\sigma_c = 0.9$]{\includegraphics[width=0.45\textwidth]{{fig3_B1.0_y_Hc0.9_zm_kperp0}.eps}}
   \subfigure[$B_0 = 1.0$, $\vec{z}^+$, $\sigma_c = 0.9$]{\includegraphics[width=0.45\textwidth]{{fig3_B1.0_y_Hc0.9_zp_kperp0}.eps}}
-    \caption{Normalized spectra $E^\pm({\bf k}, \omega)/E^+({\bf k})$ of $\vec{z}^-$ (left) and $\vec{z}^+$ (right), for the runs with $B_0=1$, for modes with $k_\perp=0$, and thus as a function of $k_\parallel$ and $\omega$. Panels (a) and (b) correspond to $\sigma_c = 0$, (c) and (d) to $\sigma_c = 0.3$, and (e) and (f) to $\sigma_c = 0.9$. The sweeping time relation, given by Eq.~(\ref{eq:tausw}), is indicated by solid (green)
-    lines, and the dashed (blue) lines indicate the dispersion relation of Alfv\'en waves. Lighter regions indicate larger energy density. In this case power for $\sigma_c = 0$ is concentrated in a region near the wave dispersion relations $\omega^\pm \approx \pm \vec{V}_\textrm{A}\cdot\vec{k}$ up to $k_\parallel \approx 10$. For $\sigma_c = 0.9$, both fields $\vec{z}^+$ and $\vec{z}^-$ follow the same dispersion relation $\omega \approx + \vec{V}_\textrm{A}\cdot\vec{k}$, and Alfv\'enic excitations dominate over all scales.}
+    \caption{Normalized spectra $E^\pm({\bf k}, \omega)/E^+({\bf k})$
+      of $\vec{z}^-$ (left) and $\vec{z}^+$ (right), for the runs with
+      $B_0=1$, for modes with $k_\perp=0$, and thus as a function of
+      $k_\parallel$ and $\omega$. Panels (a) and (b) correspond to
+      $\sigma_c = 0$, (c) and (d) to $\sigma_c = 0.3$, and (e) and (f)
+      to $\sigma_c = 0.9$. The sweeping time relation, given by
+      Eq.~(\ref{eq:tausw}), is indicated by solid (green) lines, and
+      the dashed (blue) lines indicate the dispersion relation of
+      Alfv\'en waves. Lighter regions indicate larger energy
+      density. In this case power for $\sigma_c = 0$ is concentrated
+      in a region near the wave dispersion relations $\omega^\pm
+      \approx \pm \vec{V}_\textrm{A}\cdot\vec{k}$ up to $k_\parallel
+      \approx 10$. For $\sigma_c = 0.9$, both fields $\vec{z}^+$ and
+      $\vec{z}^-$ follow the same dispersion relation $\omega \approx
+      + \vec{V}_\textrm{A}\cdot\vec{k}$, and Alfv\'enic excitations
+      dominate over all scales.}
   \label{fig3:B1_spectrum_Hc}
 \end{figure*}
 
@@ -541,8 +586,20 @@ using the spatio-temporal information.
   \subfigure[$B_0 = 8.0$, $\vec{z}^+$, $\sigma_c = 0.3$]{\includegraphics[width=0.45\textwidth]{{fig3_B8.0_y_Hc0.3_zp_kperp0}.eps}}
   \subfigure[$B_0 = 8.0$, $\vec{z}^-$, $\sigma_c = 0.9$]{\includegraphics[width=0.45\textwidth]{{fig3_B8.0_y_Hc0.9_zm_kperp0}.eps}}
   \subfigure[$B_0 = 8.0$, $\vec{z}^+$, $\sigma_c = 0.9$]{\includegraphics[width=0.45\textwidth]{{fig3_B8.0_y_Hc0.9_zp_kperp0}.eps}}
-    \caption{Normalized spectra $E^\pm({\bf k}, \omega)/E^+({\bf k})$ of $\vec{z}^-$ (left) and $\vec{z}^+$ (right), for the runs with $B_0=8$, for modes with $k_\perp=0$, and thus as a function of $k_\parallel$ and $\omega$. Panels (a) and (b) correspond to $\sigma_c = 0$, (c) and (d) to $\sigma_c = 0.3$, and (e) and (f) to $\sigma_c = 0.9$. The sweeping time relation, given by Eq.~(\ref{eq:tausw}), is indicated by solid (green)
-    lines, and the dashed (blue) lines indicate the dispersion relation of Alfv\'en waves. Lighter regions indicate larger energy density. In all cases power is concentrated in a narrow region near the wave dispersion relations $\omega^\pm \approx \pm \vec{V}_\textrm{A}\cdot\vec{k}$ or near $\omega \approx 0$, for all the wavenumbers studied, and there is no evidence of counter-propagation of waves.}
+    \caption{Normalized spectra $E^\pm({\bf k}, \omega)/E^+({\bf k})$
+      of $\vec{z}^-$ (left) and $\vec{z}^+$ (right), for the runs with
+      $B_0=8$, for modes with $k_\perp=0$, and thus as a function of
+      $k_\parallel$ and $\omega$. Panels (a) and (b) correspond to
+      $\sigma_c = 0$, (c) and (d) to $\sigma_c = 0.3$, and (e) and (f)
+      to $\sigma_c = 0.9$. The sweeping time relation, given by
+      Eq.~(\ref{eq:tausw}), is indicated by solid (green) lines, and
+      the dashed (blue) lines indicate the dispersion relation of
+      Alfv\'en waves. Lighter regions indicate larger energy
+      density. In all cases power is concentrated in a narrow region
+      near the wave dispersion relations $\omega^\pm \approx \pm
+      \vec{V}_\textrm{A}\cdot\vec{k}$ or near $\omega \approx 0$, for
+      all the wavenumbers studied, and there is no evidence of
+      counter-propagation of waves.}
   \label{fig3:B8_spectrum_Hc}
 \end{figure*}
 
@@ -555,38 +612,92 @@ and correlation functions.
 
 We start discussing the spatial spectral, to characterize the
 turbulence and to quantify its anisotropy as the intensity of the
-guide field is varied, for different values of the cross-helicity. The
-reduced perpendicular energy spectra $E(k_\perp)$ are shown in
-Fig.~\ref{fig1:E} for the simulations with $B_0=0$, $0.25$, 1, 2, 4,
-and 8 with normalized cross-helicity $\sigma_c=0.3$. The simulations 
-with $\sigma_c=0$ and $\sigma_c=0.9$ display a similar behavior. A 
-Kolmogorov power law is also indicated in the figure as reference. 
-As can be seen, despite the moderate spatial resolution of the runs, 
-the observed spatial spectra are compatible with Kolmogorov scaling 
-$\sim k_\perp^{-5/3}$, and the simulations are well resolved 
-displaying a dissipative range for large wavenumbers (for example, the
-Kolmogorov dissipation wavenumbers $k_\nu$ are $k_\nu \approx 91$, $152$, 
-and $122$ for the simulations with $B_0 = 1$ and $\sigma_c = 0$, $0.3$, 
-and $0.9$ respectively).
+guide field is varied, for different values of the cross-helicity.
+But first we need to define some quantities, as we are dealing with
+anisotropic flows. In principle we could study spectra in terms of 
+the wave vector ${\bf k}$, but this results in a three-dimensional
+spectral density. Using the preferential direction associated to 
+the guide field, reduced spectra can be defined that simplify
+substantially the data analysis.
 
-A more detailed illustration the spectral behavior (and of the anisotropy ç
-of the flows) can be seen in Fig.~\ref{fig2:isocontourns}. There, we show 
-isocontours of the axisymmetric energy spectrum $e(k_\perp, k_\parallel)$ 
-(i.e., the energy density as a function of perpendicular and parallel
-wavenumbers) for $B_0=0$, 1, 4, and 8, and in all cases for flows with
-$\sigma_c = 0.3$. As a reference we also indicate the curves (in Fourier
-space) where the Alfv\'en time is equal to either the sweeping time,
-or the non-linear time. In other words, these curves separate regions
-in which (from theoretical arguments) the fastest time scale can be
-expected to be either $\tau_A$ (above the dashed red curve) or
-$\tau_{nl}$ (below the solid blue curve). The sweeping time can be
-relevant for all modes below the dashed red curve.
+The axisymmetric energy spectrum $e(k_\perp, k_\parallel, t)$ provides
+information on the anisotropy of the turbulence relative to the the
+guide field \cite{mininni_isotropization_2012}. It is defined as
+\begin{equation}\label{eq:axisymmetric}
+\begin{split}  e(k_\perp, k_\parallel, t) = \sum_{\substack{k_\perp \leq |\vec{k}\times\hat{x}| < k_\perp+1 \\ k_\parallel \leq k_x < k_\parallel +1}} |\hat{u}(\vec{k},t)|^2 +|\hat{b}(\vec{k},t)|^2 = \\ = \int \left(|\hat{u}(\vec{k},t)|^2 +|\hat{b}(\vec{k},t)|^2\right) |\vec{k}| \sin \theta_k~d\phi_k.
+\end{split}
+\end{equation}
+The first equality corresponds to the way the spectra is computed 
+in the simulations (as Fourier modes are discrete), while the 
+second corresponds to the theoretical definition in the continuum 
+case. Since the guide field is $\vec{B_0} = B_0 \hat{x}$, in both 
+cases the wave vector components $k_\parallel = k_x$ and 
+$k_\perp = \sqrt{k_y^2+k_z^2}$, and the polar angles in Fourier 
+space $\theta_k$ and $\phi_k$, are relative to the $x$-axis. That is, 
+in Eq.~(\ref{eq:axisymmetric}), 
+$\theta_k = \arctan(k_\perp/k_\parallel)$ is the co-latitude in
+Fourier space with respect to the $x$-axis, and $\phi_k$ is the
+longitude with respect to the $y$-axis. Note that below we treat the 
+discrete and continuum expressions of Fourier spectra as equivalent,
+bearing in mind that in all cases integrals should be replaced by sums
+when required for the numerics.
+
+Using the axisymmetric spectrum, one can define the time averaged
+isotropic energy spectrum $E(k)$ as
+\begin{equation}
+  E\left(k \right) = \frac{1}{T}\int\int e(|\vec{k_\perp}|,
+  k_\parallel, t) |{\bf k}|~d\theta_k~dt,
+\end{equation}
+and the reduced perpendicular energy spectrum $E(k_\perp)$
+\cite{mininni_isotropization_2012} as
+\begin{equation}\label{eq:reducedspectrum}
+  E\left(k_\perp\right) = \frac{1}{T}\int\int e(|\vec{k_\perp}|,
+  k_\parallel, t) \, dk_\parallel~dt,
+\end{equation}
+where in the latter case we integrate over parallel wave numbers to 
+obtain a spectrum that depends only on $k_\perp$, and in both cases
+we average in time over a (sufficiently long) time $T$.
+
+The reduced perpendicular
+energy spectra $E(k_\perp)$ are shown in Fig.~\ref{fig1:E} for the
+simulations with $B_0 = 0.25$, $1$, $2$, $4$, and $8$ with normalized
+cross-helicity $\sigma_c=0.3$. In this figure we also show the 
+isotropic energy spectrum $E(k)$ for the simulation with $B_0 = 0$, 
+with $\sigma_c=0.3$.  The simulations with $\sigma_c=0$ and 
+$\sigma_c=0.9$ display a similar behavior. A Kolmogorov power law is 
+also indicated in the figure as reference.  As can be seen, despite 
+the moderate spatial resolution of the runs, the observed spatial 
+spectra are compatible with Kolmogorov scaling $\sim k_\perp^{-5/3}$, 
+and the simulations are well resolved displaying a dissipative range 
+for large wavenumbers (for example, the Kolmogorov dissipation 
+wavenumbers $k_\nu$ are $k_\nu \approx 91$, $152$, and $122$ for the 
+simulations with $B_0 = 1$ and $\sigma_c = 0$, $0.3$, and $0.9$ 
+respectively).
+
+We can see the spectral behavior (and of the anisotropy of the flows)
+in more detail in Fig.~\ref{fig2:isocontourns}. There, we show
+isocontours of the axisymmetric energy spectrum $e(k_\perp,
+k_\parallel)$ (i.e., the energy density as a function of perpendicular
+and parallel wavenumbers) for $B_0=0$, 1, 4, and 8, and in all cases
+for flows with $\sigma_c = 0.3$. As a reference we also indicate the
+curves (in Fourier space) where the Alfv\'en time is equal to either
+the sweeping time, or the non-linear time. In other words, these
+curves separate regions in which (from theoretical arguments) the
+fastest time scale can be expected to be either $\tau_A$ (above the
+dashed red curve) or $\tau_{nl}$ (below the solid blue curve). The
+sweeping time can be relevant for all modes below the dashed red
+curve.
 
 \begin{figure}
   \centering
   \subfigure[$\vec{z}^-$, $B_0=1$, $\sigma_c=0.3$, $k_\parallel=10$]{\includegraphics[width=0.95\columnwidth]{fig5_B1_Hc03_zmz_kpara_10.eps}}
   \subfigure[$\vec{z}^+$, $B_0=1$, $\sigma_c=0.3$, $k_\parallel=10$]{\includegraphics[width=0.95\columnwidth]{fig5_B1_Hc03_zpz_kpara_10.eps}}
-  \caption{Decorrelation times $\tau_D$ for the run with $B_0=1$ and $\sigma_c=0.3$, for $k_\parallel=10$ constant and as a function of $k_\perp$. Panel (a) corresponds to $\vec{z}^-$ and panel (b) to $\vec{z}^+$. The theoretical prediction for the sweeping time $\tau_{sw}$, the non-linear time $\tau_{nl}$, and the Alfv\'en time $\tau_A$ are indicated as references.}
+  \caption{Decorrelation times $\tau_D$ for the run with $B_0=1$ and
+    $\sigma_c=0.3$, for $k_\parallel=10$ constant and as a function of
+    $k_\perp$. Panel (a) corresponds to $\vec{z}^-$ and panel (b) to
+    $\vec{z}^+$. The theoretical prediction for the sweeping time
+    $\tau_{sw}$, the non-linear time $\tau_{nl}$, and the Alfv\'en
+    time $\tau_A$ are indicated as references.}
   \label{fig5:z+_vs_z-}
 \end{figure}
 
@@ -594,63 +705,72 @@ Note that for $B_0 \neq 0$ the energy is not distributed isotropically
 in the axisymmetric spectra in Fig.~\ref{fig2:isocontourns}. Energy
 tends to accumulate in modes with small $k_\parallel$ as $B_0$ is
 increased, and for $B_0=4$ and 8, a substantial fraction of the energy
-accumulates in the vicinity of the curves satisfying
-$\tau_A \approx \tau_{sw}$ and $\tau_A \approx \tau_{nl}$.
+accumulates in the vicinity of the curves satisfying $\tau_A \approx
+\tau_{sw}$ and $\tau_A \approx \tau_{nl}$.
 
 \subsection{Wavenumber-frequency spectra}\label{sec:wk}
 
-The main results of the present study are summarized in
-Figs.~\ref{fig3:B0_spectrum_Hc} to \ref{fig3:B8_spectrum_Hc}, which
-quantify the spatio-temporal behavior of the Els\"asser fields
-separately. These figures show the normalized wavevector and frequency
-spectra of the $\vec{z}^+$ and $\vec{z}^-$ variables, for simulations
-with different values of the background mean field $B_0$ and
-normalized cross-helicity $\sigma_c$. As the spectra are multidimensional, in all
-cases we show slices of the spectrum for $k_\perp=0$ and as a function
-of $k_\parallel$ and $\omega$.
+We calculate the energy spectrum $E(\vec{k}, \omega)$ from the relation
+\begin{equation}
+  E(\vec{k}, \omega) = \frac{1}{2} \left|\hat{u}(\vec{k},
+  \omega)\right|^2 + \frac{1}{2} \left|\hat{b}(\vec{k},
+  \omega)\right|^2
+\end{equation}
+where $\hat{u}(\vec{k}, \omega)$ and $\hat{b}(\vec{k}, \omega)$ are
+the Fourier transforms in time and in space of the velocity and the
+magnetic fields, respectively.  The main results of the present study
+are summarized in Figs.~\ref{fig3:B0_spectrum_Hc} to
+\ref{fig3:B8_spectrum_Hc}, which quantify the spatio-temporal behavior
+of the Els\"asser fields separately. These figures show the normalized
+wavevector and frequency spectra of the $\vec{z}^+$ and $\vec{z}^-$
+variables, for simulations with different values of the background
+mean field $B_0$ and normalized cross-helicity $\sigma_c$. As the
+spectra are multidimensional, in all cases we show slices of the
+spectrum for $k_\perp=0$ and as a function of $k_\parallel$ and
+$\omega$ (other slices, with other values of $k_\perp$, display the
+same behavior for the waves reported below).
 
 Figure \ref{fig3:B0_spectrum_Hc} shows these spatio-temporal spectra
 for simulations with $B_0=0$. In this case, the dispersion relation
 for Alfv\'enic fluctuations becomes $\omega=0$, and Alfv\'en waves are
 indistinguishable (in this spectrum) from slow modes such as turbulent
 eddies. The sweeping relation, for eddies with velocity $v_{rms}$,
-becomes $\omega=\pm v_{rms} k$, and in practice, as all
-turbulent eddies with this velocity (or a smaller velocity) can randomly 
-sweep small-scale structures in the flow, the relation for random
-sweeping becomes $|\omega| \leq v_{rms} k$. Both relations
-are indicated respectively by dashed and solid lines in
+becomes $\omega=\pm v_{rms} k$, and in practice, as all turbulent
+eddies with this velocity (or a smaller velocity) can randomly sweep
+small-scale structures in the flow, the relation for random sweeping
+becomes $|\omega| \leq v_{rms} k$. Both relations are indicated
+respectively by dashed and solid lines in
 Fig.~\ref{fig3:B0_spectrum_Hc}.
 
 Accumulation of energy in the spectra in
 Fig.~\ref{fig3:B0_spectrum_Hc} can be seen for all modes in the region
 enclosed by the sweeping relation, evidencing the presence of
 broadband (strong) turbulence rather than of wave turbulence or linear
-wave propagation. Moreover, for large values of the normalized cross-helicity
-($\sigma_c = 0.9$), energy accumulates instead in modes with
-$\omega\approx 0$, and more energy can be observed in $\vec{z}^+$
-modes when compared to the $\vec{z}^-$ modes. From these 
-spectra we can conclude that for $B_0=0$ and $\sigma_c=0$ the dominant
-timescale is that of the sweeping, while for large values of $\sigma_c$
-either the non-linear timescale or the Alfv\'en time become dominant.
+wave propagation. Moreover, for large values of the normalized
+cross-helicity ($\sigma_c = 0.9$), energy accumulates instead in modes
+with $\omega\approx 0$, and more energy can be observed in $\vec{z}^+$
+modes when compared to the $\vec{z}^-$ modes. From these spectra we
+can conclude that for $B_0=0$ and $\sigma_c=0$ the dominant timescale
+is that of the sweeping, while for large values of $\sigma_c$ either
+the non-linear timescale or the Alfv\'en time become dominant.
 
 Figure \ref{fig3:B025_spectrum_Hc} shows the spatio-temporal spectra
-for simulations with $B_0=0.25$. The case with $\sigma_c=0$ shows again a
-broad range of fluctuations in the range of frequencies enclosed by
-the sweeping relation. As the value of $\sigma_c$ is increased the
-$\vec{z}^+$ fluctuations become dominant, a situation which is more
-evident in the case with $\sigma_c=0.9$. Also, as $\sigma_c$ is increased,
-energy in $\vec{z}^+$ fluctuations leaves the funnel defined by the
-sweeping relation, and concentrates in the vicinity of the dispersion
-relation of Alfv\'en waves
-$\omega^+ = +\vec{V}_\textrm{A} \cdot \vec{k}$ (see the case with
-$\sigma_c=0.9$ in Fig.~\ref{fig3:B025_spectrum_Hc}). Note that the choice of signs
-for waves described by $\vec{z}^\pm={\vec z}_0^\pm e^{i(\vec{k} \cdot \vec{x}+\omega^\pm t)}$
-follows from the fact that the Fourier
+for simulations with $B_0=0.25$. The case with $\sigma_c=0$ shows
+again a broad range of fluctuations in the range of frequencies
+enclosed by the sweeping relation. As the value of $\sigma_c$ is
+increased the $\vec{z}^+$ fluctuations become dominant, a situation
+which is more evident in the case with $\sigma_c=0.9$. Also, as
+$\sigma_c$ is increased, energy in $\vec{z}^+$ fluctuations leaves the
+funnel defined by the sweeping relation, and concentrates in the
+vicinity of the dispersion relation of Alfv\'en waves $\omega^+ =
++\vec{V}_\textrm{A} \cdot \vec{k}$ (see the case with $\sigma_c=0.9$
+in Fig.~\ref{fig3:B025_spectrum_Hc}). Note that the choice of signs
+for waves described by $\vec{z}^\pm={\vec z}_0^\pm e^{i(\vec{k} \cdot
+  \vec{x}+\omega^\pm t)}$ follows from the fact that the Fourier
 transforms used in space and in time follow the same sign convention,
-and where ${\vec z}_0^\pm$ are the amplitudes of the waves. 
-This way, the sign
-of $\omega^+$ implies $\vec{z}^+$ fluctuations propagate anti-parallel
-to the guide field, as expected. However, in an apparent
+and where ${\vec z}_0^\pm$ are the amplitudes of the waves.  This way,
+the sign of $\omega^+$ implies $\vec{z}^+$ fluctuations propagate
+anti-parallel to the guide field, as expected. However, in an apparent
 contradiction, the waves with the opposite polarization, i.e., the
 $\vec{z}^-$ fluctuations, also populate (albeit with smaller
 amplitude) the same upper branch of the Alfv\'enic wave dispersion
@@ -662,11 +782,11 @@ Fig.~\ref{fig3:B025_spectrum_Hc}. This behavior indicates that
 $\vec{z}^-$ fluctuations also propagate in real space in the direction
 anti-parallel to the guide field (i.e., with negative velocity),
 instead of parallel to this field (i.e., with positive velocity) as
-would be expected. Such a behaviour was predicted by Hollweg 
-\cite{hollweg_1990_wkb} for the solar wind and caused by, e.g., 
-reflections of waves in density fluctuations in the interplanetary medium, 
-using a WKB expansion. In our case, the flow is incompressible and density 
-is uniform in space and constant in time.
+would be expected. Such a behaviour was predicted by Hollweg
+\cite{hollweg_1990_wkb} for the solar wind and caused by, e.g.,
+reflections of waves in density fluctuations in the interplanetary
+medium, using a WKB expansion. In our case, the flow is incompressible
+and density is uniform in space and constant in time.
 
 \begin{figure*}
   \centering
@@ -674,7 +794,12 @@ is uniform in space and constant in time.
   \subfigure[$\vec{z}^+$, $B_0=1$, $\sigma_c=0.3$, $k_\parallel=15$]{\includegraphics[width=0.9\columnwidth]{fig5_B1_Hc03_zpz_kpara_15.eps}}
   \subfigure[$\vec{z}^+$, $B_0=4$, $\sigma_c=0.3$, $k_\parallel=15$]{\includegraphics[width=0.9\columnwidth]{fig5_B4_Hc03_zpz_kpara_15.eps}}
   \subfigure[$\vec{z}^+$, $B_0=8$, $\sigma_c=0.3$, $k_\parallel=15$]{\includegraphics[width=0.9\columnwidth]{fig5_B8_Hc03_zpz_kpara_15.eps}}
-    \caption{Decorrelation times $\tau_D$ for the $\vec{z}^+$ field in simulations with $\sigma_c = 0.3$ and (a) $B_0=0.25$, (b) $1$, (c) $4$, and (d) $8$, for $k_\parallel = 15$ and as a function of $k_\perp$. The theoretical prediction for the sweeping time $\tau_{sw}$, the non-linear time $\tau_{nl}$, and the Alfv\'en time $\tau_A$ are indicated as references.}
+    \caption{Decorrelation times $\tau_D$ for the $\vec{z}^+$ field in
+      simulations with $\sigma_c = 0.3$ and (a) $B_0=0.25$, (b) $1$,
+      (c) $4$, and (d) $8$, for $k_\parallel = 15$ and as a function
+      of $k_\perp$. The theoretical prediction for the sweeping time
+      $\tau_{sw}$, the non-linear time $\tau_{nl}$, and the Alfv\'en
+      time $\tau_A$ are indicated as references.}
   \label{fig5:tD_vs_B0}
 \end{figure*}
 
@@ -684,7 +809,12 @@ is uniform in space and constant in time.
   \subfigure[$\vec{z}^+$, $B_0=1$, $\sigma_c=0.3$, $k_\perp=15$]{\includegraphics[width=0.9\columnwidth]{fig5_B1_Hc03_zpz_kperp_15.eps}}
   \subfigure[$\vec{z}^+$, $B_0=4$, $\sigma_c=0.3$, $k_\perp=15$]{\includegraphics[width=0.9\columnwidth]{fig5_B4_Hc03_zpz_kperp_15.eps}}
   \subfigure[$\vec{z}^+$, $B_0=8$, $\sigma_c=0.3$, $k_\perp=15$]{\includegraphics[width=0.9\columnwidth]{fig5_B8_Hc03_zpz_kperp_15.eps}}
-    \caption{Decorrelation times $\tau_D$ for the $\vec{z}^+$ field in simulations with $\sigma_c = 0.3$ and (a) $B_0=0.25$, (b) $1$, (c) $4$, and (d) $8$, for $k_\perp=15$ and as a function of $k_\parallel$. The theoretical prediction for the sweeping time $\tau_{sw}$, the non-linear time $\tau_{nl}$, and the Alfv\'en time $\tau_A$ are indicated as references.}
+    \caption{Decorrelation times $\tau_D$ for the $\vec{z}^+$ field in
+      simulations with $\sigma_c = 0.3$ and (a) $B_0=0.25$, (b) $1$,
+      (c) $4$, and (d) $8$, for $k_\perp=15$ and as a function of
+      $k_\parallel$. The theoretical prediction for the sweeping time
+      $\tau_{sw}$, the non-linear time $\tau_{nl}$, and the Alfv\'en
+      time $\tau_A$ are indicated as references.}
   \label{fig5:tD_vs_B0_2}
 \end{figure*}
 
@@ -693,47 +823,53 @@ is uniform in space and constant in time.
   \subfigure[$\sigma_c = 0$]{\includegraphics[width=0.95\columnwidth]{fig5_B1_Hc00_zpz_kperp_40.eps}}
   \subfigure[$\sigma_c = 0.3$]{\includegraphics[width=0.95\columnwidth]{fig5_B1_Hc03_zpz_kperp_40.eps}}
   \subfigure[$\sigma_c = 0.9$]{\includegraphics[width=0.95\columnwidth]{fig5_B1_Hc09_zpz_kperp_40.eps}}
-    \caption{Decorrelation times $\tau_D$ for the runs with $B_0=1$, for $k_\perp=40$ and as a function of $k_\parallel$. The panels correspond to (a) $\sigma_c = 0$, (b) $\sigma_c = 0.3$, and (c) $\sigma_c = 0.9$. The theoretical prediction for the sweeping time $\tau_{sw}$, the non-linear time $\tau_{nl}$, and the Alfv\'en time $\tau_A$ are indicated as references.}
+    \caption{Decorrelation times $\tau_D$ for the runs with $B_0=1$,
+      for $k_\perp=40$ and as a function of $k_\parallel$. The panels
+      correspond to (a) $\sigma_c = 0$, (b) $\sigma_c = 0.3$, and (c)
+      $\sigma_c = 0.9$. The theoretical prediction for the sweeping
+      time $\tau_{sw}$, the non-linear time $\tau_{nl}$, and the
+      Alfv\'en time $\tau_A$ are indicated as references.}
   \label{fig5:tD_vs_Hc}
 \end{figure}
 
 As $B_0$ is increased, this effect becomes more evident. In
 Fig.~\ref{fig3:B1_spectrum_Hc} we show the spatio-temporal spectra for
 simulations with $B_0=1$. Now energy tends to concentrate near the
-dispersion relation of the Alfv\'en waves for all values of $\sigma_c$,
-i.e., as we increase the value of $B_0$ the relevance of random
-sweeping decreases and Alfv\'en waves become more important. For
-$\sigma_c=0$ we observe waves propagating in both directions: $\vec{z}^+$
-fluctuations propagate anti-parallel to the guide field, and
-$\vec{z}^-$ fluctuations propagate parallel to this field. Also, for
-values of $k_\parallel$ larger than $\approx 20$, the dispersion in
-the excitation of modes increases and energy starts to populate the
-funnel in spectral space associated with sweeping, indicating random
-sweeping plays a role at sufficiently small vertical scales. Instead, for
-$\sigma_c =0.3$ and $0.9$ energy accumulates only near the wave dispersion
-relation, and we recover counter-propagation of one of the wave
-motions: both $\vec{z}^+$ and $\vec{z}^-$ fields propagate in the same
-direction, anti-parallel to the guide field. Increasing $B_0$ further
-reduces this effect (see the cases with $B_0=8$ in
-Fig.~\ref{fig3:B8_spectrum_Hc}), resulting in the expected propagation
-for each excitation, or in very little or no propagation of
-$\vec{z}^-$ when $\sigma_c$ is sufficiently small.
+dispersion relation of the Alfv\'en waves for all values of
+$\sigma_c$, i.e., as we increase the value of $B_0$ the relevance of
+random sweeping decreases and Alfv\'en waves become more
+important. For $\sigma_c=0$ we observe waves propagating in both
+directions: $\vec{z}^+$ fluctuations propagate anti-parallel to the
+guide field, and $\vec{z}^-$ fluctuations propagate parallel to this
+field. Also, for values of $k_\parallel$ larger than $\approx 20$, the
+dispersion in the excitation of modes increases and energy starts to
+populate the funnel in spectral space associated with sweeping,
+indicating random sweeping plays a role at sufficiently small vertical
+scales. Instead, for $\sigma_c =0.3$ and $0.9$ energy accumulates only
+near the wave dispersion relation, and we recover counter-propagation
+of one of the wave motions: both $\vec{z}^+$ and $\vec{z}^-$ fields
+propagate in the same direction, anti-parallel to the guide
+field. Increasing $B_0$ further reduces this effect (see the cases
+with $B_0=8$ in Fig.~\ref{fig3:B8_spectrum_Hc}), resulting in the
+expected propagation for each excitation, or in very little or no
+propagation of $\vec{z}^-$ when $\sigma_c$ is sufficiently small.
 
 What is the origin of the observed $\vec{z}^-$ fluctuations
 propagating in the same direction as the $\vec{z}^+$ fluctuations?
-Based on the results of Hollweg \cite{hollweg_1990_wkb}, and on 
-Eq.~(\ref{eq:MHD_zpzm}), they must be caused by reflections in
-large scale inhomogeneities of the mean magnetic field (note there is
-no mean background flow in our simulations, nor density fluctuations). 
-Although our background guide field $B_0$ is uniform (i.e., constant 
-in space as well as in time), the total mean field a fluctuation sees 
-includes a slowly varying component (e.g., from magnetic field 
-fluctuations at large scales, such as those in $k=1$ modes, which 
-evolve on a slower time scale than fast waves and small-scale fluctuations). 
-As a result, the flow has an effective Alfv\'en velocity that depends on 
-the spatial coordinates. We can then write for either type of Els\"asser
-fluctuations the ideal linearized Eq.~(\ref{eq:MHD_zpzm}) for constant
-density and for $\vec{U}=0$ (no mean background flow) as
+Based on the results of Hollweg \cite{hollweg_1990_wkb}, and on
+Eq.~(\ref{eq:MHD_zpzm}), they must be caused by reflections in large
+scale inhomogeneities of the mean magnetic field (note there is no
+mean background flow in our simulations, nor density fluctuations).
+Although our background guide field $B_0$ is uniform (i.e., constant
+in space as well as in time), the total mean field a fluctuation sees
+includes a slowly varying component (e.g., from magnetic field
+fluctuations at large scales, such as those in $k=1$ modes, which
+evolve on a slower time scale than fast waves and small-scale
+fluctuations).  As a result, the flow has an effective Alfv\'en
+velocity that depends on the spatial coordinates. We can then write
+for either type of Els\"asser fluctuations the ideal linearized
+Eq.~(\ref{eq:MHD_zpzm}) for constant density and for $\vec{U}=0$ (no
+mean background flow) as
 \begin{equation}
 \partial_t \vec{z}^\pm = \pm \vec{V}_\textrm{A} \cdot \nabla \vec{z}^\pm 
     \mp \vec{z}^\mp \cdot \frac{\nabla \vec{B}'}{\sqrt{4\pi \rho}} ,
@@ -745,13 +881,12 @@ that is, if $|\vec{z}^+| \gg |\vec{z}^-|$, we have for $\vec{z}^+$
 \begin{equation}
 \partial_t \vec{z}^+  \approx \vec{V}_\textrm{A} \cdot \nabla \vec{z}^+ ,
 \end{equation}
-and using
-$\vec{z}^\pm = \vec{z}_0^\pm e^{i(\vec{k}\cdot \vec{x}+\omega^\pm t)}$
-we recover the usual dispersion relation for waves propagating
-anti-parallel to the mean field
-$\omega^+ = +\vec{V}_\textrm{A} \cdot \vec{k}$ (where now
-$\vec{V}_\textrm{A}$ can fluctuate slowly in space and time). However,
-for $\vec{z}^-$ we obtain
+and using $\vec{z}^\pm = \vec{z}_0^\pm e^{i(\vec{k}\cdot
+  \vec{x}+\omega^\pm t)}$ we recover the usual dispersion relation for
+waves propagating anti-parallel to the mean field $\omega^+ =
++\vec{V}_\textrm{A} \cdot \vec{k}$ (where now $\vec{V}_\textrm{A}$ can
+fluctuate slowly in space and time). However, for $\vec{z}^-$ we
+obtain
 \begin{equation}
 \partial_t \vec{z}^- \approx - \vec{V}_\textrm{A} \cdot \nabla \vec{z}^- + \vec{z}^+ 
     \cdot \frac{\nabla \vec{B}'}{\sqrt{4\pi \rho}} .
@@ -765,11 +900,11 @@ of the large-scale magnetic field.
 From Eq.~(\ref{eq:zmlinear}) we can also extract some phenomenological
 conditions for the behavior seen in Figs.~\ref{fig3:B0_spectrum_Hc} to
 \ref{fig3:B8_spectrum_Hc} (and in particular, for the
-counter-propagation of waves) to take place. Using again
-$\vec{z}^\pm = \vec{z}_0^\pm e^{i(\vec{k}\cdot \vec{x}+\omega^\pm
-  t)}$, and assuming $\vec{B}' = \vec{B}_0' + \vec{b}_0'$ where
-$\vec{b}_0' = \vec{\tilde{b}}_0'e^{i\vec{K} \cdot \vec{x}}$ is the
-slowly varying large-scale magnetic field with wavenumber $K \ll k$,
+counter-propagation of waves) to take place. Using again $\vec{z}^\pm
+= \vec{z}_0^\pm e^{i(\vec{k}\cdot \vec{x}+\omega^\pm t)}$, and
+assuming $\vec{B}' = \vec{B}_0' + \vec{b}_0'$ where $\vec{b}_0' =
+\vec{\tilde{b}}_0'e^{i\vec{K} \cdot \vec{x}}$ is the slowly varying
+large-scale magnetic field with wavenumber $K \ll k$,
 Eq.~(\ref{eq:zmlinear}) reduces to
 \begin{equation}
 \left( \omega^- +\vec{V}_\textrm{A} \cdot \vec{k} \right) 
@@ -810,20 +945,22 @@ fulfilled. From dimensional analysis, this condition requires that
 which (as $V_\textrm{A}\gtrsim v_\textrm{A}$ and $k\gg K$) cannot be
 satisfied when $\sigma_c \approx 0$ (as observed in
 Figs.~\ref{fig3:B0_spectrum_Hc} to \ref{fig3:B8_spectrum_Hc}), or when
-the guide field becomes too strong for a fixed value of $\sigma_c$ (as also
-observed in the spatio-temporal spectra). Thus, this last qualitative
-argument indicates (in agreement with the simulations) that
-$\vec{z}^-$ fluctuations can propagate with the same phase speed and
-direction as the $\vec{z}^+$ fluctuations as long as $\sigma_c \neq 0$ and
-$B_0$ is not too strong for a fixed value of the normalized cross-helicity.
+the guide field becomes too strong for a fixed value of $\sigma_c$ (as
+also observed in the spatio-temporal spectra). Thus, this last
+qualitative argument indicates (in agreement with the simulations)
+that $\vec{z}^-$ fluctuations can propagate with the same phase speed
+and direction as the $\vec{z}^+$ fluctuations as long as $\sigma_c
+\neq 0$ and $B_0$ is not too strong for a fixed value of the
+normalized cross-helicity.
 
 In other words, if $|\vec{z}^+|$ at large scales is comparable to
-$|\vec{V}_\textrm{A}|$ and $\sigma_c \approx 1$, we can see $\vec{z}^-$
-fluctuations propagate in the same direction as $\vec{z}^+$
-fluctuations as the result of reflections in inhomogeneities of the
-large-scale magnetic field. A similar behavior can result, for example, from mass
-density fluctuations when the flow is compressible, as is the case in
-some regions of the solar wind and the interplanetary medium \cite{zhou_1989_nonWKBevolution}, and this
+$|\vec{V}_\textrm{A}|$ and $\sigma_c \approx 1$, we can see
+$\vec{z}^-$ fluctuations propagate in the same direction as
+$\vec{z}^+$ fluctuations as the result of reflections in
+inhomogeneities of the large-scale magnetic field. A similar behavior
+can result, for example, from mass density fluctuations when the flow
+is compressible, as is the case in some regions of the solar wind and
+the interplanetary medium \cite{zhou_1989_nonWKBevolution}, and this
 argument does not preclude other effects such as strong non-linear
 interactions from resulting in reflection and counter-propagation of
 excitations. Moreover, when the intensity of the background magnetic
@@ -831,10 +968,11 @@ field $\vec{B}_0$ is further increased, the arguments used above are
 not valid anymore and the relevance of the reflections reduces. This
 is compatible with the behavior seen in Fig.~\ref{fig3:B8_spectrum_Hc}
 for the simulations with $B_0=8$, which show similar amounts of power
-in both type of fluctuations when $\sigma_c=0$, less power in $\vec{z}^-$
-fluctuations when $\sigma_c=0.3$ (and propagating opposite to the
-$\vec{z}^+$ field), and no appreciable power for $\vec{z}^-$
-fluctuations when compared to $\vec{z}^+$ in the case with $\sigma_c=0.9$.
+in both type of fluctuations when $\sigma_c=0$, less power in
+$\vec{z}^-$ fluctuations when $\sigma_c=0.3$ (and propagating opposite
+to the $\vec{z}^+$ field), and no appreciable power for $\vec{z}^-$
+fluctuations when compared to $\vec{z}^+$ in the case with
+$\sigma_c=0.9$.
 
 \subsection{Decorrelation times}
 
@@ -842,18 +980,23 @@ From the discussions in Sec.~\ref{sec_Wfspectrum_and_Gamma}, another
 way to identify dominant time scales for individual modes is to study
 the decorrelation time $\tau_D$, i.e., the time it takes for each
 Fourier mode with wave vector ${\bf k}$ to be decorrelated from its
-previous history either by non-linear eddy interactions (if
-$\tau_D \sim \tau_{nl}$), by the cross-over of waves (if
-$\tau_D \sim \tau_A$), or by the sweeping by the large-scale flow
-(when $\tau_D \sim \tau_{sw}$). Again, as $\tau_D$ depends on the wave
-vector ${\bf k}$, in the following we show it for fixed values of
-$k_\parallel$ or $k_\perp$, and as a function of the remaining
-wavenumber. In all cases, the decorrelation time $\tau_D$ is obtained
-from the numerical data by computing the correlation function
+previous history either by non-linear eddy interactions (if $\tau_D
+\sim \tau_{nl}$), by the cross-over of waves (if $\tau_D \sim
+\tau_A$), or by the sweeping by the large-scale flow (when $\tau_D
+\sim \tau_{sw}$). Again, as $\tau_D$ depends on the wave vector ${\bf
+  k}$, in the following we show it for fixed values of $k_\parallel$
+or $k_\perp$, and as a function of the remaining wavenumber. In all
+cases, the decorrelation time $\tau_D$ is obtained from the numerical
+data by computing the correlation function
 $\Gamma(k_{\perp},k_{\parallel},\tau)$, and looking at the value of
 the time lag $\tau$ for which the correlation function decays to $1/e$
-from its value for $\tau=0$, that is, the characteristic time for the
-decay of the correlation function \cite{lugones_2016_spatiotemporal}.
+from its value for $\tau=0$. Note the choice of $1/e$ as a reference
+value is arbitrary, but similar results are obtained if instead 
+the decorrelation time is defined as the half width of $\Gamma$, or as the time when the correlation function crosses the zero 
+\cite{lugones_2016_spatiotemporal, 
+clark_di_leoni_quantification_2014}. With any of these choices,
+$\tau_D$ is a measure of the characteristic time for the decay of the 
+correlation.
 
 Figure \ref{fig5:z+_vs_z-} shows the different decorrelation times for
 a fixed value of $k_{\parallel}=10$ and as a function of $k_{\perp}$,
@@ -871,11 +1014,11 @@ decorrelation time $\tau_D$ for $k_\perp > 10$ is in between the
 scaling of $\tau_{sw}$ and of $\tau_{nl}$.
 
 Figure \ref{fig5:tD_vs_B0} shows the decorrelation times $\tau_D$ for
-the $\vec{z}^+$ field for cases with $\sigma_c = 0.3$, with a guide field
-of $B_0=0.25$, $1$, $4$, and $8$, and for fixed $k_\parallel = 15$ as
-a function of $k_\perp$. Again, for low values of $B_0$, $\tau_D$ is
-mostly dominated for the sweeping, either for all values of $k_\perp$
-(for $B_0=0.25$) or down to $k_\perp \approx 20$ (for
+the $\vec{z}^+$ field for cases with $\sigma_c = 0.3$, with a guide
+field of $B_0=0.25$, $1$, $4$, and $8$, and for fixed $k_\parallel =
+15$ as a function of $k_\perp$. Again, for low values of $B_0$,
+$\tau_D$ is mostly dominated for the sweeping, either for all values
+of $k_\perp$ (for $B_0=0.25$) or down to $k_\perp \approx 20$ (for
 $B_0=1$). However, for larger values of $B_0$ (or for small values of
 $k_\perp$ when $B_0=1$) Alfv\'enic effects become dominant, with
 $\tau_D$ taking values close to $\tau_{A}$. Overall, the fastest time
@@ -885,33 +1028,34 @@ results are consistent with the previous ones we obtained
 incompressible MHD turbulence with no cross-helicity, although the
 presence of some cross-helicity in the flow seems to favor a
 transition towards a flow more dominated by Alfv\'en waves as also
-seen in the spatio-temporal spectra in Sec.~\ref{sec:wk}. This can be 
-also associated with the fact that under certain conditions the nonlinear
-time of the dominant Els\"asser fluctuations becomes too long, and the 
-decorrelation time scale is then determined by the so-called 
-``minority species'' as reported before in closure calculations by 
-Grappin \textit{et al.} \cite{grappin_1983_dependence}.
+seen in the spatio-temporal spectra in Sec.~\ref{sec:wk}. This can be
+also associated with the fact that under certain conditions the
+nonlinear time of the dominant Els\"asser fluctuations becomes too
+long, and the decorrelation time scale is then determined by the
+so-called ``minority species'' as reported before in closure
+calculations by Grappin \textit{et al.}
+\cite{grappin_1983_dependence}.
 
 This behavior can also be seen when $k_\perp$ is fixed, and $\tau_D$
 is studied as a function of $k_\parallel$ (see
-Fig.~\ref{fig5:tD_vs_B0_2}). For simulations with $\sigma_c=0.3$ and with
-increasing $B_0$, we see that $\tau_D$ varies with $k_\parallel$ as
-$\tau_{sw}$ when $B_0$ is small or moderate and when $k_\parallel$ is
-small, and varies as $\tau_A$ when $B_0$ or $k_\parallel$ are
+Fig.~\ref{fig5:tD_vs_B0_2}). For simulations with $\sigma_c=0.3$ and
+with increasing $B_0$, we see that $\tau_D$ varies with $k_\parallel$
+as $\tau_{sw}$ when $B_0$ is small or moderate and when $k_\parallel$
+is small, and varies as $\tau_A$ when $B_0$ or $k_\parallel$ are
 sufficiently large. In other words, modes with wave vectors
 sufficiently aligned with the guide field are dominated by the
 Alfv\'en time. And again, the fastest time scale in this figure is the
 one that dominates the dynamics.
 
-However, and as mentioned before, this picture changes when $\sigma_c$ is
-sufficiently large. This can be seen in Fig.~\ref{fig5:tD_vs_Hc},
+However, and as mentioned before, this picture changes when $\sigma_c$
+is sufficiently large. This can be seen in Fig.~\ref{fig5:tD_vs_Hc},
 where the decorrelation time $\tau_D$ is plotted for the simulations
 with $B_0=1$, for fixed $k_\perp=40$, and as a functions of
-$k_\parallel$ for $\sigma_c = 0$, $0.3$ and $0.9$. While for small values
-of $\sigma_c$ we observe the same behavior as before, for large values of
-$\sigma_c$ the Alfv\'en time becomes dominant, even when it is slower than
-all the other time scales, as in the case of the simulation with
-$\sigma_c=0.9$ and small values of $k_\parallel$.
+$k_\parallel$ for $\sigma_c = 0$, $0.3$ and $0.9$. While for small
+values of $\sigma_c$ we observe the same behavior as before, for large
+values of $\sigma_c$ the Alfv\'en time becomes dominant, even when it
+is slower than all the other time scales, as in the case of the
+simulation with $\sigma_c=0.9$ and small values of $k_\parallel$.
 
 Thus, while for small values of $\sigma_c$ the analysis of the
 decorrelation time confirms the tendency observed in our previous
@@ -919,21 +1063,22 @@ study \cite{lugones_2016_spatiotemporal} that the sweeping time
 dominates the decorrelations except for the cases with medium and
 large values of $B_0$ where the Alfv\'enic time is dominant for small
 values of $k_{\perp}$ or large values of $k_{\parallel}$ (see also
-studies of MHD turbulence in the weak regime, or of the transition
-from weak to strong MHD turbulence in Refs.~\cite{meyrand_weak_2015,
-  lugones_2016_spatiotemporal, meyrand_direct_2016}), increasing the
-cross-helicity content of the flow has interesting consequences. The
-appearance of the Alfv\'enic time as dominant becomes more clear for
-large values of $\sigma_c$, even when it is not the fastest time scale, and
-consistent with a linear (or weakly non-linear) picture in which most
-of the fluctuations have a single direction of propagation. However,
-as evidenced in the spatio-temporal analysis of the energy spectrum of
-each Els\"asser field as a function of $\vec{k}$ and $\omega$,
-inhomengeneities of the large scale magnetic field can induce
-reflections, and turn on non-linear interactions dominated by the
-Alfv\'en cross-over time between waves for modes with wave vectors
-sufficiently aligned with the guide field, or by the sweeping or
-non-linear time for other modes.
+studies of MHD turbulence in the weak regime in
+Refs.~\cite{galtier_2000_weak,meyrand_weak_2015}, or of the transition
+from weak to strong MHD turbulence in
+Refs.~\cite{lugones_2016_spatiotemporal, meyrand_direct_2016}),
+increasing the cross-helicity content of the flow has interesting
+consequences. The appearance of the Alfv\'enic time as dominant
+becomes more clear for large values of $\sigma_c$, even when it is not
+the fastest time scale, and consistent with a linear (or weakly
+non-linear) picture in which most of the fluctuations have a single
+direction of propagation. However, as evidenced in the spatio-temporal
+analysis of the energy spectrum of each Els\"asser field as a function
+of $\vec{k}$ and $\omega$, inhomogeneities of the large scale magnetic
+field can induce reflections, and turn on non-linear interactions
+dominated by the Alfv\'en cross-over time between waves for modes with
+wave vectors sufficiently aligned with the guide field, or by the
+sweeping or non-linear time for other modes.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5
 \section{Conclusions}\label{sec_Conclusions}
@@ -961,7 +1106,7 @@ time, a new feature when compared with previous studies of
 spatio-temporal behavior of strong MHD turbulence with zero
 cross-helicity. In principle, this behavior could be interpreted as a
 transition towards a regime with weaker non-linearities as the
-cross-helicity is increased, as often argued on theoretical grounds 
+cross-helicity is increased, as often argued on theoretical grounds
 and apparently indicated by our numerical simulations.
 
 However, it should be noted that the spatio-temporal spectra indicate

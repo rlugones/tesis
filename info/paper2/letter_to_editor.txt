@@ -1,0 +1,140 @@
+Dear Editor of Physics of Plasmas,
+
+we are presently resubmitting our manuscript
+
+MS #POP19-AR-58809
+"Spatio-temporal behavior of magnetohydrodynamic fluctuations with 
+  cross-helicity and background magnetic field,”
+by R. Lugones, P. Dmitruk, P.D. Mininni, A. Pouquet, and W.H. Matthaeus.
+
+We are glad to see that both referees recommend publication of our manuscript, 
+and recommend minor changes. In the present version we took into account all 
+referees’ comments, and also addressed the comments from the Editorial Office.
+Concerning these comments, we now provide ReVTeX sources, we added postal 
+codes to all affiliation addresses, and we filled the e-copyright.
+
+Below we provide detailed answers to the referees, with a list of changes. We 
+thank you and the referees for the careful handling and reading of the 
+manuscript, which we believe has improved as a result. We thus hope this new
+version of the manuscript will be found suitable for publication in your 
+journal.
+
+Yours sincerely,
+
+Rodrigo Lugones,
+on behalf of all authors.
+
+-----------------------------------------------------------------------------
+Reply to Referee #1
+-----------------------------------------------------------------------------
+
+> The paper deals with MHD turbulence in presence of cross-helicity and 
+> background magnetic field. A set of 3D numerical simulations are exposed 
+> to study the spatio-temporal behavior of the primary variables called 
+> Elsasser variables. The authors compare the correlation time with the 
+> typical times provided by the mhd turbulence theory. They also discuss the 
+> reflection of Alfven waves produced by inhomogeneities.
+> The paper is well written and provides significant results on plasma physics 
+> that can be published as is. I have however minor comments that the authors 
+> should take into account to improve the presentation. 
+
+We thank the referee for his/her comments, which helped us improve the 
+presentation of our results. Below we provide a list of changes introduced
+in the text.
+
+> Page 2: it is not immediately clear if the authors simulate Eqs 1 & 2 or 
+> Eqs 7-10. The authors should clarify this point. When I read the paper the 
+> reason to talk about inhomogeneities was not immediately clear. 
+
+We clarified which equations were used for the simulations in the first 
+sentence  of Sec. II.A ("The MHD equations ... as solved in the numerical
+simulations are..."). We now also state explicitly we solve Eqs. (1) and (2)
+at the beginning of Sec. II.C (Numerical simulations). Finally, we added a
+sentence before Eq. (7) to motivate the discussion on inhomogeneities.
+
+> Eq. 2 : Is P the total pressure?
+Yes. This is now clarified in the text after Eq. (4).
+
+> Page 4: since 18 simulations are made it would be relevant to provide a 
+> Table with information about it. 
+
+We added a table with the list of all numerical simulations performed and
+their relevant parameters in Sec. II.C (see table 1).
+
+> Page 5: the omega-k spectrum is plotted for k_\per=0. Why this value? 
+> Do the results change with another choice of k_\perp? 
+
+We show spectra for k_\perp = 0 for convenience, as other values of 
+k_\perp display the same behavior. We now clarify this in the text in the 
+first paragraph of Sec. III.B ("...other slices, with other values of 
+$k_\perp$, display the same behavior for the waves reported below...").
+
+> Page 12: 'the correlation function decays to 1/e. What does it mean? 
+
+We define the decorrelation time as the characteristic time for the decay 
+of the correlation function. We verified that the choice of using the time 
+in which this function decays to 1/e, or other possible choices, does not 
+affect the results. This is now explained in the first paragraph of Sec. 
+III.C (see the text "Note the choice of 1/e as a reference value is
+arbitrary, but similar results are obtained if instead the decorrelation 
+time is defined as the half width..."). We now also provide two references
+discussing other definitions for the decorrelation time.
+
+> After Eq 20: a comparison should be made with eg. Rappazzo et al. (ApJ, 
+> 2007). The authors should also add a reference paper on weak Alfven wave
+> turbulence. 
+
+We added a reference to Rappazzo et al. (2007), and a reference on weak 
+turbulence theory to Galtier et al. (2000).
+
+> Typo: 
+> Page 4, Part III, third paragraph: 'ç'; same sentence: 'illustration
+> the spectral' 
+> Page 10 (right): 'the total mean field a fluctuation sees'; please correct
+> this sentence. 
+> Page 13 (bottom): inhomengeneities 
+
+We corrected all typos.
+
+Once again, we thank the referee for his/her careful reading of the 
+manuscript.
+
+-----------------------------------------------------------------------------
+Reply to Referee #2
+-----------------------------------------------------------------------------
+
+> The paper studies the properties of MHD turbulence with cross-helicity and 
+> guide magnetic field using direct numerical simulations. In my opinion, the
+> paper is a valuable extension of previous studies in this area. I can 
+> recommend this paper for publication in Physics of Plasmas after the 
+> following points are clarified: 
+
+We thank for referee for his/her positive comments. Below we provide answers
+to all referee's requests.
+
+> 1) The authors say (in section II.B): "The Fourier transform in the time 
+> lag of the scale-dependent correlation function results in the 
+> wavenumber-frequency spectrum". Can they elaborate on that and show 
+> explicitly how energy spectrum is related to correlation function? 
+
+We now explain that this property follows directly from the Wiener-Khinchin 
+theorem, stating the theorem explicitly, and providing references with further
+details (see the new discussion before Eq. 15).
+
+> 2) How are energy spectra E(k_perp) and e(k_perp,k_par) presented in 
+> section III.A calculated? Are they results of the Fourier transform of 
+> correlation function? 
+
+Although they can be computed as the referee indicates, it is more practical
+to compute them directly from the raw numerical data using FFTs. We now 
+provide in the text explanations on how the different energy spectra were 
+calculated, in Eqs. (18), (19), and (20), and in the text introducing these
+equations.
+
+> 3) In Fig. 2(a) with B0=0, the energy spectrum is not isotropic (contours 
+> in k_per-k_par plane are not circular). Why is that?
+
+The referee is right, contours are not perfectly circular. This is because 
+of statistical fluctuations in the flow, that can prefer one large-scale 
+mode or another for relatively long times, and the spectra we show in this
+figure are instantaneous. 

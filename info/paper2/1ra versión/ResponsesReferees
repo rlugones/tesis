@@ -1,0 +1,24 @@
+
+Referee #1:
+1) We clarified which equations we used for the simulations at the beginning of sec II.A. We also added the reference to eqs (1) and (2) at the beginning of sec II.C (Numerical simulations)
+
+2) We clarified that the pressure $p$ was the plasma pressure.
+
+3) We added a table with the list of numerical simulations performed.
+
+4) We plotted the omega-k spectra only for $k_\perp = 0$ because we didn't want to add a lot of plots. For other values of $k_\perp$, we see results similar to the ones we show in figs 7-10 (energy near the Alfvén dispersion relation or enclosed by the sweeping relation). We decided not to add them to the manuscript because they didn't show new information.
+
+5) We used the fact that that the mode with wave vector k should be decorrelated after a time $\tau_D (k)$, following an exponential decay, and using the e-folding time as $\tau_D (k)$. This is explained in ref. [20] (Lugones et al, 2016), in eq (10). We added here another reference, Clark di Leoni et al (2014), where it's explained in sec II.B.
+
+6) We added a reference to Rappazzo et al (2007) (doi:10.1086/512975). We also added a reference for weak wave turbulence: Galtier et al (2000) (doi:10.1017/S0022377899008284)
+
+Finally, we corrected the typos.
+
+
+Referee #2:
+1) We added the reference to the book The theory of homogeneous turbulence (pp. 35-36) of Batchelor (1953), where the relation between the correlation function and the wavenumber spectrum is demonstrated.
+
+2) We added the explanations of how the different energy spectra were calculated.
+
+3) It's true, it's not perfectly circular. The reason is that the we used the data from the numerical simulations, and not from an analytic result.
+
