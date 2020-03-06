@@ -1,0 +1,106 @@
+% This text is proprietary.
+% It's a part of presentation made by myself.
+% It may not used commercial.
+% The noncommercial use such as private and study is free
+% Sep. 2005 
+% Author: Sascha Frank 
+% University Freiburg 
+% www.informatik.uni-freiburg.de/~frank/
+
+
+\documentclass[notes]{beamer}
+\usepackage[utf8]{inputenc}
+\usetheme{Madrid}
+\usepackage{graphicx}
+\usepackage{verbatim}
+\usepackage{xcolor}
+\usepackage{amsmath}
+\usepackage{siunitx}
+%\usepackage{amssym}
+%%\usepackage[spanish]{babel}
+\graphicspath{{./figs/}}
+\renewcommand{\parallel}{{\mkern3mu\vphantom{\perp}\vrule depth 0pt\mkern2mu\vrule depth 0pt\mkern3mu}}
+\let\oldhat\hat
+\renewcommand{\vec}[1]{\mathbf{#1}}
+\renewcommand{\hat}[1]{\oldhat{\mathbf{#1}}}
+
+%%%%%%%%%%%%%%%%%%%%%%%
+% NOTAS
+%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{pgfpages}
+\setbeameroption{show notes on second screen}
+
+\AtBeginSection[] {
+  \begin{frame}[plain]
+    \frametitle{Contents}
+    \tableofcontents[currentsection]
+  \end{frame}
+  %\addtocounter{framenumber}{-1}
+} 
+
+\begin{document}
+\titlegraphic{\includegraphics[width=2cm]{logos/logo-UBA.png}\hspace*{1.875cm}~%
+   \includegraphics[width=1cm]{logos/flip_logo.png}\hspace*{1.875cm}~%
+   \includegraphics[width=2cm]{logos/logo-CONICET.png}
+ }
+\title[Defensa tesis doctoral]{Comportamiento espacio-temporal de
+turbulencia magnetohidrodinámica}
+\author[]{Rodrigo Lugones\\Director: Pablo A. Dmitruk}
+
+\institute[]{Universidad de Buenos Aires, Grupo de Fluidos y Plasmas, IFIBA-CONICET}
+%\date{\today}
+\date{6 de marzo de 2020}
+
+\frame{\titlepage} 
+
+%\frame{\frametitle{Contents}\tableofcontents} 
+
+\frame{\frametitle{Resumen}
+\begin{itemize}
+\item En esta tesis estudiamos algunos de los aspectos fundamentales
+  de la turbulencia MHD, tales como la transferencia espectral de
+  energía o la multiplicidad de escalas temporales presentes.
+\item Analizamos el comportamiento espacio-temporal de los campos
+  magnético y de velocidades estudiando el espectro de energías y los
+  tiempos de descorrelación. Esto nos permite distinguir el efecto
+  físico dominante en una amplia variedad de situaciones.
+\item Analizamos los espectros espacio-temporales de los campos de
+  Elsässer, variando independientemente el campo magnético medio y la
+  helicidad cruzada.
+\end{itemize}
+}
+
+
+%\section{Introduction}
+
+\input{chapters/TalkIntroduccion.tex}
+
+\input{chapters/TalkFundamentos.tex}
+
+\input{chapters/TalkSpatioTemporalSpectra.tex}
+
+\input{chapters/TalkCrossHelicity.tex}
+
+\input{chapters/TalkConclusiones.tex}
+
+\frame{\frametitle{}
+  \vfill
+  \begin{center}
+    \includegraphics[width=0.7\columnwidth]{extra/muchasgracias.jpg}
+  \end{center}
+  \vfill
+}
+
+\frame{\frametitle{}
+  \vfill
+  \begin{center}
+    \includegraphics[width=0.49\columnwidth]{extra/preguntas.jpg}\hfill
+    \includegraphics[width=0.49\columnwidth]{extra/comentarios.jpg}
+  \end{center}
+  \vfill
+}
+
+
+\input{chapters/TalkApendice.tex}
+
+\end{document}

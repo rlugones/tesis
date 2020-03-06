@@ -24,7 +24,7 @@ significativo, aun influenciando los procesos turbulentos en escalas
 más pequeñas. Entre otros procesos, esto da lugar a la presencia de
 más escalas temporales influenciando la dinámica de la turbulencia
 MHD. Por esta razón, la ``cascada'' MHD, que transfiere energía entre
-estructuras distintas escalas espaciales mediante el acoplamiento
+estructuras de distintas escalas espaciales mediante el acoplamiento
 dinámico del término no lineal, es un proceso mucho más complejo que
 en el caso de la cascada hidrodinámica.
 
@@ -38,7 +38,7 @@ sección \ref{sec:FundTurbulenciaMHD} resumiremos algunos aspectos
 fundamentales de la turbulencia MHD, incluyendo la transferencia
 espectral de energía, la no localidad y la anisotropía, cada uno de
 los cuales se encuentra relacionado con una multiplicidad de escalas
-temporales dinámicas presentes en el fenómeno.  Me centraré en la
+temporales dinámicas presentes en el fenómeno.  Nos centraremos en la
 identificación de las escalas temporales relevantes, cómo son
 influenciadas por la anisotropía asociada con los campos magnéticos de
 gran escala, y cómo se alcanza un equilibrio entre distorsiones no
@@ -405,7 +405,7 @@ un gradiente de velocidades que distorsiona otros vórtices.
 
 Por su parte, el flujo de gran escala arrastra los vórtices de menor
 escala, pero sin inducir una distorsión apreciable en sus estructuras
-dinámicas internas. La interacción directa entre las grande escalas y
+dinámicas internas. La interacción directa entre las grandes escalas y
 las pequeñas consiste, entonces, en un movimiento de ``barrido''
 (\textit{sweeping}), que no involucra transferencia energética
 significativa en el espacio de Fourier, ni cambia la forma del
@@ -559,7 +559,7 @@ identificable con \textit{eddy-damping time} $\Theta_{kkk}$ (o
 ``tiempo de amortiguación de los remolinos'') que emerge como el
 tiempo clave en la evaluación del flujo de energía
 \textit{EDQNM}. Este resultado nos da confianza, porque ahora el
-resultado dimensional adquiere un contexto dentro de la teoría
+resultado del análisis dimensional adquiere un contexto dentro de la teoría
 analítica. Sin embargo, es muy importante tener en cuenta que el rol
 físico que cumple la tasa de amortiguamiento de los \textit{eddies} en
 la correlación triple es el de restaurar, de una forma aproximada, el
@@ -655,7 +655,7 @@ para muchos de los problemas de turbulencia MHD
 en términos de la velocidad $\vec{v}$ del fluido y del campo magnético
 $\vec{B}$, consta de una ecuación de momentos
 \begin{equation}\label{eq2:NS-MHDv}
-  \frac{\partial \vec{v}}{\partial t} + \vec{v} \cdot \nabla\vec{v} = -\frac{1}{\rho} \nabla p + \frac{1}{4\pi\rho} \left(\nabla\times\vec{B}\right)\times\vec{B} + \nu \nabla^2 u,
+  \frac{\partial \vec{v}}{\partial t} + \vec{v} \cdot \nabla\vec{v} = -\frac{1}{\rho} \nabla p + \frac{1}{4\pi\rho} \left(\nabla\times\vec{B}\right)\times\vec{B} + \nu \nabla^2 v,
 \end{equation}
 y de una ecuación de inducción magnética
 \begin{equation}\label{eq2:NS-MHDB}
@@ -748,7 +748,7 @@ hidrodinámica y magnetohidrodinámica. A diferencia del caso
 hidrodinámico, el efecto no local de las escalas grandes sobre las
 pequeñas, el \textit{sweeping}, tiene un papel importante en
 turbulencia MHD, pues el campo magnético medio no puede ser
-removido por una transformación de Galileo. Es más, comenzando por
+removido por una transformación de Galileo. De hecho, comenzando por
 \cite{iroshnikov_turbulence_1964} y
 \cite{kraichnan_inertial-range_1965}, hay argumentos para plantear que
 el \textit{sweeping} juega un papel importante aún en el caso de
@@ -759,7 +759,7 @@ Alfv\'en (\textit{sweeping} magnético). Es más, la presencia de un
 campo magnético permite la existencia de otro tiempo característico,
 que competirá con el tiempo no lineal y el de \textit{sweeping}.
 
-Para discutir esto, es más fácil escribir las ecuaciones MHD
+Para discutir esto, resulta más sencillo escribir las ecuaciones MHD
 en una forma más simétrica, utilizando los denominados campos de
 Els\"asser [\cite{elsasser_hydromagnetism_1956}], $\vec{z}^\pm =
 \vec{v} \pm \vec{b}/\sqrt{4\pi\rho}$,
@@ -873,9 +873,9 @@ La dicotomía entre la representación de ``turbulencia'' no lineal y la
 representación de ``ondas'' lineales se empapa de 40 años de estudio
 del viento solar y espeja el tema básico de la presente tesis: las
 características observables de la turbulencia MHD emergen de un
-balance entre la propagación de ondas y el barrido por el campo
-magnético medio, por un lado, y las distorsiones
-o \textit{strainings}, por otro.
+balance entre la propagación de ondas y el \textit{sweeping}
+aleatorio, por un lado, y las distorsiones o \textit{strainings}, por
+otro.
 
 
 \subsection{Fenomenología del decaimiento MHD}
@@ -948,7 +948,7 @@ que deben resolverse (en, por ejemplo, las simulaciones), tanto las
 escalas más pequeñas (de manera de resolver adecuadamente la cascada
 directa de energía) como las escalas más grandes.
 
-Otra dificultad con el decaimiento MHD fenomenológico es el grado de
+Otra dificultad con el análisis del decaimiento MHD fenomenológico es el grado de
 certeza y generalidad con el que se hace la identificación
 $\tau_{sp}^\pm \rightarrow \tau_{nl}^\pm$, utilizada en la
 \cref{eq2:elsasserdecay}. Efectivamente, cabe preguntarse si hay alguna
@@ -1071,8 +1071,8 @@ $1<E_v(k)/E_b(k)<2$.
 \end{figure}
 
 Las simulaciones también tratan la cuestión del índice espectral en
-MHD. Los espectros de energías obtenido por simulaciones
-computacionales antiguas de turbulencia MHD resultaron poco
+MHD. Los espectros de energías obtenidos por las primeras simulaciones
+computacionales de turbulencia MHD resultaron poco
 concluyentes. Por ejemplo, simulaciones con resolución numérica de
 $180^3$ puntos de grilla [\cite{politano_current_1995}] no pudieron
 generar un rango inercial extendido. Simulaciones más recientes y con
@@ -1129,7 +1129,7 @@ local y las interacciones locales son dominantes.
 
 \subsubsection{Cuando la propagación de Alfv\'en es dominante: escaleo de Iroshnikov-Kraichnan}\label{sec:escaleoI-K}
 
-La forma más simple de incorporar efectos de la propagación de Alf\'en
+La forma más simple de incorporar efectos de la propagación de Alfv\'en
 es asumir isotropía estadística, pero con la escala de tiempos de
 descorrelación controlada por el periodo de una onda de Alfv\'en
 característica.  De esta forma, \cite{iroshnikov_turbulence_1964} y
@@ -1327,7 +1327,7 @@ tendrán acoplamiento no nulo sólo si $\vec{k_1}\cdot \vec{V}_A = 0$ ó
 $\vec{k_2}\cdot \vec{V}_A = 0$. En consecuencia, $\vec{k_1}$ ó
 $\vec{k_2}$ tendrán componente nula a lo largo de $\vec{B}_0$.
 
-Las consecuencias físicas de los acoplamientos de tres ondas puede
+Las consecuencias físicas de los acoplamientos de tres ondas puedes
 resumirse de la siguiente manera: al orden principal, no hay
 transferencia para un campo magnético DC impuesto; la transferencia en
 la dirección perpendicular no es impedida por el acoplamiento de ondas
@@ -1350,7 +1350,7 @@ indistinguibles de un campo DC estrictamente uniforme. En
 consecuencia, sería esperable poder entender la ocurrencia de
 anisotropías enteramente en el contexto de un sistema teniendo
 corrientes eléctricas localizadas y campos magnéticos con escala
-estrictamente finita. Hay mucho estudios numéricos
+estrictamente finita. Hay muchos estudios numéricos
 [\cite{cho_anisotropy_2000, milano_local_2001}] que se encargan de
 este problema, y concluyen que la anisotropía descripta posee
 efectivamente un análogo puramente local. El punto básico vuelve a las
@@ -1431,7 +1431,7 @@ de transferencia se volvían más locales aún.
     positivo para $K>Q$, que indica que la energía es removida de los
     números de onda vecinos más chicos y transferida hacia los números
     de onda vecinos más grandes. La transferencia energética desde el
-    campo magnético al cinético en mucho más pequeña en amplitud, y
+    campo magnético al cinético es mucho más pequeña en amplitud, y
     también resulta local. (b) Función de transferencia $T_{vb}$
     (mecánica a magnética), para distintos valores de $K$. Esta
     función es no local, con un pico alto en la escala del forzado y
@@ -1563,7 +1563,7 @@ Nuevamente, el caso MHD resulta mucho más complejo, quedando aún
 muchas preguntas acerca de cuál es la escala temporal dominante de la
 descorrelación temporal [\cite{busse_2010_lagrangian}].
 Recientemente, \cite{servidio_time_2011} realizaron un estudio para
-analizar a descorrelación temporal para el caso de turbulencia MHD
+analizar la descorrelación temporal para el caso de turbulencia MHD
 isotrópica. El resultado principal que obtuvieron fue que, como en
 hidrodinámica, la descorrelación temporal en MHD es gobernada por
 interacciones no locales (en este caso, \emph{sweeping} aleatorio y
@@ -1603,7 +1603,7 @@ afirmación
 \begin{equation}
   \epsilon = \Pi(k) = \tau_T(k) \frac{kE(k)}{\tau_{nl}^2},
 \end{equation}
-que es no es más que la \cref{eq2:TR_sw}. En esta ecuación se
+que no es más que la \cref{eq2:TR_sw}. En esta ecuación se
 relacionan varios elementos físicos de la MHD:
 \begin{itemize}
 \item La transferencia de energía debe ser proporcional al tiempo de
@@ -1621,7 +1621,7 @@ relacionan varios elementos físicos de la MHD:
 Este procedimiento nos permite fácilmente entender la física de las
 teorías de Kolmogorov y de Iroshnikov-Kraichnan, así como sus
 diferencias. Además, no se requieren teorías de clausura complejas o
-esquemas de perturbaciones. Si, en adición, queremos desarrollar
+esquemas de perturbaciones. Si, adicionalmente, queremos desarrollar
 aproximaciones para las funciones de correlación tiempo-dependientes,
 como las funciones de correlación Eulerianas (un punto espacial, dos
 temporales), o las descorrelaciones de dos tiempos que aparecen en las
@@ -1630,7 +1630,7 @@ adoptamos una forma funcional razonable para la función de correlación
 temporal, dependiente de una única escala temporal, digamos,
 del mismo tiempo de transferencia espectral.
 
-En este capítulo hemos intentado dar un panorama del rol influente de
+En este capítulo hemos intentado dar un panorama del rol influyente de
 distintas escalas temporales para establecer la transferencia de
 energía, las cascadas, la no localidad y la anisotropía, en
 turbulencia MHD. Como en el caso hidrodinámico, la escala temporal
@@ -1640,7 +1640,7 @@ tipo de barrido (ya sea por el propio \textit{sweeping} aleatorio o
 por la propagación de ondas) que desplazan estructuras de pequeña
 escala bajo la influencia de los campos de gran escala. En MHD los
 movimientos de \textit{straining} son dominantemente locales en
-escala, en la que las distorsiones no lineales son más efectivas para
+escala, dado que las distorsiones no lineales son más efectivas para
 interacciones entre \textit{eddies} de aproximadamente el mismo
 tamaño. No obstante, las interacciones no locales son más
 complejos que en hidrodinámica debido al efecto de propagación de
@@ -1649,7 +1649,7 @@ introduce un nuevo nivel de no-localidad en MHD y una fuerte tendencia
 a que la transferencia espectral ocurra anisotrópicamente respecto de
 la dirección del campo magnético.
 
-En el pasado se han hecho muchas diferencia entre los espectros de
+En el pasado se han hecho muchas diferencias entre los espectros de
 Kolmogorov y de Iroshnikov-Kraichnan, y ambas posibilidades suelen ser
 comparadas en simulaciones y en observaciones interplanetarias, con el
 aparente objetivo de plantear una distinción firme entre estas

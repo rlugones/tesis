@@ -1,0 +1,108 @@
+\frame{\frametitle{{\Large Apéndice}}}
+
+\frame{\frametitle{Apéndice: Espectro de energías axisimétrico}
+\begin{itemize}
+  \item Espectro de energías axisimétrico $e(k_\perp, k_\parallel, t)$\\
+    \begin{equation*}
+      \begin{split} e(k_\perp, k_\parallel, t) = \sum_{\substack{k_\perp \leq |\vec{k}\times\hat{x}| < k_\perp+1 \\ k_\parallel \leq k_x < k_\parallel +1}} |\hat{u}(\vec{k},t)|^2 +|\hat{b}(\vec{k},t)|^2 = \\ = \int \left(|\hat{u}(\vec{k},t)|^2 +|\hat{b}(\vec{k},t)|^2\right) |\vec{k}| \sin \theta_k~d\phi_k
+      \end{split}
+    \end{equation*}
+  \item Espectros energéticos perpendiculares reducidos $E(k_\perp)$
+    \begin{equation*}
+      E\left(k_\perp\right) = \frac{1}{T}\int\int e(|\vec{k_\perp}|,
+      k_\parallel, t) \, dk_\parallel~dt,
+    \end{equation*}
+\end{itemize}
+}
+
+\frame{\frametitle{Apéndice: Demostración contrapropagación de $\vec{z}^-$}
+Ecuación ideal linealizada ($\rho$ constante, $\vec{U}=0$)
+  \begin{equation*}
+    \partial_t \vec{z}^\pm = \pm \vec{V}_{A} \cdot \nabla \vec{z}^\pm 
+    \mp \vec{z}^\mp \cdot \frac{\nabla \vec{B}'}{\sqrt{4\pi \rho}} ,
+  \end{equation*}
+donde $\vec{V}_{A}$ incluye variaciones de gran escala y $\vec{B}'$ es el
+campo magnético total en unidades gaussianas. \vfill
+
+Si $\sigma_c \sim 1$ (i.e., $|\vec{z}^+| \gg |\vec{z}^-|$), tenemos
+que para $\vec{z}^+$
+\begin{equation*}
+\partial_t \vec{z}^+  \approx \vec{V}_{A} \cdot \nabla \vec{z}^+ ,
+\end{equation*}
+Utilizando $\vec{z}^\pm = \vec{z}_0^\pm e^{i(\vec{k}\cdot
+  \vec{x}+\omega^\pm t)}$ recuperamos $\omega^+ =
++\vec{V}_{A} \cdot \vec{k}$.
+}
+
+\frame{\frametitle{Apéndice: Demostración contrapropagación de $\vec{z}^-$}
+No obstante, para $\vec{z}^-$,
+\begin{equation*}
+\partial_t \vec{z}^- \approx - \vec{V}_{A} \cdot \nabla \vec{z}^- + \vec{z}^+ 
+    \cdot \frac{\nabla \vec{B}'}{\sqrt{4\pi \rho}} .
+\end{equation*}
+
+Utilizando $\vec{z}^\pm = \vec{z}_0^\pm
+e^{i(\vec{k}\cdot \vec{x}+\omega^\pm t)}$, y asumiendo $\vec{B}' =
+\vec{B}_0 + \vec{b}_0'$ donde $\vec{b}_0' =
+\vec{\tilde{b}}_0'e^{i\vec{K} \cdot \vec{x}}$ es el campo magnético de
+gran escala lentamente variable, con número de onda $K \ll k$, la ecuación se reduce a
+\begin{equation*}
+\left( \omega^- +\vec{V}_{A} \cdot \vec{k} \right) 
+    \vec{z}_0^- e^{i \omega^- t} = 
+    \frac{\left(\vec{K} \cdot \vec{z}_0^+\right) \vec{b}_0'}{\sqrt{4\pi \rho}} 
+    e^{i \omega^+ t} .
+\end{equation*}
+Tomando el producto escalar con $\vec{z}_0^-$, definiendo las
+densidades energéticas de Els\"asser $e^\pm = |\vec{z}_0^\pm|^2/4$, y
+definiendo las fluctuaciones en la velocidad de Alfvén (asociadas a
+las fluctuaciones de gran escala del campo magnético) como
+$\vec{v}_{A} = \vec{b}_0'/\sqrt{4\pi \rho}$, obtenemos
+\begin{equation*}
+\left( \omega^- + \vec{V}_{A} \cdot \vec{k} \right)
+    e^{i \omega^- t} = 
+    \frac{\left(\vec{K} \cdot \vec{z}_0^+\right)
+    \left(\vec{v}_{A} \cdot \vec{z}_0^-\right)}
+    {4e^-} 
+    e^{i \omega^+ t} .
+\end{equation*}
+}
+\note[itemize]{
+\item $\vec{z}^-$ (más pequeñas $\vec{z}^+$) pueden
+ser afectadas fuertemente por el campo $\vec{z}^+$ y por las
+variaciones espaciales del campo magnético de gran escala.
+
+}
+
+
+\frame{\frametitle{Apéndice: Demostración contrapropagación de $\vec{z}^-$}
+Esta ecuación admite como soluciones
+\begin{eqnarray*}
+    \omega^- &=& \omega^+ =
+    + \vec{V}_{A} \cdot \vec{k}, 
+    \label{eq4:cond1} \\
+    2 \vec{V}_{A} \cdot \vec{k} &=& 
+    \left(\vec{K} \cdot \vec{z}_0^+\right)
+    \left(\vec{v}_{A} \cdot \vec{z}_0^-\right) /
+    (4e^-), \label{eq4:cond2}
+\end{eqnarray*}
+
+A partir de análisis dimensional, la 2da condición requiere
+\begin{equation*}
+    2 \frac{V_{A}}{v_{A}} \frac{k}{K}
+    \sim \sqrt{\frac{e^+}{e^-}},
+\end{equation*}
+que (como $V_{A}\gtrsim v_{A}$ y $k\gg K$) no puede ser
+satisfecha cuando $\sigma_c \approx 0$ (como se observa en los espectros),
+o cuando el campo guía se vuelve demasiado
+fuerte para un valor fijo de $\sigma_c$ (como también fue observado en
+los espectros espacio-temporales).\vfill
+
+Entonces, las fluctuaciones $\vec{z}^-$ pueden propagarse con la misma velocidad de
+fase y dirección que las fluctuaciones $\vec{z}^+$, siempre que
+$\sigma_c \neq 0$ y $B_0$ no sea demasiado fuerte para un valor fijado
+de $\sigma_c$.
+}
+\note[itemize]{
+\item ambas ondas viajando en la misma dirección mientras
+la segunda condición se cumpla
+}
